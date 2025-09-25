@@ -1,121 +1,131 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Моє Портфоліо</title>
-  <link href="css/zero-style.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link href="css/section-hero.css" rel="stylesheet">
-</head>
-<body>
-
-  <header class="site-header">
-    <div class="container">
-
-      <div class="header-inner">
-        <a href="#" class="logo"><img class="header-logo" src="img/lending0.jpg" alt="logo"></a>
-        <h2 class="header-title">Лендінг студія</h2>
-        <nav class="nav">
-          <ul class="nav-list">
-            <li><a href="#works">Роботи</a></li>
-            <li><a href="#about">Про мене</a></li>
-            <li><a href="#contact">Контакти</a></li>
-          </ul>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Моє Портфоліо</title>
+    <link href="css/zero-style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link href="css/section-hero.css" rel="stylesheet" />
+    <link href="css/section-about.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="header-inner">
+          <a href="#" class="logo"
+            ><img class="header-logo" src="img/lending0.jpg" alt="logo"
+          /></a>
+          <h2 class="header-title">Лендінг студія</h2>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li><a href="#works">Роботи</a></li>
+              <li><a href="#about">Про мене</a></li>
+              <li><a href="#contact">Контакти</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-      <div class="burger">
-        <span></span>
-        <span></span>
-        <span></span>
+    </header>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <h1>Наше Портфоліо</h1>
+        <p>Створюю сучасні сайти, від лендингів до інтернет-магазинів.</p>
+        <a href="#works" class="btn">Подивитися роботи</a>
+      </div>
+    </section>
+
+    <!-- Роботи -->
+    <section id="works" class="works">
+      <div class="container">
+        <h2>Виконані роботи</h2>
+        <div class="tags">
+          <span class="tag">AI</span>
+          <span class="tag">Лендінги</span>
+          <span class="tag">Магазини</span>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <img src="img/lending0.jpg" alt="Лендінг" />
+            <h3>Лендінг</h3>
+            <p>Повестання ковирк роботи</p>
+            <a href="#">Переглянути</a>
+          </div>
+          <div class="card">
+            <img src="img/lending1.jpg" alt="Інтернет-магазин" />
+            <h3>Інтернет-магазин</h3>
+            <p>Коротий опис роботи</p>
+            <a href="#">Переглянути</a>
+          </div>
+          <div class="card">
+            <img src="img/lending0.jpg" alt="Корпоративний сайт" />
+            <h3>Корпоративний сайт</h3>
+            <p>Стен техонології</p>
+            <a href="#">Переглянути</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Про мене -->
+    <section class="about">
+      <div class="container">
+        <div class="about-inner">
+          <div class="about-left">
+            <div class="profile">
+              <img class="about-img" src="img/person.jpg" alt="Фото" />
+              <p>Вегі зреви виребораговія везраделод...</p>
+              <a href="#">Ім продокшу</a>
+            </div>
+            <div class="about-order-site">
+              <a href="#" class="btn large">Замовити сайт</a>
+
+            </div>
+          </div>
+          <div class="about-right">
+            <div class="tech">
+              <h2>Стек технологій</h2>
+              <div class="icons">
+                <img src="img/stec.jpg" alt="HTML" />
+                <img src="img/stec.jpg" alt="CSS" />
+                <img src="img/stec.jpg" alt="JavaScript" />
+                <img src="img/stec.jpg" alt="React" />
+              </div>
+                  <div class="reviews">
+      <h2>Відгуки</h2>
+      <div class="review">
+        <img src="img/person.jpg" alt="Марія" />
+        <p><strong>Марія:</strong> Чудзими вікенавець! Сайт стрімно бараю...</p>
+      </div>
+      <div class="review">
+        <img src="img/person.jpg" alt="Андрій" />
+        <p><strong>Андрій:</strong> Уміє чудово чути клієнта...</p>
       </div>
     </div>
-  </header>
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <h1>Наше Портфоліо</h1>
-      <p>Створюю сучасні сайти, від лендингів до інтернет-магазинів.</p>
-      <a href="#works" class="btn">Подивитися роботи</a>
-    </div>
-  </section>
-
-  <!-- Роботи -->
-  <section id="works" class="works">
-    <div class="container">
-    <h2>Виконані роботи</h2>
-    <div class="tags">
-      <span class="tag">AI</span>
-      <span class="tag">Лендінги</span>
-      <span class="tag">Магазини</span>
-    </div>
-    <div class="cards">
-      <div class="card">
-        <img src="img/lending0.jpg" alt="Лендінг">
-        <h3>Лендінг</h3>
-        <p>Повестання ковирк роботи</p>
-        <a href="#">Переглянути</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <img src="img/lending1.jpg" alt="Інтернет-магазин">
-        <h3>Інтернет-магазин</h3>
-        <p>Коротий опис роботи</p>
-        <a href="#">Переглянути</a>
+    </section>
+
+    <!-- Відгуки -->
+
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2023 Моє Портфоліо. Всі права захищено.</p>
+      <div class="socials">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-behance"></i></a>
+        <a href="#"><i class="fab fa-dribbble"></i></a>
       </div>
-      <div class="card">
-        <img src="img/lending0.jpg" alt="Корпоративний сайт">
-        <h3>Корпоративний сайт</h3>
-        <p>Стен техонології</p>
-        <a href="#">Переглянути</a>
-      </div>
-    </div>
-    </div>
-  </section>
-  
-
-  <!-- Про мене -->
-  <section class="about">
-    <div class="profile">
-      <img src="img/person.jpg" alt="Фото">
-      <p>Вегі зреви виребораговія везраделод...</p>
-      <a href="#">Ім продокшу</a>
-    </div>
-    <a href="#" class="btn large">Замовити сайт</a>
-  </section>
-
-  <!-- Технології -->
-  <section class="tech">
-    <h2>Стек технологій</h2>
-    <div class="icons">
-      <img src="img/stec.jpg" alt="HTML">
-      <img src="img/stec.jpg" alt="CSS">
-      <img src="img/stec.jpg" alt="JavaScript">
-      <img src="img/stec.jpg" alt="React">
-    </div>
-  </section>
-
-  <!-- Відгуки -->
-  <section class="reviews">
-    <h2>Відгуки</h2>
-    <div class="review">
-      <img src="img/person.jpg" alt="Марія">
-      <p><strong>Марія:</strong> Чудзими вікенавець! Сайт стрімно бараю...</p>
-    </div>
-    <div class="review">
-      <img src="img/person.jpg" alt="Андрій">
-      <p><strong>Андрій:</strong> Уміє чудово чути клієнта...</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2023 Моє Портфоліо. Всі права захищено.</p>
-    <div class="socials">
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-behance"></i></a>
-      <a href="#"><i class="fab fa-dribbble"></i></a>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>

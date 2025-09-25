@@ -1,0 +1,35 @@
+.about-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.about-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.about-left {
+  width: 49%;
+  border: 1px solid var(--btn);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.about-order-site {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(232deg,rgba(235, 192, 204, 1) 0%, rgba(218, 225, 237, 1) 100%);
+  border: 1px solid var(--btn);
+  border-radius: 15px;
+  padding: 70px 20px;
+}
+
+.about-right {
+  width: 49%;
+  border: 1px solid var(--btn);
+  border-radius: 15px;
+  padding: 20px;
+}

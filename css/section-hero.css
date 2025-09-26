@@ -1,7 +1,11 @@
 .hero {
   text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #e4e0ff, #d6f1ff);
+  /* padding: 80px 20px;
+  background: linear-gradient(135deg, #e4e0ff, #d6f1ff); */
+  background: url("../img/hero.png") no-repeat center/cover;
+  position: relative;
+  padding: 100px 20px;
+  height: 100vh;
 }
 
 .hero h1 {

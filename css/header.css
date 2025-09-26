@@ -3,7 +3,8 @@
   position: fixed;
   top: 0;
   z-index: 1000;
-  background: var(--accent);
+  background: var(--transparent);
+  backdrop-filter: saturate(180%) blur(5px);
   width: 100%;
   margin: 0 auto;
   padding: 7px 0;

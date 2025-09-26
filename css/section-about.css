@@ -32,7 +32,6 @@ margin: 0 auto;
 
 .about-right {
   width: 49%;
-  border: 1px solid var(--btn);
   border-radius: 15px;
   padding: 20px;
 }
@@ -87,4 +86,58 @@ margin: 0 auto;
   width: 24px;
   height:24px;
   fill: var(--border);
+}
+
+.tech {
+  text-align: left;
+}
+.tech-title,
+.reviews-title {
+  text-align: left;
+  font-size: clamp(18px, 3.5vw, 22px);
+  color: var(--muted);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.tech .icons img {
+  width: 60px;
+}
+
+.reviews {
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 20px;
+  background: linear-gradient(232deg,rgba(235, 192, 204, 1) 0%, rgba(218, 225, 237, 1) 100%);
+  margin: 15px 0;
+  border-radius: 15px;
+}
+
+
+.review-person {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.review-person img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.review-text {
+  padding-left: 80px;
+  text-align: left;
+  font-size: 16px;
+  color: var(--muted);
+  font-weight: 400;
+  line-height: 1.5;
 }

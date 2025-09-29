@@ -13,26 +13,30 @@
     <link href="css/section-about.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
   </head>
-  <body>
+  <body id="top">
     <header class="site-header">
       <div class="container">
         <div class="header-inner">
           <a href="#" class="logo"
-            ><img class="header-logo" src="img/lending0.jpg" alt="logo"
+            ><img class="header-logo" src="img/logo.png" alt="logo"
           /></a>
           <h2 class="header-title">Лендінг студія</h2>
-          <nav class="nav">
+          <nav class="nav" id="nav">
             <ul class="nav-list">
               <li><a href="#works">Роботи</a></li>
               <li><a href="#about">Про мене</a></li>
               <li><a href="#contact">Контакти</a></li>
             </ul>
           </nav>
-        </div>
-        <div class="burger">
-          <span></span>
-          <span></span>
-          <span></span>
+                <button
+          class="burger"
+          id="burger"
+          aria-label="Otwórz menu"
+          aria-controls="nav"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
         </div>
       </div>
     </header>

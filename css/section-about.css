@@ -100,7 +100,15 @@ margin: 0 auto;
   margin-bottom: 15px;
 }
 
-.tech .icons img {
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.tech .tech-icons img {
   width: 60px;
 }
 
@@ -140,4 +148,23 @@ margin: 0 auto;
   color: var(--muted);
   font-weight: 400;
   line-height: 1.5;
+}
+
+@media (max-width: 860px) {
+  .about-inner{
+    flex-direction: column;
+  }
+  .about-left,
+  .about-right{
+    width: 100%;
+  }
+  .tech-title,
+  .reviews-title{
+    text-align: center;
+  }
+  .tech-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

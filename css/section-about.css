@@ -112,9 +112,6 @@ margin: 0 auto;
   width: 60px;
 }
 
-.reviews {
-}
-
 .review {
   display: flex;
   flex-direction: column;

@@ -1,10 +1,21 @@
 .hero {
   text-align: center;
-  background: url("../img/hero2.png") no-repeat center/cover;
+  background: url("../img/hero3.png") no-repeat center/contain;
   position: relative;
   padding: 100px 20px;
   height: 100vh;
 }
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(180deg, #e6e5e9 , var(--bg));;
+}
+
 .hero-inner {
   display: flex;
   align-items: center;

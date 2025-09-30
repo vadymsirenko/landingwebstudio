@@ -46,8 +46,10 @@ nav?.querySelectorAll("a").forEach((a) =>
 //     }
 //   })
 // );
-// // Year
-// document.getElementById("y").textContent = new Date().getFullYear();
+
+
+// Year
+document.getElementById("y").textContent = new Date().getFullYear();
 
 
 
@@ -89,3 +91,34 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-scrollbar",
   },
 });
+
+//  const swiper2 = new Swiper(".verticalSwiper", {
+//       direction: "vertical",
+//       slidesPerView: 2,
+//       spaceBetween: 30,
+//       loop: true,
+//       noSwipingClass: "swiper-slide",
+//   slidesPerView: "1",
+//   spaceBetween: 15,
+//   speed: 2500,
+//   autoplay: {
+//     delay: 11000,
+//     disableOnInteraction: false,
+//     reverseDirection: false,
+//   },
+
+//       pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//       },
+//     });
+
+
+ // FAQ toggle
+  document.querySelectorAll(".works-description").forEach(item => {
+    item.addEventListener("click", () => {
+      const p = item.querySelector("p");
+      item.classList.toggle("active");
+      p.style.display = (p.style.display === "block") ? "none" : "block";
+    });
+  });

@@ -64,6 +64,15 @@
   margin-top: 12px;
 }
 
+.works-description-title {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.works-description-text {
+  display: none;
+}
+
 @media (max-width: 860px) {
   .works-header {
     flex-direction: column;

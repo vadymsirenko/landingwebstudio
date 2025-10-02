@@ -131,6 +131,7 @@ margin: 0 auto;
   margin-bottom: 15px;
 }
 
+
 .review-person img {
   width: 60px;
   height: 60px;
@@ -165,3 +166,59 @@ margin: 0 auto;
     justify-content: center;
   }
 }
+
+.verticalSwiper {
+  width: 100%;
+  max-width: 420px;
+  height: 420px;
+  overflow: hidden;
+}
+
+.verticalSwiper .swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+.reviews .review {
+  margin: 0;
+}
+
+.verticalSwiper .swiper-button-next,
+.verticalSwiper .swiper-button-prev {
+  left: 50%;
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  color: var(--border);
+  transform: translateX(-50%);
+}
+
+.verticalSwiper .swiper-button-prev {
+  top: 12px;
+}
+
+.verticalSwiper .swiper-button-next {
+  bottom: 12px;
+}
+
+.verticalSwiper .swiper-button-prev::after {
+  content: "\2191";
+  font-size: 20px;
+}
+
+.verticalSwiper .swiper-button-next::after {
+  content: "\2193";
+  font-size: 20px;
+}
+
+.verticalSwiper .swiper-button-disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+@media (max-width: 768px) {
+  .verticalSwiper {
+    height: 260px;
+  }
+}
+
+

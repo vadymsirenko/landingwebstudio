@@ -51,17 +51,22 @@ nav?.querySelectorAll("a").forEach((a) =>
 // Year
 document.getElementById("y").textContent = new Date().getFullYear();
 
-
-
 // Swiper
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  spaceBetween: 30,
-  centeredSlides: true,
-  // effect: "fade",
+const reviewsContainer = document.querySelector(".verticalSwiper");
+if (reviewsContainer) {
+  reviewsContainer.querySelector(".swiper-pagination")?.remove();
+  if (!reviewsContainer.querySelector(".reviews-swiper-button-next")) {
+    const reviewsPrev = document.createElement("div");
+    reviewsPrev.classList.add("swiper-button-prev", "reviews-swiper-button-prev");
+    const reviewsNext = document.createElement("div");
+    reviewsNext.classList.add("swiper-button-next", "reviews-swiper-button-next");
+    reviewsContainer.append(reviewsPrev, reviewsNext);
+  }
+}
+
+const heroSwiper = new Swiper(".mySwiper", {
   centeredSlides: true,
   loop: true,
-  // navigation: false,
   noSwipingClass: "swiper-slide",
   slidesPerView: "auto",
   spaceBetween: 15,
@@ -74,51 +79,39 @@ const swiper = new Swiper(".swiper", {
   keyboard: {
     enabled: true,
   },
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+});
+
+const verticalSwiper = new Swiper(".verticalSwiper", {
+  direction: "vertical",
+  loop: true,
+  slidesPerView: 2,
+  spaceBetween: 30,
+  speed: 800,
+  autoplay: {
+    delay: 7000,
+    disableOnInteraction: false,
   },
-
-  // // Navigation arrows
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
+  navigation: {
+    nextEl: ".reviews-swiper-button-next",
+    prevEl: ".reviews-swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
   },
 });
 
-//  const swiper2 = new Swiper(".verticalSwiper", {
-//       direction: "vertical",
-//       slidesPerView: 2,
-//       spaceBetween: 30,
-//       loop: true,
-//       noSwipingClass: "swiper-slide",
-//   slidesPerView: "1",
-//   spaceBetween: 15,
-//   speed: 2500,
-//   autoplay: {
-//     delay: 11000,
-//     disableOnInteraction: false,
-//     reverseDirection: false,
-//   },
-
-//       pagination: {
-//         el: ".swiper-pagination",
-//         clickable: true,
-//       },
-//     });
-
-
- // FAQ toggle
-  document.querySelectorAll(".works-description").forEach(item => {
-    item.addEventListener("click", () => {
-      const p = item.querySelector("p");
-      item.classList.toggle("active");
-      p.style.display = (p.style.display === "block") ? "none" : "block";
-    });
+// FAQ toggle
+document.querySelectorAll(".works-description").forEach((item) => {
+  item.addEventListener("click", () => {
+    const p = item.querySelector("p");
+    item.classList.toggle("active");
+    p.style.display = p.style.display === "block" ? "none" : "block";
   });
+});

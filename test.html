@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Анкета – Бриф</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f3f4f6; }
+    .container { display: flex; max-width: 1200px; margin: 0 auto; padding: 20px; gap: 20px; }
+
+    /* Прогрес-бар */
+    .progress-wrap { margin: 20px auto; text-align: center; }
+    .progress-text { margin-bottom: 8px; font-weight: 500; }
+    .progress { height: 10px; background: #e5e7eb; border-radius: 5px; overflow: hidden; }
+    .progress-bar { height: 100%; background: linear-gradient(90deg,#2563eb,#4f46e5); width: 0%; transition: width 0.3s; border-radius: 5px; }
+
+    /* Ліва колонка */
+    .questions { flex: 1.2; }
+    .question { display: none; background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.05); }
+    .question.active { display: block; }
+    .question h3 { margin-bottom: 20px; font-size: 20px; color: #111827; }
+
+    .option { display: flex; align-items: center; gap: 15px; padding: 15px; margin-bottom: 15px; border: 2px solid #e5e7eb; border-radius: 12px; cursor: pointer; background: #fff; transition: 0.25s; font-size: 15px; }
+    .option .emoji { font-size: 22px; }
+    .option:hover { background: #f9fafb; border-color: #93c5fd; }
+    .option.selected { border-color: #2563eb; background: #2563eb; color: #fff; box-shadow: 0 4px 10px rgba(37,99,235,0.3); }
+    .option.selected .emoji { filter: brightness(2); }
+
+    /* Превʼю справа */
+    .preview { flex: 0.8; padding: 20px; background: #fff; border: 1px solid #ddd; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.05); }
+    .preview .header { display: flex; justify-content: space-between; margin-bottom: 20px; font-weight: bold; }
+    .preview .mockup { border: 1px solid #eee; padding: 20px; border-radius: 12px; background: #f9fafb; }
+    .mockup h2 { font-size: 18px; margin-bottom: 15px; }
+    .mockup ul { list-style: none; padding: 0; margin: 0; }
+    .mockup li { margin-bottom: 15px; padding: 12px; border-radius: 8px; background: #fff; border: 1px solid #e5e7eb; }
+    .mockup li strong { color: #111827; }
+    .mockup li span { color: #2563eb; }
+
+    /* Кнопки */
+    .controls { display: flex; justify-content: space-between; margin-top: 25px; gap: 10px; }
+    .btn { padding: 12px 28px; border: none; border-radius: 8px; cursor: pointer; font-size: 15px; transition: 0.25s; }
+    .btn.primary { background: #2563eb; color: #fff; flex: 1; }
+    .btn.primary:hover { background: #1d4ed8; }
+    .btn.secondary { background: #e5e7eb; color: #111827; flex: 1; }
+    .btn.secondary:hover { background: #d1d5db; }
+    .btn.success { background: #16a34a; color: #fff; width: 100%; margin-top: 15px; }
+    .btn.success:hover { background: #15803d; }
+
+    /* 📱 Адаптивність */
+    @media (max-width: 1024px) {
+      .container { flex-direction: column; }
+      .preview { order: -1; }
+    }
+    @media (max-width: 600px) {
+      .option { font-size: 14px; gap: 10px; padding: 12px; }
+      .option .emoji { font-size: 18px; }
+      .controls { flex-direction: column; }
+      .btn { width: 100%; }
+      .progress-text { font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Прогрес -->
+  <div class="progress-wrap">
+    <div class="progress-text" id="progress-text">Питання 1 із 5</div>
+    <div class="progress"><div class="progress-bar" id="progress-bar"></div></div>
+  </div>
+
+  <div class="container">
+    <!-- Ліва частина -->
+    <div class="questions" id="questions-container"></div>
+
+    <!-- Права частина -->
+    <div class="preview">
+      <div class="header">
+        <span>MyWebsite</span>
+        <div><a href="#">About</a> | <a href="#">Contact</a></div>
+      </div>
+      <div class="mockup">
+        <h2>Ваші відповіді</h2>
+        <ul id="answers-list"><li><em>Поки що немає вибраних відповідей...</em></li></ul>
+        <button class="btn success" id="sendBtn">Вислати</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Масив з 5 питаннями (тепер з emoji)
+    const questionsData = [
+      { id: 1, text: "Яка головна мета сайту?", options: [
+        { text: "Презентація компанії", emoji: "🏢" },
+        { text: "Продаж товарів онлайн", emoji: "🛒" },
+        { text: "Залучення клієнтів", emoji: "🤝" },
+        { text: "Інформаційний ресурс", emoji: "📰" },
+        { text: "Платформа для навчання", emoji: "📚" }
+      ]},
+      { id: 2, text: "Хто основна цільова аудиторія?", options: [
+        { text: "Молодь 18–25", emoji: "👩‍🎓" },
+        { text: "Люди 25–40", emoji: "👨‍👩‍👧‍👦" },
+        { text: "Старші 40+", emoji: "👴" },
+        { text: "Професіонали", emoji: "💼" },
+        { text: "Широка аудиторія", emoji: "🌍" }
+      ]},
+      { id: 3, text: "Які дії ви хочете, щоб відвідувач зробив на сайті?", options: [
+        { text: "Залишив заявку", emoji: "📝" },
+        { text: "Купив товар онлайн", emoji: "💳" },
+        { text: "Подзвонив у компанію", emoji: "📞" },
+        { text: "Завантажив каталог", emoji: "📂" },
+        { text: "Підписався на розсилку", emoji: "📧" }
+      ]},
+      { id: 4, text: "Які сайти-конкуренти вам подобаються і чому?", options: [
+        { text: "Стильний дизайн", emoji: "🎨" },
+        { text: "Проста навігація", emoji: "🧭" },
+        { text: "Гарні фото/візуал", emoji: "📷" },
+        { text: "Зручний функціонал", emoji: "⚙️" },
+        { text: "Атмосферність", emoji: "✨" }
+      ]},
+      { id: 5, text: "Чи потрібна багатомовність?", options: [
+        { text: "Тільки українська", emoji: "🇺🇦" },
+        { text: "Українська + англійська", emoji: "🇺🇦🇬🇧" },
+        { text: "Українська + російська", emoji: "🇺🇦🇷🇺" },
+        { text: "Українська + інші", emoji: "🌐" },
+        { text: "Не потрібна", emoji: "🚫" }
+      ]}
+    ];
+
+    const container = document.getElementById("questions-container");
+    const progressBar = document.getElementById("progress-bar");
+    const progressText = document.getElementById("progress-text");
+    const answersList = document.getElementById("answers-list");
+
+    let currentStep = 0;
+    const answers = {};
+
+    // Генерація питань
+    questionsData.forEach((q, i) => {
+      const qDiv = document.createElement("div");
+      qDiv.className = "question" + (i === 0 ? " active" : "");
+      qDiv.dataset.id = q.id;
+      qDiv.innerHTML = `
+        <h3>${q.id}. ${q.text}</h3>
+        ${q.options.map(opt => `
+          <div class="option">
+            <span class="emoji">${opt.emoji}</span>
+            <span>${opt.text}</span>
+          </div>
+        `).join("")}
+        <div class="controls">
+          <button class="btn secondary prevBtn">← Попереднє</button>
+          <button class="btn primary nextBtn">${i === questionsData.length - 1 ? "Завершити →" : "Наступне →"}</button>
+        </div>
+      `;
+      container.appendChild(qDiv);
+    });
+
+    function showStep(step) {
+      const allQ = document.querySelectorAll(".question");
+      allQ.forEach((q, i) => q.classList.toggle("active", i === step));
+      progressBar.style.width = ((step + 1) / questionsData.length) * 100 + "%";
+      progressText.innerText = `Питання ${step + 1} із ${questionsData.length}`;
+    }
+
+    function renderAnswers() {
+      answersList.innerHTML = "";
+      if (Object.keys(answers).length === 0) {
+        answersList.innerHTML = "<li><em>Поки що немає вибраних відповідей...</em></li>";
+      } else {
+        Object.values(answers).forEach(item => {
+          const li = document.createElement("li");
+          li.innerHTML = `<strong>${item.question}</strong><br><span>${item.answer}</span>`;
+          answersList.appendChild(li);
+        });
+      }
+    }
+
+    container.addEventListener("click", (e) => {
+      if (e.target.closest(".option")) {
+        const opt = e.target.closest(".option");
+        const parent = opt.closest(".question");
+        const qId = parent.dataset.id;
+        const qText = parent.querySelector("h3").innerText;
+        const value = opt.innerText.trim();
+
+        parent.querySelectorAll(".option").forEach(o => o.classList.remove("selected"));
+        opt.classList.add("selected");
+
+        answers[qId] = { question: qText, answer: value };
+        renderAnswers();
+      }
+
+      if (e.target.classList.contains("nextBtn")) {
+        if (currentStep < questionsData.length - 1) {
+          currentStep++;
+          showStep(currentStep);
+        } else {
+          alert("Результати:\n" + JSON.stringify(answers, null, 2));
+        }
+      }
+
+      if (e.target.classList.contains("prevBtn")) {
+        if (currentStep > 0) {
+          currentStep--;
+          showStep(currentStep);
+        }
+      }
+    });
+
+    document.getElementById("sendBtn").addEventListener("click", () => {
+      alert("Відправка відповідей...\n" + JSON.stringify(answers, null, 2));
+    });
+
+    showStep(currentStep);
+    renderAnswers();
+  </script>
+</body>
+</html>
+

@@ -2,60 +2,260 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/zero-style.css" />
   <title>Анкета – Бриф</title>
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f3f4f6; }
-    .container { display: flex; max-width: 1200px; margin: 0 auto; padding: 20px; gap: 20px; }
-
-    /* Прогрес-бар */
-    .progress-wrap { margin: 20px auto; text-align: center; }
-    .progress-text { margin-bottom: 8px; font-weight: 500; }
-    .progress { height: 10px; background: #e5e7eb; border-radius: 5px; overflow: hidden; }
-    .progress-bar { height: 100%; background: linear-gradient(90deg,#2563eb,#4f46e5); width: 0%; transition: width 0.3s; border-radius: 5px; }
-
-    /* Ліва колонка */
-    .questions { flex: 1.2; }
-    .question { display: none; background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.05); }
-    .question.active { display: block; }
-    .question h3 { margin-bottom: 20px; font-size: 20px; color: #111827; }
-
-    .option { display: flex; align-items: center; gap: 15px; padding: 15px; margin-bottom: 15px; border: 2px solid #e5e7eb; border-radius: 12px; cursor: pointer; background: #fff; transition: 0.25s; font-size: 15px; }
-    .option .emoji { font-size: 22px; }
-    .option:hover { background: #f9fafb; border-color: #93c5fd; }
-    .option.selected { border-color: #2563eb; background: #2563eb; color: #fff; box-shadow: 0 4px 10px rgba(37,99,235,0.3); }
-    .option.selected .emoji { filter: brightness(2); }
-
-    /* Превʼю справа */
-    .preview { flex: 0.8; padding: 20px; background: #fff; border: 1px solid #ddd; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.05); }
-    .preview .header { display: flex; justify-content: space-between; margin-bottom: 20px; font-weight: bold; }
-    .preview .mockup { border: 1px solid #eee; padding: 20px; border-radius: 12px; background: #f9fafb; }
-    .mockup h2 { font-size: 18px; margin-bottom: 15px; }
-    .mockup ul { list-style: none; padding: 0; margin: 0; }
-    .mockup li { margin-bottom: 15px; padding: 12px; border-radius: 8px; background: #fff; border: 1px solid #e5e7eb; }
-    .mockup li strong { color: #111827; }
-    .mockup li span { color: #2563eb; }
-
-    /* Кнопки */
-    .controls { display: flex; justify-content: space-between; margin-top: 25px; gap: 10px; }
-    .btn { padding: 12px 28px; border: none; border-radius: 8px; cursor: pointer; font-size: 15px; transition: 0.25s; }
-    .btn.primary { background: #2563eb; color: #fff; flex: 1; }
-    .btn.primary:hover { background: #1d4ed8; }
-    .btn.secondary { background: #e5e7eb; color: #111827; flex: 1; }
-    .btn.secondary:hover { background: #d1d5db; }
-    .btn.success { background: #16a34a; color: #fff; width: 100%; margin-top: 15px; }
-    .btn.success:hover { background: #15803d; }
-
-    /* 📱 Адаптивність */
-    @media (max-width: 1024px) {
-      .container { flex-direction: column; }
-      .preview { order: -1; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text-ink);
     }
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .progress-wrap {
+      margin: 20px auto;
+      text-align: center;
+      max-width: 720px;
+    }
+
+    .progress-text {
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .progress {
+      height: 10px;
+      background: var(--primary);
+      border-radius: 999px;
+      overflow: hidden;
+      box-shadow: inset 0 3px 8px var(--btn-inset-shadow);
+    }
+
+    .progress-bar {
+      height: 100%;
+      background: linear-gradient(90deg, #7c5cff, #5f9dff);
+      width: 0%;
+      transition: width 0.3s;
+      border-radius: 999px;
+    }
+
+    .questions {
+      flex: 1.2;
+    }
+
+    .question {
+      display: none;
+      background: var(--card);
+      padding: 25px;
+      border-radius: var(--radius);
+      border: 1px solid var(--primary);
+      box-shadow: 0 15px 35px var(--shadow);
+    }
+
+    .question.active {
+      display: block;
+    }
+
+    .question h3 {
+      margin-bottom: 20px;
+      font-size: 20px;
+      color: var(--text-ink);
+    }
+
+    .option {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 15px;
+      margin-bottom: 15px;
+      border: 1px solid var(--primary);
+      border-radius: var(--radius);
+      cursor: pointer;
+      background: var(--card);
+      transition: 0.25s;
+      font-size: 15px;
+      color: var(--text-ink);
+      box-shadow: 0 4px 12px rgba(16, 16, 16, 0.08);
+    }
+
+    .option .emoji {
+      font-size: 22px;
+    }
+
+    .option:hover {
+      background: var(--primary);
+      border-color: var(--btn-border);
+      box-shadow: 0 6px 16px var(--shadow);
+    }
+
+    .option.selected {
+      border-color: var(--btn-border);
+      background: var(--btn);
+      color: var(--btn-text-ink);
+      box-shadow: 0 12px 24px var(--btn-hover-shadow);
+    }
+
+    .option.selected .emoji {
+      filter: brightness(1.4);
+    }
+
+    .preview {
+      flex: 0.8;
+      padding: 20px;
+      background: var(--card);
+      border: 1px solid var(--primary);
+      border-radius: var(--radius);
+      box-shadow: 0 15px 35px var(--shadow);
+      color: var(--text-ink);
+    }
+
+    .preview .header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      font-weight: 600;
+      color: var(--text-ink);
+    }
+
+    .preview .header a {
+      color: var(--text-ink);
+      transition: color 0.2s;
+    }
+
+    .preview .header a:hover {
+      color: var(--text-ink-tertiary);
+    }
+
+    .preview .mockup {
+      border: 1px solid var(--btn-border);
+      padding: 20px;
+      border-radius: var(--radius);
+      background: var(--primary);
+    }
+
+    .mockup h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: var(--text-ink-secondary);
+    }
+
+    .mockup ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .mockup li {
+      margin-bottom: 15px;
+      padding: 12px;
+      border-radius: calc(var(--radius) - 4px);
+      background: var(--card);
+      border: 1px solid var(--primary);
+      box-shadow: 0 4px 12px rgba(16, 16, 16, 0.05);
+    }
+
+    .mockup li strong {
+      color: var(--text-ink);
+    }
+
+    .mockup li span {
+      color: var(--btn);
+    }
+
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+      gap: 10px;
+    }
+
+    .btn {
+      padding: 12px 28px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-size: 15px;
+      transition: 0.25s;
+      border: none;
+      font-weight: 600;
+    }
+
+    .btn.primary {
+      background: linear-gradient(90deg, #7c5cff, #5f9dff);
+      color: var(--btn-text-ink);
+      flex: 1;
+      box-shadow: 0 12px 24px var(--btn-hover-shadow);
+    }
+
+    .btn.primary:hover {
+      filter: brightness(0.97);
+    }
+
+    .btn.secondary {
+      background: var(--card);
+      color: var(--text-ink);
+      border: 1px solid var(--btn-border);
+      flex: 1;
+      box-shadow: 0 4px 12px rgba(16, 16, 16, 0.08);
+    }
+
+    .btn.secondary:hover {
+      background: var(--primary);
+    }
+
+    .btn.success {
+      background: var(--accent);
+      color: var(--black-ink);
+      width: 100%;
+      margin-top: 15px;
+      box-shadow: 0 12px 24px rgba(148, 243, 129, 0.35);
+    }
+
+    .btn.success:hover {
+      filter: brightness(0.95);
+    }
+
+    @media (max-width: 1024px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .preview {
+        order: -1;
+      }
+    }
+
     @media (max-width: 600px) {
-      .option { font-size: 14px; gap: 10px; padding: 12px; }
-      .option .emoji { font-size: 18px; }
-      .controls { flex-direction: column; }
-      .btn { width: 100%; }
-      .progress-text { font-size: 14px; }
+      .option {
+        font-size: 14px;
+        gap: 10px;
+        padding: 12px;
+      }
+
+      .option .emoji {
+        font-size: 18px;
+      }
+
+      .controls {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .progress-text {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
@@ -87,44 +287,6 @@
 
   <script>
     // Масив з 5 питаннями (тепер з emoji)
-    const questionsData = [
-      { id: 1, text: "Яка головна мета сайту?", options: [
-        { text: "Презентація компанії", emoji: "🏢" },
-        { text: "Продаж товарів онлайн", emoji: "🛒" },
-        { text: "Залучення клієнтів", emoji: "🤝" },
-        { text: "Інформаційний ресурс", emoji: "📰" },
-        { text: "Платформа для навчання", emoji: "📚" }
-      ]},
-      { id: 2, text: "Хто основна цільова аудиторія?", options: [
-        { text: "Молодь 18–25", emoji: "👩‍🎓" },
-        { text: "Люди 25–40", emoji: "👨‍👩‍👧‍👦" },
-        { text: "Старші 40+", emoji: "👴" },
-        { text: "Професіонали", emoji: "💼" },
-        { text: "Широка аудиторія", emoji: "🌍" }
-      ]},
-      { id: 3, text: "Які дії ви хочете, щоб відвідувач зробив на сайті?", options: [
-        { text: "Залишив заявку", emoji: "📝" },
-        { text: "Купив товар онлайн", emoji: "💳" },
-        { text: "Подзвонив у компанію", emoji: "📞" },
-        { text: "Завантажив каталог", emoji: "📂" },
-        { text: "Підписався на розсилку", emoji: "📧" }
-      ]},
-      { id: 4, text: "Які сайти-конкуренти вам подобаються і чому?", options: [
-        { text: "Стильний дизайн", emoji: "🎨" },
-        { text: "Проста навігація", emoji: "🧭" },
-        { text: "Гарні фото/візуал", emoji: "📷" },
-        { text: "Зручний функціонал", emoji: "⚙️" },
-        { text: "Атмосферність", emoji: "✨" }
-      ]},
-      { id: 5, text: "Чи потрібна багатомовність?", options: [
-        { text: "Тільки українська", emoji: "🇺🇦" },
-        { text: "Українська + англійська", emoji: "🇺🇦🇬🇧" },
-        { text: "Українська + російська", emoji: "🇺🇦🇷🇺" },
-        { text: "Українська + інші", emoji: "🌐" },
-        { text: "Не потрібна", emoji: "🚫" }
-      ]}
-    ];
-
     const container = document.getElementById("questions-container");
     const progressBar = document.getElementById("progress-bar");
     const progressText = document.getElementById("progress-text");
@@ -132,13 +294,26 @@
 
     let currentStep = 0;
     const answers = {};
+    let questionsData = [];
 
-    // Генерація питань
-    questionsData.forEach((q, i) => {
-      const qDiv = document.createElement("div");
-      qDiv.className = "question" + (i === 0 ? " active" : "");
-      qDiv.dataset.id = q.id;
-      qDiv.innerHTML = `
+    function buildQuestions(data) {
+      if (!Array.isArray(data) || data.length === 0) {
+        container.innerHTML = "";
+        progressBar.style.width = "0%";
+        progressText.innerText = "Немає запитань для відображення";
+        return;
+      }
+
+      questionsData = data;
+      currentStep = 0;
+      Object.keys(answers).forEach((key) => delete answers[key]);
+      container.innerHTML = "";
+
+      data.forEach((q, i) => {
+        const qDiv = document.createElement("div");
+        qDiv.className = "question" + (i === 0 ? " active" : "");
+        qDiv.dataset.id = q.id;
+        qDiv.innerHTML = `
         <h3>${q.id}. ${q.text}</h3>
         ${q.options.map(opt => `
           <div class="option">
@@ -147,24 +322,51 @@
           </div>
         `).join("")}
         <div class="controls">
-          <button class="btn secondary prevBtn">← Попереднє</button>
-          <button class="btn primary nextBtn">${i === questionsData.length - 1 ? "Завершити →" : "Наступне →"}</button>
+          <button class="btn secondary prevBtn">Назад</button>
+          <button class="btn primary nextBtn">${i === data.length - 1 ? "Завершити" : "Далі"}</button>
         </div>
       `;
-      container.appendChild(qDiv);
-    });
+        container.appendChild(qDiv);
+      });
 
+      showStep(currentStep);
+      renderAnswers();
+    }
+
+    async function loadQuestions() {
+      progressText.innerText = "Завантаження питань...";
+      try {
+        const response = await fetch("assets/questions.json");
+        if (!response.ok) {
+          throw new Error(`Request failed with status ${response.status}`);
+        }
+        const data = await response.json();
+        buildQuestions(data);
+      } catch (error) {
+        console.error("Не вдалося завантажити questionsData", error);
+        container.innerHTML = "";
+        progressBar.style.width = "0%";
+        progressText.innerText = "Не вдалося завантажити питання";
+      }
+    }
     function showStep(step) {
       const allQ = document.querySelectorAll(".question");
       allQ.forEach((q, i) => q.classList.toggle("active", i === step));
-      progressBar.style.width = ((step + 1) / questionsData.length) * 100 + "%";
-      progressText.innerText = `Питання ${step + 1} із ${questionsData.length}`;
+
+      if (!questionsData.length) {
+        progressBar.style.width = "0%";
+        return;
+      }
+
+      const progress = ((step + 1) / questionsData.length) * 100;
+      progressBar.style.width = `${progress.toFixed(2)}%`;
+      progressText.innerText = `Крок ${step + 1} з ${questionsData.length}`;
     }
 
     function renderAnswers() {
       answersList.innerHTML = "";
       if (Object.keys(answers).length === 0) {
-        answersList.innerHTML = "<li><em>Поки що немає вибраних відповідей...</em></li>";
+        answersList.innerHTML = "<li><em>Поки що немає відповідей. Оберіть варіанти, щоб побачити зведення.</em></li>";
       } else {
         Object.values(answers).forEach(item => {
           const li = document.createElement("li");
@@ -194,7 +396,7 @@
           currentStep++;
           showStep(currentStep);
         } else {
-          alert("Результати:\n" + JSON.stringify(answers, null, 2));
+          alert("Результати брифу:\n" + JSON.stringify(answers, null, 2));
         }
       }
 
@@ -207,11 +409,11 @@
     });
 
     document.getElementById("sendBtn").addEventListener("click", () => {
-      alert("Відправка відповідей...\n" + JSON.stringify(answers, null, 2));
+      alert("Підсумки брифу:\n" + JSON.stringify(answers, null, 2));
     });
 
-    showStep(currentStep);
     renderAnswers();
+    loadQuestions();
   </script>
 </body>
 </html>

@@ -82,11 +82,7 @@ margin: 0 auto;
   justify-content: center;
   gap: 20px;
 }
-.i{
-  width: 24px;
-  height:24px;
-  fill: var(--border);
-}
+
 
 .tech {
   text-align: left;

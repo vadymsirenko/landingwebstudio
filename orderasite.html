@@ -9,9 +9,8 @@
     <link href="css/zero-style.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/header.css" />
-    <link href="css/section-hero.css" rel="stylesheet" />
     <link href="css/section-works.css" rel="stylesheet" />
-    <link href="css/section-about.css" rel="stylesheet" />
+    <link href="css/evaluating-site-goals.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
   </head>
   <body id="top">
@@ -41,7 +40,6 @@
         </div>
       </div>
     </header>
-
 
     <!-- Роботи -->
     <section id="works" class="works">
@@ -107,11 +105,72 @@
       </div>
     </section>
 
+    <hr class="line-separator" />
+    <!-- Quiz -->
+    <section class="quiz-shell">
+      <div class="quiz-inner">
+        <div class="progress" aria-live="polite">
+          <span id="stepLabel">Крок 1 з 1</span>
+          <div class="progress-track" role="presentation">
+            <div class="progress-fill" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <div class="content-columns">
+          <section
+            class="panel question-panel"
+            aria-labelledby="question-title"
+          >
+            <h2 class="question-title" id="question-title">
+              Завантаження питання...
+            </h2>
+            <div
+              class="option-stack"
+              id="optionStack"
+              role="group"
+              aria-label="Варіанти відповіді"
+            ></div>
+
+            <div class="controls">
+              <button class="glow-btn" type="button" id="backBtn" disabled>
+                Назад
+              </button>
+              <button
+                class="glow-btn primary"
+                type="button"
+                id="nextBtn"
+                disabled
+              >
+                Далі
+              </button>
+            </div>
+          </section>
+
+          <aside class="panel summary-panel" aria-labelledby="summary-title">
+            <div class="summary-header">
+              <strong>MyWebsite</strong>
+              <nav class="nav-links" aria-label="Головна навігація">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+              </nav>
+            </div>
+            <h3 id="summary-title">Ваші відповіді</h3>
+            <!-- <p class="summary-note">Обирайте варіанти, щоб побачити персоналізовану добірку відповідей.</p> -->
+            <p class="summary-empty" id="summaryEmpty">
+              Поки що без відповідей. Зробіть вибір у формі.
+            </p>
+            <div class="summary-answers" id="summaryList" role="list"></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <hr class="line-separator" />
 
     <!-- Footer -->
     <footer>
       <div class="socials">
-        <ul class="about-social-list">
+        <ul class="footer-socials">
           <li>
             <a href="#" target="_blank" rel="noopener" aria-label="Facebook">
               <!-- Facebook -->
@@ -148,5 +207,6 @@
     </footer>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/evaluating-site-goals.js"></script>
   </body>
 </html>

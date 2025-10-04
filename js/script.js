@@ -1,4 +1,4 @@
-// // Burger menu
+﻿// // Burger menu
 const burger = document.getElementById("burger");
 const nav = document.getElementById("nav");
 const body = document.getElementById("top");

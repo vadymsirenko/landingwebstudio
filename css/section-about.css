@@ -201,28 +201,19 @@
   height: 36px;
   margin: 0;
   color: var(--border);
-  transform: translateX(100%);
+  transform: translateX(-100%);
 }
 
 .verticalSwiper .swiper-button-prev {
   top: 12px;
-  transform: rotate(90deg) translateX(-18px);
+  transform: rotate(90deg) translateX(-18px) translate(5px, 50%);
 }
 
 .verticalSwiper .swiper-button-next {
   bottom: 12px;
-  transform: rotate(90deg) translateX(178px);
+  transform: rotate(90deg) translateX(178px) translate(-5px, 50%);
 }
 
-/* .verticalSwiper .swiper-button-prev::after {
-  content: "\2191";
-  font-size: 20px;
-}
-
-.verticalSwiper .swiper-button-next::after {
-  content: "\2193";
-  font-size: 20px;
-} */
 
 .verticalSwiper .swiper-button-disabled {
   opacity: 0.3;
@@ -234,6 +225,6 @@
   }
   .verticalSwiper .swiper-button-next {
     bottom: 12px;
-    transform: rotate(90deg) translateX(98px);
+    transform: rotate(90deg) translateX(98px) translate(-5px, 50%);
   }
 }

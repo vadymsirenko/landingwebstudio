@@ -1,4 +1,4 @@
-.container {
+﻿.container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -19,3 +19,18 @@
 .btn:hover {
   opacity: 0.9;
 }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  margin-top: auto;
+}
+

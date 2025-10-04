@@ -252,7 +252,7 @@ function handleNext() {
 
 async function loadQuestions() {
   try {
-    const response = await fetch("assets/questions.json", {
+    const response = await fetch("data/questions.json", {
       cache: "no-store",
     });
     if (!response.ok) {

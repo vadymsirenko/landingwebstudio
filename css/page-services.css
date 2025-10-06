@@ -118,6 +118,26 @@
   margin-bottom: 15px;
   font-size: 16px;
 }
+.services-inner ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.services-inner ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.services-inner ul li::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 8px;
+  background-color: #7d4dff;
+}
+
 .services-popular {
   text-align: center;
   margin: 40px 20px;

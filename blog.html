@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LandingWebStudio - insights, playbooks, and experiments</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+    <link href="css/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/header.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
+    <link href="css/page-blog.css" rel="stylesheet" />
+  </head>
+  <body class="blog-page" id="top">
+    <header class="site-header">
+      <div class="container">
+        <div class="header-inner">
+          <a href="index.html" class="logo"
+            ><img class="header-logo" src="img/logo.png" alt="LandingWebStudio logo"
+          /></a>
+          <h2 class="header-title">LandingWebStudio</h2>
+          <nav class="nav" id="nav">
+            <ul class="nav-list">
+              <li><a href="index.html#cases">Portfolio</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="blog.html" aria-current="page">Blog</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contacts.html">Contact</a></li>
+            </ul>
+          </nav>
+          <button
+            class="burger"
+            id="burger"
+            aria-label="Toggle navigation"
+            aria-controls="nav"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="blog-hero" aria-labelledby="blog-hero-title">
+        <div class="container blog-hero__inner">
+          <div class="blog-hero__content">
+            <p class="blog-hero__eyebrow">Insights</p>
+            <h1 id="blog-hero-title">
+              Field notes on building high converting digital experiences
+            </h1>
+            <p class="blog-hero__lead">
+              The LandingWebStudio team shares playbooks, experiments, and behind the scenes
+              learnings from launches across SaaS, ecommerce, and service brands.
+            </p>
+            <div class="blog-hero__actions">
+              <a href="#latest" class="btn">Read the latest</a>
+              <a href="#topics" class="btn btn-secondary">Browse topics</a>
+            </div>
+          </div>
+          <aside class="blog-hero__aside">
+            <div class="blog-hero__card">
+              <h2>Inside this journal</h2>
+              <ul>
+                <li>Practical conversion design frameworks</li>
+                <li>Analytics and automation breakdowns</li>
+                <li>Process tips for aligned product and marketing teams</li>
+                <li>Interviews with founders and marketing leaders</li>
+              </ul>
+            </div>
+            <form class="blog-subscribe">
+              <h3>Get updates once a month</h3>
+              <p>No spam. Only curated case notes and templates we are using right now.</p>
+              <label class="sr-only" for="subscribe-email">Email address</label>
+              <input
+                type="email"
+                id="subscribe-email"
+                name="subscribe-email"
+                placeholder="name@company.com"
+                required
+              />
+              <button type="submit" class="btn">Subscribe</button>
+            </form>
+          </aside>
+        </div>
+      </section>
+
+      <section class="blog-topics" id="topics" aria-labelledby="topics-title">
+        <div class="container">
+          <div class="blog-section-header">
+            <h2 id="topics-title">Categories we explore</h2>
+            <p>Select a theme to uncover articles, templates, and examples.</p>
+          </div>
+          <div class="blog-topics__grid">
+            <a class="blog-topic-card" href="#latest">
+              <h3>Conversion design</h3>
+              <p>Frameworks for messaging, layout, and customer flow optimisation.</p>
+            </a>
+            <a class="blog-topic-card" href="#latest">
+              <h3>Product storytelling</h3>
+              <p>Positioning and narrative techniques for complex products and features.</p>
+            </a>
+            <a class="blog-topic-card" href="#latest">
+              <h3>Experiments</h3>
+              <p>What we test, how we measure success, and the impact on roadmap decisions.</p>
+            </a>
+            <a class="blog-topic-card" href="#latest">
+              <h3>Operations</h3>
+              <p>Playbooks for running design sprints, stakeholder reviews, and handoffs.</p>
+            </a>
+            <a class="blog-topic-card" href="#latest">
+              <h3>Tools and stack</h3>
+              <p>Evaluations of platforms from Webflow to Next.js and automation suites.</p>
+            </a>
+            <a class="blog-topic-card" href="#latest">
+              <h3>Data stories</h3>
+              <p>Insights from analytics, heatmaps, and customer interviews.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog-latest" id="latest" aria-labelledby="latest-title">
+        <div class="container">
+          <div class="blog-section-header">
+            <h2 id="latest-title">Latest from the studio</h2>
+            <p>Fresh learnings to help your next release or optimisation run smoother.</p>
+          </div>
+          <div class="blog-latest__grid">
+            <article class="blog-post-card">
+              <p class="blog-post-card__meta">Conversion design</p>
+              <h3><a href="#">Five hero section patterns that convert for SaaS</a></h3>
+              <p>
+                A tear down of the hero structures that improved demo requests by up to 38
+                percent, with Figma files ready to adapt.
+              </p>
+              <span class="blog-post-card__date">9 min read</span>
+            </article>
+            <article class="blog-post-card">
+              <p class="blog-post-card__meta">Experiments</p>
+              <h3><a href="#">What we learned running 12 onboarding tests in 60 days</a></h3>
+              <p>
+                Behind the scenes of a growth sprint for a B2B analytics platform, including
+                the three experiments that moved the activation needle.
+              </p>
+              <span class="blog-post-card__date">12 min read</span>
+            </article>
+            <article class="blog-post-card">
+              <p class="blog-post-card__meta">Operations</p>
+              <h3><a href="#">How to align product and marketing during a site rebuild</a></h3>
+              <p>
+                Practical agenda, workshop templates, and stakeholder map to keep velocity
+                high without sacrificing quality.
+              </p>
+              <span class="blog-post-card__date">8 min read</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog-featured" aria-labelledby="featured-title">
+        <div class="container blog-featured__inner">
+          <div>
+            <h2 id="featured-title">Featured playbook</h2>
+            <p>
+              Our step by step approach to redesigning a product website while keeping the
+              funnel running. Includes templates, QA checklist, and analytics plan.
+            </p>
+            <ul>
+              <li>Discovery alignment framework</li>
+              <li>Content architecture worksheet</li>
+              <li>Design system starter library</li>
+              <li>Launch and post launch checklist</li>
+            </ul>
+            <a href="#" class="btn">Download the playbook</a>
+          </div>
+          <div class="blog-featured__note">
+            <h3>Release cadence</h3>
+            <p>
+              We publish fresh insights every other Thursday. Subscribe to get notified or
+              follow us on social to join the conversation.
+            </p>
+            <div class="blog-featured__links">
+              <a href="#">LinkedIn</a>
+              <a href="#">Twitter</a>
+              <a href="#">YouTube</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="socials">
+        <ul class="footer-socials">
+          <li>
+            <a href="#" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" class="i">
+                <path
+                  d="M13 22v-9h3l1-4h-4V7.5c0-1.03.34-1.75 1.86-1.75H17V2.26C16.65 2.18 15.7 2 14.6 2 11.98 2 10 3.66 10 7v2H7v4h3v9h3Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" class="i">
+                <path
+                  d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm5 5.8A5.2 5.2 0 1 0 17.2 13 5.21 5.21 0 0 0 12 7.8Zm0 8.6A3.4 3.4 0 1 1 15.4 13 3.41 3.41 0 0 1 12 16.4ZM18 6.2a1.2 1.2 0 1 0 1.2 1.2A1.2 1.2 0 0 0 18 6.2Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" class="i">
+                <path
+                  d="M20.52 3.48A11.94 11.94 0 0 0 12.02 0C5.43 0 .1 5.32.1 11.9a11.8 11.8 0 0 0 1.6 6l-1.7 6.1 6.26-1.64a12 12 0 0 0 5.76 1.47h.01c6.59 0 11.92-5.33 11.92-11.91 0-3.18-1.24-6.16-3.45-8.45ZM12 21.3a9.3 9.3 0 0 1-4.74-1.3l-.34-.2-3.72.98 1-3.62-.22-.37A9.3 9.3 0 1 1 21.3 12 9.29 9.29 0 0 1 12 21.3Zm5.39-6.86c-.29-.15-1.72-.85-1.99-.95-.27-.1-.47-.15-.67.15-.2.3-.77.95-.94 1.15-.17.2-.35.22-.64.07-.29-.15-1.22-.45-2.33-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.14-.14.3-.36.44-.54.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.11 3.22 5.11 4.51.71.31 1.26.5 1.69.64.71.23 1.35.2 1.86.12.57-.09 1.72-.7 1.96-1.37.24-.67.24-1.24.17-1.37-.07-.13-.26-.2-.55-.35Z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p>
+        &copy; <span id="y"></span> LandingWebStudio. All rights reserved. Sharing experiments
+        and insights from our work in product and marketing.
+      </p>
+    </footer>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

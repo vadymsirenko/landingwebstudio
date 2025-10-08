@@ -1,37 +1,40 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Лендінг студія</title>
+    <title>LandingWebStudio - start your project</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
     <link href="css/swiper-bundle.min.css" rel="stylesheet" />
     <link href="css/reset.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link href="css/section-works.css" rel="stylesheet" />
-    <link href="css/evaluating-site-goals.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/header.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
+    <link href="css/evaluating-site-goals.css" rel="stylesheet" />
+    <link href="css/page-order.css" rel="stylesheet" />
   </head>
-  <body id="top">
+  <body id="top" class="order-page">
     <header class="site-header">
       <div class="container">
         <div class="header-inner">
           <a href="index.html" class="logo"
-            ><img class="header-logo" src="img/logo.png" alt="logo"
+            ><img class="header-logo" src="img/logo.png" alt="LandingWebStudio logo"
           /></a>
-          <h2 class="header-title">Лендінг студія</h2>
+          <h2 class="header-title">LandingWebStudio</h2>
           <nav class="nav" id="nav">
             <ul class="nav-list">
-              <li><a href="#works">Роботи</a></li>
-              <li><a href="#about">Про мене</a></li>
-              <li><a href="#contact">Контакти</a></li>
+              <li><a href="index.html#cases">Portfolio</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contacts.html">Contact</a></li>
             </ul>
           </nav>
           <button
             class="burger"
             id="burger"
-            aria-label="Otwórz menu"
+            aria-label="Toggle navigation"
             aria-controls="nav"
             aria-expanded="false"
           >
@@ -41,139 +44,324 @@
       </div>
     </header>
 
-    <!-- Роботи -->
-    <section id="works" class="works">
-      <div class="container">
-        <div class="works-header">
-          <h2 class="works-title">Виконані роботи</h2>
-          <div class="tags">
-            <span class="tag">AI</span>
-            <span class="tag">Лендінги</span>
-            <span class="tag">Магазини</span>
-          </div>
-        </div>
-        <div class="cards">
-          <div class="card">
-            <img src="img/lending0.jpg" alt="Лендінг" />
-            <h3>сайт візитка</h3>
-            <div class="works-description">
-              <button class="works-description-title btn">
-                Коротий опис роботи
-              </button>
-              <p class="works-description-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Similique, culpa?
-              </p>
-            </div>
-            <a href="https://podologkalisz.com" target="_blank"
-              >podologkalisz.com</a
-            >
-          </div>
-          <div class="card">
-            <img src="img/lending1.jpg" alt="Лендінг" />
-            <h3>Лендінг</h3>
-            <div class="works-description">
-              <button class="works-description-title btn">
-                Коротий опис роботи
-              </button>
-              <p class="works-description-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Similique, culpa?
-              </p>
-            </div>
-            <a href="https://sterylizacjanarzendzi.pl/" target="_blank"
-              >sterylizacjanarzendzi.pl</a
-            >
-          </div>
-          <div class="card">
-            <img src="img/lending2.jpg" alt="Корпоративний сайт" />
-            <h3>Корпоративний сайт</h3>
-            <div class="works-description">
-              <button class="works-description-title btn">
-                Коротий опис роботи
-              </button>
-              <p class="works-description-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Similique, culpa?
-              </p>
-            </div>
-            <a href="https://sterylizacjanarzendzi.pl/" target="_blank"
-              >sterylizacjanarzendzi.pl</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="line-separator" />
-    <!-- Quiz -->
-    <section class="quiz-shell">
-      <div class="quiz-inner">
-        <div class="progress" aria-live="polite">
-          <span id="stepLabel">Крок 1 з 1</span>
-          <div class="progress-track" role="presentation">
-            <div class="progress-fill" style="width: 0%"></div>
-          </div>
-        </div>
-
-        <div class="content-columns">
-          <section
-            class="panel question-panel"
-            aria-labelledby="question-title"
-          >
-            <h2 class="question-title" id="question-title">
-              Завантаження питання...
-            </h2>
-            <div
-              class="option-stack"
-              id="optionStack"
-              role="group"
-              aria-label="Варіанти відповіді"
-            ></div>
-
-            <div class="controls">
-              <button class="glow-btn" type="button" id="backBtn" disabled>
-                Назад
-              </button>
-              <button
-                class="glow-btn primary"
-                type="button"
-                id="nextBtn"
-                disabled
-              >
-                Далі
-              </button>
-            </div>
-          </section>
-
-          <aside class="panel summary-panel" aria-labelledby="summary-title">
-            <div class="summary-header">
-              <strong>MyWebsite</strong>
-              <nav class="nav-links" aria-label="Головна навігація">
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-              </nav>
-            </div>
-            <h3 id="summary-title">Ваші відповіді</h3>
-            <!-- <p class="summary-note">Обирайте варіанти, щоб побачити персоналізовану добірку відповідей.</p> -->
-            <p class="summary-empty" id="summaryEmpty">
-              Поки що без відповідей. Зробіть вибір у формі.
+    <main>
+      <section class="order-hero" aria-labelledby="order-hero-title">
+        <div class="container order-hero__inner">
+          <div class="order-hero__content">
+            <p class="order-hero__eyebrow">Start a project</p>
+            <h1 id="order-hero-title">
+              Design, build, and launch a digital experience that does the heavy lifting
+            </h1>
+            <p class="order-hero__lead">
+              Tell us about the impact you want to make. We'll scope a launch-ready plan that
+              blends strategy, UX, content, and development - ready to activate in weeks, not
+              quarters.
             </p>
-            <div class="summary-answers" id="summaryList" role="list"></div>
+            <div class="order-hero__cta">
+              <a href="#intake" class="btn">Share project details</a>
+              <a href="contacts.html#contact-form" class="btn btn-secondary"
+                >Book a discovery call</a
+              >
+            </div>
+            <ul class="order-hero__highlights">
+              <li>Week 1: Discovery workshop + roadmap</li>
+              <li>Week 2+: UX, UI, content, and build sprints</li>
+              <li>Launch: QA, analytics, automation, and handover</li>
+            </ul>
+          </div>
+          <aside class="order-hero__aside">
+            <div class="order-hero__card">
+              <h2>What you get</h2>
+              <ul>
+                <li>Strategy sprint with clear KPIs and milestones</li>
+                <li>Conversion-focused design system and messaging</li>
+                <li>Implementation in Webflow, React, or your stack</li>
+                <li>Analytics, automation, and performance setup</li>
+              </ul>
+            </div>
+            <div class="order-hero__note">
+              <p>
+                Launch timelines depend on scope (3-8 weeks typical). Have a tighter deadline?
+                Mention it in the form and we'll adapt the plan.
+              </p>
+            </div>
           </aside>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <hr class="line-separator" />
+      <section class="order-packages" aria-labelledby="order-packages-title">
+        <div class="container">
+          <div class="order-section-header">
+            <h2 id="order-packages-title">Pick the path that fits your stage</h2>
+            <p>
+              Not sure what package works best? Share context below - we'll recommend the most
+              suitable option or customise a scope.
+            </p>
+          </div>
+          <div class="order-packages__grid">
+            <article class="order-package-card">
+              <header>
+                <h3>Starter Landing</h3>
+                <p>Ideal for campaigns, MVP launches, and early-stage validation.</p>
+              </header>
+              <ul>
+                <li>Discovery workshop + positioning</li>
+                <li>Copywriting and benefit mapping</li>
+                <li>Design + build in Webflow or Framer</li>
+                <li>Integrations (CRM, marketing automation, analytics)</li>
+              </ul>
+              <footer>
+                <span class="order-package__meta">Timeline: 3-4 weeks</span>
+                <span class="order-package__meta">Investment: From EUR 3 200</span>
+              </footer>
+            </article>
+            <article class="order-package-card">
+              <header>
+                <h3>Product Website</h3>
+                <p>Full multi-page site with conversion strategy and design system.</p>
+              </header>
+              <ul>
+                <li>UX architecture and content strategy</li>
+                <li>Visual identity expansion and component library</li>
+                <li>Development in Webflow, Next.js, or your stack</li>
+                <li>SEO essentials, performance tuning, documentation</li>
+              </ul>
+              <footer>
+                <span class="order-package__meta">Timeline: 6-8 weeks</span>
+                <span class="order-package__meta">Investment: From EUR 7 500</span>
+              </footer>
+            </article>
+            <article class="order-package-card">
+              <header>
+                <h3>Growth Partner</h3>
+                <p>Ongoing design, optimisation, and experimentation support.</p>
+              </header>
+              <ul>
+                <li>Monthly experiment and CRO roadmap</li>
+                <li>Design & development cycles with analytics reporting</li>
+                <li>Design system maintenance and rollout</li>
+                <li>Quarterly strategy reviews with leadership</li>
+              </ul>
+              <footer>
+                <span class="order-package__meta">Ongoing: 3+ months</span>
+                <span class="order-package__meta">Investment: From EUR 2 000/mo</span>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </section>
 
-    <!-- Footer -->
+      <section class="order-quiz" aria-labelledby="order-quiz-title">
+        <div class="container">
+          <div class="order-section-header">
+            <h2 id="order-quiz-title">Need help defining the scope?</h2>
+            <p>
+              Answer a few quick questions - the interactive worksheet will outline a suggested
+              timeline and deliverables. Share it with your team or send it to us directly.
+            </p>
+          </div>
+          <div class="quiz-shell">
+            <div class="quiz-inner">
+              <div class="progress" aria-live="polite">
+                <span id="stepLabel">Step 1 of 1</span>
+                <div class="progress-track" role="presentation">
+                  <div class="progress-fill" style="width: 0%"></div>
+                </div>
+              </div>
+
+              <div class="content-columns">
+                <section
+                  class="panel question-panel"
+                  aria-labelledby="question-title"
+                >
+                  <h2 class="question-title" id="question-title">
+                    Let's understand your goals...
+                  </h2>
+                  <div
+                    class="option-stack"
+                    id="optionStack"
+                    role="group"
+                    aria-label="Project goals options"
+                  ></div>
+
+                  <div class="controls">
+                    <button class="glow-btn" type="button" id="backBtn" disabled>
+                      Back
+                    </button>
+                    <button
+                      class="glow-btn primary"
+                      type="button"
+                      id="nextBtn"
+                      disabled
+                    >
+                      Next
+                    </button>
+                  </div>
+                </section>
+
+                <aside class="panel summary-panel" aria-labelledby="summary-title">
+                  <div class="summary-header">
+                    <strong>Project brief</strong>
+                    <nav class="nav-links" aria-label="Quick navigation">
+                      <a href="services.html">Services</a>
+                      <a href="contacts.html">Contact</a>
+                    </nav>
+                  </div>
+                  <h3 id="summary-title">Your answers</h3>
+                  <p class="summary-empty" id="summaryEmpty">
+                    The summary will appear once you select answers. We will compile a PDF
+                    recap for you to share with stakeholders.
+                  </p>
+                  <div class="summary-answers" id="summaryList" role="list"></div>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="order-intake" id="intake" aria-labelledby="intake-title">
+        <div class="container order-intake__inner">
+          <div class="order-intake__intro">
+            <h2 id="intake-title">Project intake form</h2>
+            <p>
+              The more context you share, the faster we can prepare a plan with accurate
+              timelines, team makeup, and budget expectations.
+            </p>
+            <ul class="order-intake__tips">
+              <li>Attach key docs (briefs, decks, references)</li>
+              <li>Include deadlines, business goals, and stakeholders</li>
+              <li>Tell us how you prefer to collaborate</li>
+            </ul>
+          </div>
+          <form class="order-form">
+            <div class="form-row">
+              <label for="name">Full name*</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Work email*</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="name@company.com"
+                inputmode="email"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="company">Company or brand</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="Company, startup, or personal brand"
+              />
+            </div>
+            <div class="form-row">
+              <label for="project">Project type*</label>
+              <select id="project" name="project" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="landing">Landing launch</option>
+                <option value="website">Website redesign</option>
+                <option value="ecommerce">E-commerce build</option>
+                <option value="product">Product experience</option>
+                <option value="growth">Growth optimisation</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-row form-row--full">
+              <label for="details">Project goals and challenges*</label>
+              <textarea
+                id="details"
+                name="details"
+                rows="5"
+                placeholder="Outline your current situation, success metrics, audience insights, and any requirements or references."
+                required
+              ></textarea>
+            </div>
+            <div class="form-row form-row--split">
+              <div>
+                <label for="timeline">Ideal launch date</label>
+                <input type="date" id="timeline" name="timeline" />
+              </div>
+              <div>
+                <label for="budget">Estimated budget</label>
+                <select id="budget" name="budget">
+                  <option value="" disabled selected>Select a range</option>
+                  <option value="under5k">Under EUR 5 000</option>
+                  <option value="5-10k">EUR 5 000 - 10 000</option>
+                  <option value="10-20k">EUR 10 000 - 20 000</option>
+                  <option value="20kplus">EUR 20 000+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class="checkbox">
+                <input type="checkbox" id="nda" name="nda" />
+                <span>We require an NDA before sharing sensitive information</span>
+              </label>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn large">Submit request</button>
+              <p class="form-note">
+                By submitting this form you agree to receive a follow-up email from
+                LandingWebStudio. We do not add you to a mailing list without consent.
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="order-faq" aria-labelledby="order-faq-title">
+        <div class="container">
+          <div class="order-section-header">
+            <h2 id="order-faq-title">Frequently asked questions</h2>
+            <p>
+              Still deciding if we are the right fit? These answers cover the most common
+              questions we hear from new partners.
+            </p>
+          </div>
+          <div class="order-faq__grid">
+            <article>
+              <h3>How quickly can we start?</h3>
+              <p>
+                Discovery kicks off within 5 business days. From there the timeline depends on
+                scope - tell us your deadline and we'll prioritise accordingly.
+              </p>
+            </article>
+            <article>
+              <h3>Do you work with in-house teams?</h3>
+              <p>
+                Yes. We can run design and build end-to-end or integrate with your designers,
+                developers, copywriters, or marketers as an embedded partner.
+              </p>
+            </article>
+            <article>
+              <h3>Which platforms do you support?</h3>
+              <p>
+                Webflow, Framer, Shopify, Next.js, and custom stacks. We recommend the platform
+                that best suits your team's maturity and future plans.
+              </p>
+            </article>
+            <article>
+              <h3>Can you help post-launch?</h3>
+              <p>
+                Absolutely. Many clients stay on a growth retainer for experiment roadmaps,
+                CRO, automation, and design system updates.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <footer>
       <div class="socials">
         <ul class="footer-socials">
           <li>
             <a href="#" target="_blank" rel="noopener" aria-label="Facebook">
-              <!-- Facebook -->
               <svg viewBox="0 0 24 24" class="i">
                 <path
                   d="M13 22v-9h3l1-4h-4V7.5c0-1.03.34-1.75 1.86-1.75H17V2.26C16.65 2.18 15.7 2 14.6 2 11.98 2 10 3.66 10 7v2H7v4h3v9h3Z"
@@ -183,7 +371,6 @@
           </li>
           <li>
             <a href="#" target="_blank" rel="noopener" aria-label="Instagram">
-              <!-- Instagram -->
               <svg viewBox="0 0 24 24" class="i">
                 <path
                   d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm5 5.8A5.2 5.2 0 1 0 17.2 13 5.21 5.21 0 0 0 12 7.8Zm0 8.6A3.4 3.4 0 1 1 15.4 13 3.41 3.41 0 0 1 12 16.4ZM18 6.2a1.2 1.2 0 1 0 1.2 1.2A1.2 1.2 0 0 0 18 6.2Z"
@@ -193,7 +380,6 @@
           </li>
           <li>
             <a href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
-              <!-- WhatsApp -->
               <svg viewBox="0 0 24 24" class="i">
                 <path
                   d="M20.52 3.48A11.94 11.94 0 0 0 12.02 0C5.43 0 .1 5.32.1 11.9a11.8 11.8 0 0 0 1.6 6l-1.7 6.1 6.26-1.64a12 12 0 0 0 5.76 1.47h.01c6.59 0 11.92-5.33 11.92-11.91 0-3.18-1.24-6.16-3.45-8.45ZM12 21.3a9.3 9.3 0 0 1-4.74-1.3l-.34-.2-3.72.98 1-3.62-.22-.37A9.3 9.3 0 1 1 21.3 12 9.29 9.29 0 0 1 12 21.3Zm5.39-6.86c-.29-.15-1.72-.85-1.99-.95-.27-.1-.47-.15-.67.15-.2.3-.77.95-.94 1.15-.17.2-.35.22-.64.07-.29-.15-1.22-.45-2.33-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.14-.14.3-.36.44-.54.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.11 3.22 5.11 4.51.71.31 1.26.5 1.69.64.71.23 1.35.2 1.86.12.57-.09 1.72-.7 1.96-1.37.24-.67.24-1.24.17-1.37-.07-.13-.26-.2-.55-.35Z"
@@ -203,7 +389,10 @@
           </li>
         </ul>
       </div>
-      <p>© <span id="y"></span> Лендінг веб студія. Всі права захищено.</p>
+      <p>
+        &copy; <span id="y"></span> LandingWebStudio. All rights reserved. We build digital
+        products with clarity and performance in mind.
+      </p>
     </footer>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>

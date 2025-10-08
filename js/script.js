@@ -52,7 +52,7 @@ nav?.querySelectorAll("a").forEach((a) =>
 document.getElementById("y").textContent = new Date().getFullYear();
 
 // Swiper
-const reviewsContainer = document.querySelector(".verticalSwiper");
+const reviewsContainer = document.querySelector(".reviewsSwiper");
 if (reviewsContainer) {
   reviewsContainer.querySelector(".swiper-pagination")?.remove();
   if (!reviewsContainer.querySelector(".reviews-swiper-button-next")) {
@@ -81,8 +81,8 @@ const heroSwiper = new Swiper(".mySwiper", {
   },
 });
 
-const verticalSwiper = new Swiper(".verticalSwiper", {
-  direction: "vertical",
+const reviewsSwiper = new Swiper(".reviewsSwiper", {
+  direction: "horizontal",
   loop: true,
   slidesPerView: 2,
   spaceBetween: 30,
@@ -94,6 +94,10 @@ const verticalSwiper = new Swiper(".verticalSwiper", {
   navigation: {
     nextEl: ".reviews-swiper-button-next",
     prevEl: ".reviews-swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
   },
   breakpoints: {
     0: {

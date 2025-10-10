@@ -95,33 +95,35 @@
             </dl>
           </div>
           <aside class="home-hero__stats" aria-label="Key results">
-            <div class="stat-card">
-              <span class="stat-card__value">62%</span>
-              <span class="stat-card__label">Increase in demo bookings</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-card__value">38%</span>
-              <span class="stat-card__label">Bounce rate drop post relaunch</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-card__value">4.9/5</span>
-              <span class="stat-card__label">Client satisfaction score</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-card__value">3.5x</span>
-              <span class="stat-card__label">Faster iteration cycle</span>
-            </div>
+            <ul>
+              <li class="stat-card">
+                <span class="stat-card__value">62%</span>
+                <span class="stat-card__label">Increase in demo bookings</span>
+              </li>
+              <li class="stat-card">
+                <span class="stat-card__value">38%</span>
+                <span class="stat-card__label">Bounce rate drop post relaunch</span>
+              </li>
+              <li class="stat-card">
+                <span class="stat-card__value">4.9/5</span>
+                <span class="stat-card__label">Client satisfaction score</span>
+              </li>
+              <li class="stat-card">
+                <span class="stat-card__value">3.5x</span>
+                <span class="stat-card__label">Faster iteration cycle</span>
+              </li>
+            </ul>
           </aside>
         </div>
       </section>
 
       <section class="home-clients" aria-labelledby="clients-title">
         <div class="container">
-          <div class="home-section-header">
+          <header class="home-section-header">
             <h2 id="clients-title">Trusted by teams across industries</h2>
             <p>We partner with founders, marketing leads, and product squads in EU & UK.</p>
-          </div>
-          <ul class="home-clients__logos">
+          </header>
+          <ul class="home-clients__logos" aria-label="Industries we work with">
             <li>Fintech</li>
             <li>HealthTech</li>
             <li>SaaS</li>
@@ -134,23 +136,23 @@
 
       <section class="home-services" aria-labelledby="services-preview-title">
         <div class="container">
-          <div class="home-section-header">
+          <header class="home-section-header">
             <h2 id="services-preview-title">How we can help</h2>
             <p>
               Shaping positioning, crafting UX, running experiments, and keeping everything
               measurable from day one.
             </p>
-          </div>
-          <div class="home-services__grid">
-            <article class="home-service-card">
+          </header>
+          <ul class="home-services__grid">
+            <li class="home-service-card">
               <h3>Launch accelerators</h3>
               <p>
                 MVP and campaign landings, copywriting, automation, and analytics setup to
                 kickstart demand generation quickly.
               </p>
               <a href="services.html" class="home-service-card__link">View packages</a>
-            </article>
-            <article class="home-service-card">
+            </li>
+            <li class="home-service-card">
               <h3>Product websites</h3>
               <p>
                 Multi-page experiences with conversion-optimised architecture, design
@@ -159,28 +161,28 @@
               <a href="services.html#packages-title" class="home-service-card__link"
                 >See what's inside</a
               >
-            </article>
-            <article class="home-service-card">
+            </li>
+            <li class="home-service-card">
               <h3>Growth optimisation</h3>
               <p>
                 Experiment roadmaps, CRO, and performance improvements to keep your funnel
                 learning and iterating every month.
               </p>
               <a href="contacts.html" class="home-service-card__link">Book a strategy chat</a>
-            </article>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
 
       <section class="home-process" aria-labelledby="process-title">
         <div class="container">
-          <div class="home-section-header">
+          <header class="home-section-header">
             <h2 id="process-title">A process built for clarity and velocity</h2>
             <p>
               Every engagement follows a transparent cadence so you always know what is in
               progress, what's next, and how success is tracked.
             </p>
-          </div>
+          </header>
           <ol class="home-process__timeline">
             <li>
               <span class="timeline-step">01</span>
@@ -216,9 +218,15 @@
 
       <section class="home-cases" id="cases" aria-labelledby="cases-title">
         <div class="container">
-          <div class="home-section-header">
+          <header class="home-section-header">
             <h2 id="cases-title">Selected collaborations</h2>
             <p>Highlights from recent work launching new ideas and reinventing established brands.</p>
+          </header>
+          <div class="home-cases__filters" role="group" aria-label="Filter by project type">
+            <button class="chip chip--active" type="button">All</button>
+            <button class="chip" type="button">Landings</button>
+            <button class="chip" type="button">Corporate</button>
+            <button class="chip" type="button">E-commerce</button>
           </div>
           <div class="home-cases__grid">
             <article class="case-card">
@@ -229,7 +237,19 @@
                   Crafted a benefits-led narrative, designed the UX, and shipped a Webflow build
                   integrated with HubSpot and Zapier automations.
                 </p>
-                <a href="https://podologkalisz.com" target="_blank" rel="noopener"
+                <p class="case-card__tag">Сайт-візитка</p>
+                <a
+                  href="https://podologkalisz.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="case-card__button"
+                  >Короткий опис роботи</a
+                >
+                <a
+                  href="https://podologkalisz.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="case-card__site"
                   >podologkalisz.com</a
                 >
               </div>
@@ -242,7 +262,19 @@
                   Rebuilt the site architecture, refreshed the brand system, and implemented the
                   experience in React with multilingual support.
                 </p>
-                <a href="https://sterylizacjanarzendzi.pl/" target="_blank" rel="noopener"
+                <p class="case-card__tag">Лендінг</p>
+                <a
+                  href="https://sterylizacjanarzendzi.pl/"
+                  target="_blank"
+                  rel="noopener"
+                  class="case-card__button"
+                  >Короткий опис роботи</a
+                >
+                <a
+                  href="https://sterylizacjanarzendzi.pl/"
+                  target="_blank"
+                  rel="noopener"
+                  class="case-card__site"
                   >sterylizacjanarzendzi.pl</a
                 >
               </div>
@@ -255,8 +287,20 @@
                   Delivered a conversion-focused marketing site with scripted demo walkthrough,
                   interactive pricing, and performance-friendly build.
                 </p>
-                <a href="https://sterylizacjanarzendzi.pl/" target="_blank" rel="noopener"
-                  >View case</a
+                <p class="case-card__tag">Корпоративний сайт</p>
+                <a
+                  href="https://sterylizacjanarzendzi.pl/"
+                  target="_blank"
+                  rel="noopener"
+                  class="case-card__button"
+                  >Короткий опис роботи</a
+                >
+                <a
+                  href="https://sterylizacjanarzendzi.pl/"
+                  target="_blank"
+                  rel="noopener"
+                  class="case-card__site"
+                  >sterylizacjanarzendzi.pl</a
                 >
               </div>
             </article>
@@ -266,10 +310,10 @@
 
       <section class="home-testimonials" aria-labelledby="testimonials-title">
         <div class="container">
-          <div class="home-section-header">
+          <header class="home-section-header">
             <h2 id="testimonials-title">Clients about our partnership</h2>
             <p>Real feedback from teams who entrust us with their launches and growth cycles.</p>
-          </div>
+          </header>
           <div class="swiper reviewsSwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">

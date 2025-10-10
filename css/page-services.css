@@ -1,5 +1,5 @@
 .services-page {
-  background: linear-gradient(160deg, #ecebff 0%, #fef3ff 45%, #ffffff 100%);
+  background: var(--gradient-main);
   color: var(--text-ink);
 }
 
@@ -61,7 +61,7 @@
 }
 
 .services-hero__pills div {
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--card);
   border: 1px solid rgba(102, 146, 217, 0.18);
   border-radius: 18px;
   padding: 20px 22px;
@@ -81,7 +81,7 @@
 }
 
 .services-highlight-card {
-  background: rgba(255, 255, 255, 0.94);
+  background: var(--card);
   border-radius: 24px;
   border: 1px solid rgba(102, 146, 217, 0.2);
   padding: 32px 28px;
@@ -115,6 +115,18 @@
   padding: 90px 0;
 }
 
+.services-section:nth-of-type(odd) {
+  background: var(--gradient-main);
+}
+
+.services-section:nth-of-type(even) {
+  background: linear-gradient(
+    180deg,
+    rgba(218, 225, 237, 0.6) 0%,
+    rgba(235, 192, 204, 0.35) 100%
+  );
+}
+
 .services-section__header {
   max-width: 760px;
   margin: 0 auto 60px;
@@ -140,7 +152,7 @@
 }
 
 .service-card {
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--card);
   border-radius: 24px;
   border: 1px solid rgba(102, 146, 217, 0.18);
   padding: 32px 28px;
@@ -188,7 +200,7 @@
 }
 
 .services-timeline li {
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--card);
   border-radius: 22px;
   border: 1px solid rgba(102, 146, 217, 0.18);
   padding: 26px;
@@ -241,7 +253,7 @@
 }
 
 .services-capabilities__grid article {
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--card);
   border-radius: 22px;
   border: 1px solid rgba(102, 146, 217, 0.18);
   padding: 26px;
@@ -285,7 +297,7 @@
 }
 
 .services-proof__stat {
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--card);
   border-radius: 22px;
   border: 1px solid rgba(102, 146, 217, 0.18);
   padding: 24px;

@@ -1,5 +1,5 @@
 .blog-page {
-  background: linear-gradient(162deg, #ececff 0%, #fef5ff 45%, #ffffff 100%);
+  background: var(--gradient-main);
   color: var(--text-ink);
 }
 
@@ -60,11 +60,11 @@
 }
 
 .blog-hero__card {
-  background: rgba(255, 255, 255, 0.94);
+  background: var(--card);
   border-radius: 24px;
   border: 1px solid rgba(102, 146, 217, 0.18);
   padding: 30px;
-  box-shadow: 0 20px 42px rgba(102, 146, 217, 0.2);
+  
   display: grid;
   gap: 16px;
 }
@@ -83,11 +83,11 @@
 }
 
 .blog-subscribe {
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--card);
   border-radius: 20px;
   border: 1px solid rgba(102, 146, 217, 0.18);
   padding: 24px;
-  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.08);
+  
   display: grid;
   gap: 12px;
 }
@@ -146,11 +146,11 @@
 }
 
 .blog-topic-card {
-  background: rgba(255, 255, 255, 0.94);
+  background: var(--card);
   border-radius: 20px;
   border: 1px solid rgba(102, 146, 217, 0.18);
   padding: 24px;
-  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.08);
+  
   display: grid;
   gap: 10px;
   color: inherit;
@@ -159,7 +159,7 @@
 
 .blog-topic-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 22px 46px rgba(102, 146, 217, 0.2);
+  
 }
 
 .blog-topic-card h3 {
@@ -174,7 +174,7 @@
 
 .blog-latest {
   padding: 90px 0;
-  background: linear-gradient(180deg, rgba(236, 236, 255, 0.18), #ffffff 100%);
+  background: var(--gradient-main);
 }
 
 .blog-latest__grid {
@@ -188,7 +188,7 @@
   border-radius: 22px;
   border: 1px solid rgba(102, 146, 217, 0.18);
   padding: 28px;
-  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.1);
+  
   display: grid;
   gap: 12px;
 }
@@ -225,13 +225,17 @@
 
 .blog-featured {
   padding: 90px 0;
+  background: linear-gradient(
+    180deg,
+    rgba(235, 192, 204, 0.55) 0%,
+    rgba(218, 225, 237, 0.55) 100%
+  );
 }
 
 .blog-featured__inner {
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--card);
   border-radius: 26px;
   border: 1px solid rgba(102, 146, 217, 0.18);
-  box-shadow: 0 22px 50px rgba(102, 146, 217, 0.24);
   padding: 50px;
   display: grid;
   gap: 36px;
@@ -254,7 +258,11 @@
 }
 
 .blog-featured__note {
-  background: rgba(236, 236, 255, 0.45);
+  background: linear-gradient(
+    180deg,
+    rgba(218, 225, 237, 0.55) 0%,
+    rgba(235, 192, 204, 0.35) 100%
+  );
   border-radius: 20px;
   padding: 24px;
   display: grid;

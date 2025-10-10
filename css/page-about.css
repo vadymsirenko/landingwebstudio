@@ -1,5 +1,5 @@
 .about-page {
-  background: linear-gradient(140deg, #ece9ff 0%, #fef3ff 45%, #ffffff 100%);
+  background: var(--gradient-main);
   color: var(--text-ink);
 }
 
@@ -63,9 +63,9 @@
 .about-stat {
   padding: 26px 22px;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.8);
+  background: var(--card);
   border: 1px solid rgba(102, 146, 217, 0.2);
-  box-shadow: 0 18px 32px rgba(102, 146, 217, 0.15);
+  
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -85,6 +85,18 @@
 
 .about-section {
   padding: 90px 0;
+}
+
+.about-section:nth-of-type(odd) {
+  background: var(--gradient-main);
+}
+
+.about-section:nth-of-type(even) {
+  background: linear-gradient(
+    180deg,
+    rgba(218, 225, 237, 0.6) 0%,
+    rgba(235, 192, 204, 0.35) 100%
+  );
 }
 
 .about-section__header {
@@ -113,11 +125,11 @@
 }
 
 .about-card {
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--card);
   border: 1px solid rgba(102, 146, 217, 0.18);
   border-radius: 22px;
   padding: 32px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -155,7 +167,7 @@
 }
 
 .about-timeline__item {
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--card);
   border-radius: 20px;
   border: 1px solid rgba(102, 146, 217, 0.18);
   padding: 24px;
@@ -163,7 +175,7 @@
   gap: 16px;
   grid-template-columns: auto 1fr;
   align-items: start;
-  box-shadow: 0 12px 28px rgba(102, 146, 217, 0.12);
+  
 }
 
 .about-timeline__step {
@@ -206,11 +218,11 @@
 
 .about-values__list li {
   list-style: none;
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--card);
   border: 1px solid rgba(102, 146, 217, 0.18);
   border-radius: 18px;
   padding: 22px;
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+  
 }
 
 .about-values__list h3 {
@@ -230,12 +242,12 @@
 }
 
 .about-cta__inner {
-  background: linear-gradient(135deg, rgba(124, 92, 255, 0.08), rgba(95, 157, 255, 0.12));
+  background: var(--card);
   border-radius: 26px;
   padding: 60px 40px;
   text-align: center;
   border: 1px solid rgba(102, 146, 217, 0.25);
-  box-shadow: 0 20px 50px rgba(102, 146, 217, 0.18);
+  
   display: grid;
   gap: 18px;
   justify-items: center;

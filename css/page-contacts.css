@@ -1,5 +1,5 @@
 .contacts-page {
-  background: linear-gradient(150deg, #f0edff 0%, #fdf4ff 45%, #ffffff 100%);
+  background: var(--gradient-main);
   color: var(--text-ink);
 }
 
@@ -59,11 +59,11 @@
 }
 
 .availability-card {
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--card);
   border: 1px solid rgba(102, 146, 217, 0.2);
   border-radius: 24px;
   padding: 32px 28px;
-  box-shadow: 0 18px 36px rgba(102, 146, 217, 0.18);
+
   display: grid;
   gap: 18px;
 }
@@ -87,6 +87,34 @@
 
 .contacts-section {
   padding: 90px 0;
+}
+
+.contacts-channels {
+  background: linear-gradient(
+    180deg,
+    rgba(218, 225, 237, 0.6) 0%,
+    rgba(235, 192, 204, 0.35) 100%
+  );
+}
+
+.contacts-form {
+  background: var(--gradient-main);
+}
+
+.contacts-faq {
+  background: linear-gradient(
+    180deg,
+    rgba(235, 192, 204, 0.55) 0%,
+    rgba(218, 225, 237, 0.55) 100%
+  );
+}
+
+.contacts-cta {
+  background: linear-gradient(
+    180deg,
+    rgba(218, 225, 237, 0.6) 0%,
+    rgba(235, 192, 204, 0.3) 100%
+  );
 }
 
 .contacts-section__header {
@@ -114,11 +142,11 @@
 }
 
 .contact-card {
-  background: rgba(255, 255, 255, 0.94);
+  background: var(--card);
   border-radius: 22px;
   padding: 28px;
   border: 1px solid rgba(102, 146, 217, 0.16);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+
   display: grid;
   gap: 12px;
 }
@@ -140,10 +168,10 @@
 }
 
 .contacts-form__inner {
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--card);
   border-radius: 28px;
   border: 1px solid rgba(102, 146, 217, 0.18);
-  box-shadow: 0 20px 50px rgba(102, 146, 217, 0.2);
+
   padding: 48px 52px;
   display: grid;
   gap: 40px;
@@ -196,7 +224,7 @@
   padding: 12px 14px;
   border-radius: 14px;
   border: 1px solid rgba(102, 146, 217, 0.35);
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--card);
   font-size: 15px;
   color: var(--text-ink);
   transition: border-color 0.2s ease;
@@ -250,11 +278,11 @@
 }
 
 .faq-card {
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--card);
   border-radius: 22px;
   border: 1px solid rgba(102, 146, 217, 0.18);
   padding: 28px;
-  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.08);
+
   display: grid;
   gap: 12px;
 }
@@ -266,17 +294,11 @@
 }
 
 .contacts-cta__inner {
-  background: linear-gradient(
-      140deg,
-      rgba(124, 92, 255, 0.1),
-      rgba(95, 157, 255, 0.15)
-    ),
-    #ffffff;
+  background: var(--card);
   border-radius: 26px;
   padding: 60px 40px;
   text-align: center;
   border: 1px solid rgba(102, 146, 217, 0.25);
-  box-shadow: 0 20px 50px rgba(102, 146, 217, 0.18);
   display: grid;
   gap: 18px;
   justify-items: center;

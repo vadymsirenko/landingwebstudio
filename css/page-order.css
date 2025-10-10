@@ -1,5 +1,5 @@
 .order-page {
-  background: linear-gradient(160deg, #ececff 0%, #fef5ff 45%, #ffffff 100%);
+  background: var(--gradient-main);
   color: var(--text-ink);
 }
 
@@ -68,11 +68,11 @@
 }
 
 .order-hero__card {
-  background: rgba(255, 255, 255, 0.94);
+  background: var(--card);
   border-radius: 24px;
   border: 1px solid rgba(102, 146, 217, 0.18);
   padding: 30px;
-  box-shadow: 0 18px 38px rgba(102, 146, 217, 0.2);
+
   display: grid;
   gap: 16px;
 }
@@ -91,11 +91,11 @@
 }
 
 .order-hero__note {
-  background: rgba(255, 255, 255, 0.88);
+  background: var(--card);
   border-radius: 18px;
   border: 1px solid rgba(102, 146, 217, 0.15);
   padding: 20px;
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+
   font-size: 14px;
   color: var(--text-ink);
 }
@@ -129,11 +129,11 @@
 }
 
 .order-package-card {
-  background: rgba(255, 255, 255, 0.94);
+  background: var(--card);
   border-radius: 24px;
   border: 1px solid rgba(102, 146, 217, 0.18);
   padding: 30px;
-  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.1);
+
   display: grid;
   gap: 18px;
 }
@@ -163,14 +163,14 @@
 
 .order-quiz {
   padding: 90px 0;
-  background: linear-gradient(180deg, rgba(236, 236, 255, 0.18), #ffffff 100%);
+  background: var(--gradient-main);
 }
 
 .quiz-shell {
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--card);
   border-radius: 28px;
   border: 1px solid rgba(102, 146, 217, 0.18);
-  box-shadow: 0 22px 48px rgba(102, 146, 217, 0.22);
+
   padding: 40px;
 }
 
@@ -183,11 +183,11 @@
 }
 
 .order-intake__inner {
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--card);
   border-radius: 28px;
   border: 1px solid rgba(102, 146, 217, 0.18);
   padding: 50px;
-  box-shadow: 0 22px 48px rgba(102, 146, 217, 0.24);
+
   display: grid;
   gap: 36px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -229,7 +229,7 @@
   padding: 12px 14px;
   border-radius: 14px;
   border: 1px solid rgba(102, 146, 217, 0.35);
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--card);
   font-size: 15px;
   color: var(--text-ink);
 }
@@ -278,7 +278,7 @@
 
 .order-faq {
   padding: 90px 0;
-  background: linear-gradient(180deg, rgba(236, 236, 255, 0.12), #ffffff 100%);
+  background: linear-gradient(180deg, rgba(218, 225, 237, 0.6) 0%, rgba(235, 192, 204, 0.3) 100%);
 }
 
 .order-faq__grid {
@@ -288,11 +288,11 @@
 }
 
 .order-faq__grid article {
-  background: rgba(255, 255, 255, 0.94);
+  background: var(--card);
   border-radius: 20px;
   border: 1px solid rgba(102, 146, 217, 0.18);
   padding: 26px;
-  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.1);
+
   display: grid;
   gap: 12px;
 }

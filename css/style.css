@@ -1,4 +1,4 @@
-﻿body {
+body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -52,7 +52,7 @@ body.lock {
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(235, 192, 204, 0.18);
   color: var(--text-ink-secondary);
 }
 
@@ -77,3 +77,5 @@ body.lock {
   margin: 20px auto;
   border-radius: 5px;
 }
+
+

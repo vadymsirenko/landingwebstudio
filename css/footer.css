@@ -3,7 +3,7 @@ footer {
   text-align: center;
   padding: 30px 20px 20px;
   color: var(--text-ink);
-  background: linear-gradient(180deg, var(--bg), #e6e5e9 );
+  background: linear-gradient(180deg, var(--color-light), var(--color-dark));
 }
 
 
@@ -13,3 +13,4 @@ footer .socials a {
   margin: 0 10px;
   font-size: 1.2rem;
 }
+

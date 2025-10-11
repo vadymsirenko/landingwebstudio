@@ -1,5 +1,5 @@
 .pricing-page {
-  background: linear-gradient(160deg, #ececff 0%, #fef5ff 45%, #ffffff 100%);
+  background: linear-gradient(160deg, rgba(218, 225, 237, 0.9) 0%, rgba(235, 192, 204, 0.9) 100%);
   color: var(--text-ink);
 }
 
@@ -51,7 +51,7 @@
 }
 
 .btn-secondary:hover {
-  background: rgba(102, 146, 217, 0.12);
+  background: rgba(235, 192, 204, 0.18);
 }
 
 .pricing-hero__aside {
@@ -60,11 +60,11 @@
 }
 
 .pricing-hero__card {
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(218, 225, 237, 0.94);
   border-radius: 24px;
-  border: 1px solid rgba(102, 146, 217, 0.18);
+  border: 1px solid rgba(235, 192, 204, 0.18);
   padding: 30px;
-  box-shadow: 0 20px 42px rgba(102, 146, 217, 0.22);
+  box-shadow: 0 20px 42px rgba(235, 192, 204, 0.22);
   display: grid;
   gap: 16px;
 }
@@ -83,11 +83,11 @@
 }
 
 .pricing-hero__note {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(218, 225, 237, 0.9);
   border-radius: 20px;
-  border: 1px solid rgba(102, 146, 217, 0.18);
+  border: 1px solid rgba(235, 192, 204, 0.18);
   padding: 22px;
-  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 18px 36px rgba(235, 192, 204, 0.2);
   font-size: 14px;
   color: var(--text-ink);
 }
@@ -121,11 +121,11 @@
 }
 
 .pricing-card {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(218, 225, 237, 0.95);
   border-radius: 24px;
-  border: 1px solid rgba(102, 146, 217, 0.18);
+  border: 1px solid rgba(235, 192, 204, 0.18);
   padding: 30px;
-  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 22px 48px rgba(235, 192, 204, 0.24);
   display: grid;
   gap: 18px;
 }
@@ -160,7 +160,7 @@
 
 .pricing-addons {
   padding: 90px 0;
-  background: linear-gradient(180deg, rgba(236, 236, 255, 0.18), #ffffff 100%);
+  background: linear-gradient(180deg, rgba(218, 225, 237, 0.45), rgba(235, 192, 204, 0.25));
 }
 
 .pricing-addons__grid {
@@ -170,11 +170,11 @@
 }
 
 .pricing-addons__grid article {
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(218, 225, 237, 0.94);
   border-radius: 20px;
-  border: 1px solid rgba(102, 146, 217, 0.18);
+  border: 1px solid rgba(235, 192, 204, 0.18);
   padding: 26px;
-  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 42px rgba(235, 192, 204, 0.22);
   display: grid;
   gap: 12px;
 }
@@ -208,11 +208,11 @@
 }
 
 .pricing-process__timeline li {
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(218, 225, 237, 0.94);
   border-radius: 22px;
-  border: 1px solid rgba(102, 146, 217, 0.18);
+  border: 1px solid rgba(235, 192, 204, 0.18);
   padding: 26px;
-  box-shadow: 0 22px 48px rgba(102, 146, 217, 0.22);
+  box-shadow: 0 22px 48px rgba(235, 192, 204, 0.22);
   display: grid;
   gap: 16px;
   grid-template-columns: auto 1fr;
@@ -223,10 +223,10 @@
   width: 48px;
   height: 48px;
   border-radius: 14px;
-  background: linear-gradient(135deg, #7c5cff, #5f9dff);
+  background: rgba(235, 192, 204, 0.9);
   display: grid;
   place-items: center;
-  color: #fff;
+  color: var(--text-ink-secondary);
   font-weight: 700;
   font-size: 16px;
 }
@@ -240,7 +240,7 @@
 
 .pricing-faq {
   padding: 90px 0;
-  background: linear-gradient(180deg, rgba(236, 236, 255, 0.12), #ffffff 100%);
+  background: linear-gradient(180deg, rgba(218, 225, 237, 0.4), rgba(235, 192, 204, 0.22));
 }
 
 .pricing-faq__grid {
@@ -250,11 +250,11 @@
 }
 
 .pricing-faq__grid article {
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(218, 225, 237, 0.94);
   border-radius: 20px;
-  border: 1px solid rgba(102, 146, 217, 0.18);
+  border: 1px solid rgba(235, 192, 204, 0.18);
   padding: 26px;
-  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 42px rgba(235, 192, 204, 0.22);
   display: grid;
   gap: 12px;
 }
@@ -272,14 +272,13 @@
 .pricing-cta__inner {
   background: linear-gradient(
       140deg,
-      rgba(124, 92, 255, 0.1),
-      rgba(95, 157, 255, 0.18)
-    ),
-    #ffffff;
+      rgba(218, 225, 237, 0.92),
+      rgba(235, 192, 204, 0.92)
+    );
   border-radius: 26px;
-  border: 1px solid rgba(102, 146, 217, 0.25);
+  border: 1px solid rgba(235, 192, 204, 0.25);
   padding: 60px 40px;
-  box-shadow: 0 24px 56px rgba(102, 146, 217, 0.24);
+  box-shadow: 0 24px 56px rgba(235, 192, 204, 0.24);
   text-align: center;
   display: grid;
   gap: 18px;
@@ -334,3 +333,11 @@
     flex-direction: column;
   }
 }
+
+
+
+
+
+
+
+

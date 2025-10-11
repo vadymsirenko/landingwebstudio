@@ -22,7 +22,7 @@
 
 .tag {
   display: inline-block;
-  background: rgba(218, 225, 237, 0.85);
+  background: rgba(248, 249, 252, 0.85);
   border-radius: 12px;
   padding: 6px 12px;
   margin: 0 5px;
@@ -30,7 +30,7 @@
 
 
 .tag:hover {
-  background: linear-gradient(232deg,rgba(235, 192, 204, 1) 0%, var(--line) 100%);
+  background: linear-gradient(232deg,rgba(219, 226, 239, 1) 0%, var(--line) 100%);
   color: var(--btn-text-ink);
 }
 
@@ -41,10 +41,10 @@
 }
 
 .card {
-  background: linear-gradient(232deg,rgba(235, 192, 204, 0.9) 0%, rgba(218, 225, 237, 0.9) 100%);
+  background: linear-gradient(232deg,rgba(219, 226, 239, 0.9) 0%, rgba(248, 249, 252, 0.9) 100%);
   padding: 20px;
   border-radius: 16px;
-  box-shadow: 0 4px 18px rgba(235, 192, 204, 0.35);
+  box-shadow: 0 4px 18px rgba(126, 139, 168, 0.35);
 }
 
 .card img {
@@ -72,4 +72,9 @@
     gap: 0;
   }
 }
+
+
+
+
+
 

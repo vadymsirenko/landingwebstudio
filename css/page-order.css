@@ -1,8 +1,8 @@
 .order-page {
   background: linear-gradient(
     160deg,
-    rgba(218, 225, 237, 0.9) 0%,
-    rgba(235, 192, 204, 0.9) 100%
+    rgba(248, 249, 252, 0.9) 0%,
+    rgba(219, 226, 239, 0.9) 100%
   );
   color: var(--text-ink);
 }
@@ -55,7 +55,9 @@
 }
 
 .btn-secondary:hover {
-  background: rgba(235, 192, 204, 0.18);
+  background: var(--btn);
+  color: var(--btn-text-ink);
+  border-color: transparent;
 }
 
 .order-hero__highlights {
@@ -72,11 +74,11 @@
 }
 
 .order-hero__card {
-  background: rgba(218, 225, 237, 0.94);
+  background: rgba(248, 249, 252, 0.94);
   border-radius: 24px;
-  border: 1px solid rgba(235, 192, 204, 0.18);
+  border: 1px solid rgba(219, 226, 239, 0.18);
   padding: 30px;
-  box-shadow: 0 18px 38px rgba(235, 192, 204, 0.2);
+  box-shadow: 0 18px 38px rgba(126, 139, 168, 0.2);
   display: grid;
   gap: 16px;
 }
@@ -95,11 +97,11 @@
 }
 
 .order-hero__note {
-  background: rgba(218, 225, 237, 0.88);
+  background: rgba(248, 249, 252, 0.88);
   border-radius: 18px;
-  border: 1px solid rgba(235, 192, 204, 0.15);
+  border: 1px solid rgba(219, 226, 239, 0.15);
   padding: 20px;
-  box-shadow: 0 14px 30px rgba(235, 192, 204, 0.2);
+  box-shadow: 0 14px 30px rgba(126, 139, 168, 0.2);
   font-size: 14px;
   color: var(--text-ink);
 }
@@ -133,11 +135,11 @@
 }
 
 .order-package-card {
-  background: rgba(218, 225, 237, 0.94);
+  background: rgba(248, 249, 252, 0.94);
   border-radius: 24px;
-  border: 1px solid rgba(235, 192, 204, 0.18);
+  border: 1px solid rgba(219, 226, 239, 0.18);
   padding: 30px;
-  box-shadow: 0 20px 42px rgba(235, 192, 204, 0.24);
+  box-shadow: 0 20px 42px rgba(200, 207, 223, 0.24);
   display: grid;
   gap: 18px;
 }
@@ -167,14 +169,14 @@
 
 .order-quiz {
   padding: 90px 0;
-  background: linear-gradient(180deg, rgba(218, 225, 237, 0.45), rgba(235, 192, 204, 0.25));
+  background: linear-gradient(180deg, rgba(248, 249, 252, 0.45), rgba(200, 207, 223, 0.25));
 }
 
 .quiz-shell {
-  background: rgba(218, 225, 237, 0.95);
+  background: rgba(248, 249, 252, 0.95);
   border-radius: 28px;
-  border: 1px solid rgba(235, 192, 204, 0.18);
-  box-shadow: 0 22px 48px rgba(235, 192, 204, 0.22);
+  border: 1px solid rgba(219, 226, 239, 0.18);
+  box-shadow: 0 22px 48px rgba(200, 207, 223, 0.22);
   padding: 40px;
 }
 
@@ -187,11 +189,11 @@
 }
 
 .order-intake__inner {
-  background: rgba(218, 225, 237, 0.95);
+  background: rgba(248, 249, 252, 0.95);
   border-radius: 28px;
-  border: 1px solid rgba(235, 192, 204, 0.18);
+  border: 1px solid rgba(219, 226, 239, 0.18);
   padding: 50px;
-  box-shadow: 0 22px 48px rgba(235, 192, 204, 0.24);
+  box-shadow: 0 22px 48px rgba(200, 207, 223, 0.24);
   display: grid;
   gap: 36px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -232,8 +234,8 @@
 .form-row textarea {
   padding: 12px 14px;
   border-radius: 14px;
-  border: 1px solid rgba(235, 192, 204, 0.35);
-  background: rgba(218, 225, 237, 0.95);
+  border: 1px solid rgba(219, 226, 239, 0.35);
+  background: rgba(248, 249, 252, 0.95);
   font-size: 15px;
   color: var(--text-ink);
 }
@@ -266,7 +268,7 @@
   width: 18px;
   height: 18px;
   border-radius: 6px;
-  border: 1px solid rgba(235, 192, 204, 0.35);
+  border: 1px solid rgba(219, 226, 239, 0.35);
 }
 
 .form-actions {
@@ -282,7 +284,7 @@
 
 .order-faq {
   padding: 90px 0;
-  background: linear-gradient(180deg, rgba(218, 225, 237, 0.4), rgba(235, 192, 204, 0.22));
+  background: linear-gradient(180deg, rgba(248, 249, 252, 0.4), rgba(200, 207, 223, 0.22));
 }
 
 .order-faq__grid {
@@ -292,11 +294,11 @@
 }
 
 .order-faq__grid article {
-  background: rgba(218, 225, 237, 0.94);
+  background: rgba(248, 249, 252, 0.94);
   border-radius: 20px;
-  border: 1px solid rgba(235, 192, 204, 0.18);
+  border: 1px solid rgba(219, 226, 239, 0.18);
   padding: 26px;
-  box-shadow: 0 18px 36px rgba(235, 192, 204, 0.22);
+  box-shadow: 0 18px 36px rgba(200, 207, 223, 0.22);
   display: grid;
   gap: 12px;
 }
@@ -341,6 +343,12 @@
     flex-direction: column;
   }
 }
+
+
+
+
+
+
 
 
 

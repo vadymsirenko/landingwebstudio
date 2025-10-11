@@ -52,8 +52,9 @@ body.lock {
 }
 
 .btn-secondary:hover {
-  background: rgba(235, 192, 204, 0.18);
-  color: var(--text-ink-secondary);
+  background: var(--btn);
+  color: var(--btn-text-ink);
+  border-color: transparent;
 }
 
 .i {
@@ -77,5 +78,10 @@ body.lock {
   margin: 20px auto;
   border-radius: 5px;
 }
+
+
+
+
+
 
 

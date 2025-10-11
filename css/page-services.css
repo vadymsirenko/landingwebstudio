@@ -1,8 +1,8 @@
 .services-page {
   background: linear-gradient(
     160deg,
-    rgba(218, 225, 237, 0.9) 0%,
-    rgba(235, 192, 204, 0.9) 100%
+    rgba(248, 249, 252, 0.9) 0%,
+    rgba(219, 226, 239, 0.9) 100%
   );
   color: var(--text-ink);
 }
@@ -55,7 +55,9 @@
 }
 
 .btn-secondary:hover {
-  background: rgba(235, 192, 204, 0.18);
+  background: var(--btn);
+  color: var(--btn-text-ink);
+  border-color: transparent;
 }
 
 .services-hero__pills {
@@ -65,7 +67,7 @@
 }
 
 .services-hero__pills div {
-  background: rgba(218, 225, 237, 0.92);
+  background: rgba(248, 249, 252, 0.92);
   border: 1px solid var(--border);
   border-radius: 18px;
   padding: 20px 22px;
@@ -85,7 +87,7 @@
 }
 
 .services-highlight-card {
-  background: rgba(218, 225, 237, 0.94);
+  background: rgba(248, 249, 252, 0.94);
   border-radius: 24px;
   border: 1px solid var(--border);
   padding: 32px 28px;
@@ -144,7 +146,7 @@
 }
 
 .service-card {
-  background: rgba(218, 225, 237, 0.95);
+  background: rgba(248, 249, 252, 0.95);
   border-radius: 24px;
   border: 1px solid var(--border);
   padding: 32px 28px;
@@ -192,7 +194,7 @@
 }
 
 .services-timeline li {
-  background: rgba(218, 225, 237, 0.92);
+  background: rgba(248, 249, 252, 0.92);
   border-radius: 22px;
   border: 1px solid var(--border);
   padding: 26px;
@@ -206,7 +208,7 @@
   width: 48px;
   height: 48px;
   border-radius: 14px;
-  background: rgba(235, 192, 204, 0.9);
+  background: rgba(219, 226, 239, 0.9);
   display: grid;
   place-items: center;
   color: var(--text-ink-secondary);
@@ -245,7 +247,7 @@
 }
 
 .services-capabilities__grid article {
-  background: rgba(218, 225, 237, 0.92);
+  background: rgba(248, 249, 252, 0.92);
   border-radius: 22px;
   border: 1px solid var(--border);
   padding: 26px;
@@ -289,7 +291,7 @@
 }
 
 .services-proof__stat {
-  background: rgba(218, 225, 237, 0.92);
+  background: rgba(248, 249, 252, 0.92);
   border-radius: 22px;
   border: 1px solid var(--border);
   padding: 24px;
@@ -311,8 +313,8 @@
 .services-cta__inner {
   background: linear-gradient(
       140deg,
-      rgba(218, 225, 237, 0.92),
-      rgba(235, 192, 204, 0.92)
+      rgba(248, 249, 252, 0.92),
+      rgba(219, 226, 239, 0.92)
     );
   border-radius: 26px;
   padding: 60px 40px;
@@ -371,4 +373,10 @@
     flex-direction: column;
   }
 }
+
+
+
+
+
+
 

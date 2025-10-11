@@ -1,8 +1,11 @@
 .home-hero {
   margin-top: 80px;
   padding: 140px 0 90px;
-  background: var(--gradient-main);
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.92) 0%, rgba(226, 233, 245, 0.68) 55%, rgba(10, 16, 28, 0.85) 100%),
+    url("../img/hero3.png") center right/cover no-repeat;
   color: var(--text-ink);
+  position: relative;
 }
 
 .home-hero__inner {

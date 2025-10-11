@@ -113,7 +113,7 @@ h6 {
   --text-ink-secondary: #111c36;
   --text-ink-tertiary: #254264;
   --shadow: rgba(126, 139, 168, 0.12);
-  --border: rgba(126, 139, 168, 0.16);
+  --border: #bf44d4;
   --line: rgba(47, 62, 96, 0.28);
   --accent: #2f3e60;
   --btn: #2f3e60;
@@ -131,6 +131,7 @@ body {
   background: var(--bg);
   overflow-x: hidden;
 }
+
 
 
 

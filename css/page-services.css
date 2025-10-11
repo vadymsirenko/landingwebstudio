@@ -50,14 +50,14 @@
 
 .btn-secondary {
   background: transparent;
-  border: 1px solid var(--btn-border);
+  border: 1px solid var(--border);
   color: var(--btn-border);
 }
 
 .btn-secondary:hover {
   background: var(--btn);
   color: var(--btn-text-ink);
-  border-color: transparent;
+  border-color: var(--border);
 }
 
 .services-hero__pills {
@@ -87,7 +87,7 @@
 }
 
 .services-highlight-card {
-  background: rgba(248, 249, 252, 0.94);
+  background: linear-gradient(232deg,rgba(235, 192, 204, 1) 0%, rgba(218, 225, 237, 1) 100%);
   border-radius: 24px;
   border: 1px solid var(--border);
   padding: 32px 28px;
@@ -146,7 +146,7 @@
 }
 
 .service-card {
-  background: rgba(248, 249, 252, 0.95);
+  background: linear-gradient(232deg,rgba(235, 192, 204, 1) 0%, rgba(218, 225, 237, 1) 100%);
   border-radius: 24px;
   border: 1px solid var(--border);
   padding: 32px 28px;
@@ -373,6 +373,7 @@
     flex-direction: column;
   }
 }
+
 
 
 

@@ -143,7 +143,7 @@
   position: relative;
   overflow: hidden;
   text-align: left;
-  background: var(--card);
+  background: linear-gradient(232deg,rgba(235, 192, 204, 1) 0%, rgba(218, 225, 237, 1) 100%);
 }
 
 .option-card::after {
@@ -167,7 +167,7 @@
 }
 
 .option-card.selected {
-  border: 2px solid var(--text-ink);
+  border: 2px solid var(--border);
   background: var(--accent);
   box-shadow: 0 0 28px var(--shadow);
 }
@@ -220,7 +220,7 @@
   letter-spacing: 0.02em;
   cursor: pointer;
   color: var(--text-ink);
-  border: 1px solid var(--btn-border);
+  border: 1px solid var(--border);
   box-shadow: inset 0 1px 0 var(--shadow);
   backdrop-filter: blur(12px);
 }
@@ -459,6 +459,7 @@
     max-height: 200px;
   }
 }
+
 
 
 

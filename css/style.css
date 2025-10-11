@@ -46,7 +46,7 @@ body.lock {
 
 .btn-secondary {
   background: transparent;
-  border: 1px solid var(--btn-border);
+  border: 1px solid var(--border);
   color: var(--btn-border);
   box-shadow: 0 18px 40px var(--shadow) !important;
 }
@@ -54,13 +54,13 @@ body.lock {
 .btn-secondary:hover {
   background: var(--btn);
   color: var(--btn-text-ink);
-  border-color: transparent;
+  border-color: var(--border);
 }
 
 .i {
   width: 24px;
   height: 24px;
-  fill: var(--border);
+  fill: var(--btn);
 }
 
 .footer-socials {
@@ -78,6 +78,7 @@ body.lock {
   margin: 20px auto;
   border-radius: 5px;
 }
+
 
 
 

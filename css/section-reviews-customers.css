@@ -9,7 +9,7 @@
     rgba(219, 226, 239, 1) 0%,
     rgba(248, 249, 252, 1) 100%
   );
-  border: 1px solid var(--btn);
+  border: 1px solid var(--border);
   border-radius: 15px;
   padding: 70px 20px;
 }
@@ -136,6 +136,7 @@
     bottom: 12px;
   }
 }
+
 
 
 

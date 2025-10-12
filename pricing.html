@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LandingWebStudio - pricing and engagement guide</title>
+    <title>LandingWebStudio - cennik i modele współpracy</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
     <link href="css/swiper-bundle.min.css" rel="stylesheet" />
     <link href="css/reset.css" rel="stylesheet" />
@@ -12,30 +12,151 @@
     <link href="css/footer.css" rel="stylesheet" />
     <link href="css/page-pricing.css" rel="stylesheet" />
   </head>
-  <body class="pricing-page" id="top">
+  <body class="pricing-page" id="top" data-active-lang="pl">
     <header class="site-header">
       <div class="container">
         <div class="header-inner">
-          <a href="index.html" class="logo"
-            ><img class="header-logo" src="img/logo.png" alt="LandingWebStudio logo"
-          /></a>
+          <a href="index.html" class="logo">
+            <img
+              class="header-logo"
+              src="img/logo.png"
+              alt="Logo LandingWebStudio"
+              data-i18n-pl="Logo LandingWebStudio"
+              data-i18n-uk="Логотип LandingWebStudio"
+              data-i18n-en="LandingWebStudio logo"
+              data-i18n-attr="alt"
+            />
+          </a>
           <h2 class="header-title">LandingWebStudio</h2>
           <nav class="nav" id="nav">
             <ul class="nav-list">
-              <li><a href="index.html#cases">Portfolio</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="pricing.html" aria-current="page">Pricing</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contacts.html">Contact</a></li>
+              <li>
+                <a
+                  href="index.html#cases"
+                  data-i18n-pl="Portfolio"
+                  data-i18n-uk="Портфоліо"
+                  data-i18n-en="Portfolio"
+                >
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  data-i18n-pl="Usługi"
+                  data-i18n-uk="Послуги"
+                  data-i18n-en="Services"
+                >
+                  Usługi
+                </a>
+              </li>
+              <li>
+                <a
+                  href="pricing.html"
+                  aria-current="page"
+                  data-i18n-pl="Cennik"
+                  data-i18n-uk="Ціни"
+                  data-i18n-en="Pricing"
+                >
+                  Cennik
+                </a>
+              </li>
+              <li>
+                <a
+                  href="blog.html"
+                  data-i18n-pl="Blog"
+                  data-i18n-uk="Блог"
+                  data-i18n-en="Blog"
+                >
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  data-i18n-pl="O nas"
+                  data-i18n-uk="Про нас"
+                  data-i18n-en="About"
+                >
+                  O nas
+                </a>
+              </li>
+              <li>
+                <a
+                  href="contacts.html"
+                  data-i18n-pl="Kontakt"
+                  data-i18n-uk="Контакти"
+                  data-i18n-en="Contact"
+                >
+                  Kontakt
+                </a>
+              </li>
             </ul>
+            <div
+              class="lang-switcher"
+              aria-label="Wybierz język"
+              data-i18n-pl="Wybierz język"
+              data-i18n-uk="Оберіть мову"
+              data-i18n-en="Choose language"
+              data-i18n-attr="aria-label"
+            >
+              <button
+                type="button"
+                class="lang-switcher__toggle"
+                id="lang-toggle"
+                aria-haspopup="listbox"
+                aria-expanded="false"
+                data-i18n-pl="Zmień język"
+                data-i18n-uk="Змінити мову"
+                data-i18n-en="Change language"
+                data-i18n-attr="aria-label"
+              >
+                PL
+              </button>
+              <ul class="lang-switcher__list" role="listbox">
+                <li>
+                  <button
+                    type="button"
+                    class="lang-switcher__option"
+                    data-lang-option="pl"
+                    aria-selected="true"
+                  >
+                    Polski (PL)
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    class="lang-switcher__option"
+                    data-lang-option="uk"
+                    aria-selected="false"
+                  >
+                    Українська (UA)
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    class="lang-switcher__option"
+                    data-lang-option="en"
+                    aria-selected="false"
+                  >
+                    English (EN)
+                  </button>
+                </li>
+              </ul>
+            </div>
           </nav>
           <button
             class="burger"
             id="burger"
-            aria-label="Toggle navigation"
+            aria-label="Przełącz nawigację"
             aria-controls="nav"
             aria-expanded="false"
+            data-i18n-pl="Przełącz nawigację"
+            data-i18n-uk="Перемкнути навігацію"
+            data-i18n-en="Toggle navigation"
+            data-i18n-attr="aria-label"
           >
             <span></span><span></span><span></span>
           </button>
@@ -47,237 +168,703 @@
       <section class="pricing-hero" aria-labelledby="pricing-hero-title">
         <div class="container pricing-hero__inner">
           <div class="pricing-hero__content">
-            <p class="pricing-hero__eyebrow">Pricing and engagement</p>
-            <h1 id="pricing-hero-title">
-              Transparent packages with room to tailor the perfect partnership
+            <p
+              class="pricing-hero__eyebrow"
+              data-i18n-pl="Cennik i współpraca"
+              data-i18n-uk="Ціни та співпраця"
+              data-i18n-en="Pricing and engagement"
+            >
+              Cennik i współpraca
+            </p>
+            <h1
+              id="pricing-hero-title"
+              data-i18n-pl="Przejrzyste pakiety z przestrzenią na idealną współpracę"
+              data-i18n-uk="Прозорі пакети з можливістю підібрати ідеальну співпрацю"
+              data-i18n-en="Transparent packages with room to tailor the perfect partnership"
+            >
+              Przejrzyste pakiety z przestrzenią na idealną współpracę
             </h1>
-            <p class="pricing-hero__lead">
-              Every collaboration starts with clear expectations on timeline, deliverables,
-              and investment. Pick a track or combine modules to match your business goals.
+            <p
+              class="pricing-hero__lead"
+              data-i18n-pl="Każda współpraca zaczyna się od jasnego harmonogramu, zakresu i inwestycji. Wybierz ścieżkę lub połącz moduły, aby dopasować je do celów biznesowych."
+              data-i18n-uk="Кожна співпраця починається з чіткого таймлайну, обсягу й бюджету. Оберіть трек або поєднайте модулі під свої бізнес-цілі."
+              data-i18n-en="Every collaboration starts with clear expectations on timeline, deliverables, and investment. Pick a track or combine modules to match your business goals."
+            >
+              Każda współpraca zaczyna się od jasnego harmonogramu, zakresu i inwestycji. Wybierz
+              ścieżkę lub połącz moduły, aby dopasować je do celów biznesowych.
             </p>
             <div class="pricing-hero__actions">
-              <a href="#packages" class="btn">Compare packages</a>
-              <a href="contacts.html#contact-form" class="btn btn-secondary"
-                >Request a proposal</a
+              <a
+                href="#packages"
+                class="btn"
+                data-i18n-pl="Porównaj pakiety"
+                data-i18n-uk="Порівняйте пакети"
+                data-i18n-en="Compare packages"
               >
+                Porównaj pakiety
+              </a>
+              <a
+                href="contacts.html#contact-form"
+                class="btn btn-secondary"
+                data-i18n-pl="Poproś o ofertę"
+                data-i18n-uk="Запитайте пропозицію"
+                data-i18n-en="Request a proposal"
+              >
+                Poproś o ofertę
+              </a>
             </div>
           </div>
           <aside class="pricing-hero__aside">
             <div class="pricing-hero__card">
-              <h2>How pricing works</h2>
+              <h2
+                data-i18n-pl="Jak działa wycena"
+                data-i18n-uk="Як працює ціноутворення"
+                data-i18n-en="How pricing works"
+              >
+                Jak działa wycena
+              </h2>
               <ul>
-                <li>Discovery sprint defines scope and milestones</li>
-                <li>Fixed fee packages with optional add ons</li>
-                <li>Flexible retainers for ongoing growth or experiments</li>
-                <li>Transparent invoicing with weekly status updates</li>
+                <li
+                  data-i18n-pl="Sprint discovery określa zakres i kamienie milowe"
+                  data-i18n-uk="Discovery-спринт визначає обсяг та ключові етапи"
+                  data-i18n-en="Discovery sprint defines scope and milestones"
+                >
+                  Sprint discovery określa zakres i kamienie milowe
+                </li>
+                <li
+                  data-i18n-pl="Pakiety o stałej cenie z opcjonalnymi dodatkami"
+                  data-i18n-uk="Пакети з фіксованою ціною та опціональними адонами"
+                  data-i18n-en="Fixed fee packages with optional add ons"
+                >
+                  Pakiety o stałej cenie z opcjonalnymi dodatkami
+                </li>
+                <li
+                  data-i18n-pl="Elastyczne retainery dla wzrostu i eksperymentów"
+                  data-i18n-uk="Гнучкі ретейнери для зростання та експериментів"
+                  data-i18n-en="Flexible retainers for ongoing growth or experiments"
+                >
+                  Elastyczne retainery dla wzrostu i eksperymentów
+                </li>
+                <li
+                  data-i18n-pl="Przejrzyste fakturowanie i cotygodniowe statusy"
+                  data-i18n-uk="Прозоре виставлення рахунків та щотижневі статуси"
+                  data-i18n-en="Transparent invoicing with weekly status updates"
+                >
+                  Przejrzyste fakturowanie i cotygodniowe statusy
+                </li>
               </ul>
             </div>
             <div class="pricing-hero__note">
-              <p>
-                All prices are shown in EUR. Need a quote in USD or another currency? Let us
-                know and we will update the proposal accordingly.
+              <p
+                data-i18n-pl="Wszystkie ceny podajemy w EUR. Potrzebujesz wyceny w USD lub innej walucie? Daj znać, przygotujemy zaktualizowaną propozycję."
+                data-i18n-uk="Усі ціни вказані в EUR. Потрібна оцінка в USD чи іншій валюті? Дайте знати — надішлемо оновлену пропозицію."
+                data-i18n-en="All prices are shown in EUR. Need a quote in USD or another currency? Let us know and we will update the proposal accordingly."
+              >
+                Wszystkie ceny podajemy w EUR. Potrzebujesz wyceny w USD lub innej walucie? Daj
+                znać, przygotujemy zaktualizowaną propozycję.
               </p>
             </div>
           </aside>
         </div>
       </section>
-
       <section class="pricing-packages" id="packages" aria-labelledby="packages-title">
         <div class="container">
           <div class="pricing-section-header">
-            <h2 id="packages-title">Core packages</h2>
-            <p>
-              Designed for the most common project types. Adjust the modules or deliverables
-              during discovery to match your roadmap.
+            <h2
+              id="packages-title"
+              data-i18n-pl="Pakiety podstawowe"
+              data-i18n-uk="Базові пакети"
+              data-i18n-en="Core packages"
+            >
+              Pakiety podstawowe
+            </h2>
+            <p
+              data-i18n-pl="Przygotowane pod najczęstsze typy projektów. Podczas discovery możemy dopasować moduły i deliverables do Twojej roadmapy."
+              data-i18n-uk="Створені для найпоширеніших типів проєктів. Під час discovery ми адаптуємо модулі й deliverables під вашу дорожню карту."
+              data-i18n-en="Designed for the most common project types. Adjust the modules or deliverables during discovery to match your roadmap."
+            >
+              Przygotowane pod najczęstsze typy projektów. Podczas discovery możemy dopasować moduły
+              i deliverables do Twojej roadmapy.
             </p>
           </div>
           <div class="pricing-packages__grid">
             <article class="pricing-card">
               <header>
-                <h3>Launch accelerator</h3>
-                <p>One landing page or microsite with conversion ready storytelling.</p>
+                <h3
+                  data-i18n-pl="Launch Accelerator"
+                  data-i18n-uk="Launch Accelerator"
+                  data-i18n-en="Launch accelerator"
+                >
+                  Launch Accelerator
+                </h3>
+                <p
+                  data-i18n-pl="Landing page lub mikrosite z narracją nastawioną na konwersje."
+                  data-i18n-uk="Лендінг або мікросайт із конверсійним сторітелінгом."
+                  data-i18n-en="One landing page or microsite with conversion ready storytelling."
+                >
+                  Landing page lub mikrosite z narracją nastawioną na konwersje.
+                </p>
               </header>
               <ul>
-                <li>Strategy session and messaging sprint</li>
-                <li>UX wireframes, copywriting, and visual design</li>
-                <li>Build in Webflow or Framer with analytics setup</li>
-                <li>Two rounds of iteration and launch checklist</li>
+                <li
+                  data-i18n-pl="Sesja strategiczna i sprint messagingowy"
+                  data-i18n-uk="Стратегічна сесія та спринт з меседжингу"
+                  data-i18n-en="Strategy session and messaging sprint"
+                >
+                  Sesja strategiczna i sprint messagingowy
+                </li>
+                <li
+                  data-i18n-pl="UX, copywriting i projekt wizualny"
+                  data-i18n-uk="UX, копірайтинг і візуальний дизайн"
+                  data-i18n-en="UX wireframes, copywriting, and visual design"
+                >
+                  UX, copywriting i projekt wizualny
+                </li>
+                <li
+                  data-i18n-pl="Wdrożenie w Webflow lub Framer + analityka"
+                  data-i18n-uk="Реалізація у Webflow чи Framer + аналітика"
+                  data-i18n-en="Build in Webflow or Framer with analytics setup"
+                >
+                  Wdrożenie w Webflow lub Framer + analityka
+                </li>
+                <li
+                  data-i18n-pl="Dwie rundy iteracji i lista launchowa"
+                  data-i18n-uk="Два раунди ітерацій та launch-чекліст"
+                  data-i18n-en="Two rounds of iteration and launch checklist"
+                >
+                  Dwie rundy iteracji i lista launchowa
+                </li>
               </ul>
               <footer>
-                <span class="pricing-card__price">From EUR 3 200</span>
-                <span class="pricing-card__meta">Timeline: 3-4 weeks</span>
+                <span
+                  class="pricing-card__price"
+                  data-i18n-pl="od 3 200 EUR"
+                  data-i18n-uk="від 3 200 EUR"
+                  data-i18n-en="From EUR 3 200"
+                >
+                  od 3 200 EUR
+                </span>
+                <span
+                  class="pricing-card__meta"
+                  data-i18n-pl="Czas: 3-4 tygodnie"
+                  data-i18n-uk="Термін: 3‑4 тижні"
+                  data-i18n-en="Timeline: 3-4 weeks"
+                >
+                  Czas: 3-4 tygodnie
+                </span>
               </footer>
             </article>
             <article class="pricing-card">
               <header>
-                <h3>Product website</h3>
-                <p>Multi page site, design system, and dev ready assets or implementation.</p>
+                <h3
+                  data-i18n-pl="Product Website"
+                  data-i18n-uk="Product Website"
+                  data-i18n-en="Product website"
+                >
+                  Product Website
+                </h3>
+                <p
+                  data-i18n-pl="Wielostronicowa strona, design system i assety gotowe do wdrożenia."
+                  data-i18n-uk="Багатосторінковий сайт, дизайн-система та ассети, готові до впровадження."
+                  data-i18n-en="Multi page site, design system, and dev ready assets or implementation."
+                >
+                  Wielostronicowa strona, design system i assety gotowe do wdrożenia.
+                </p>
               </header>
               <ul>
-                <li>Audience research and sitemap architecture</li>
-                <li>Design system, content production, and interactions</li>
-                <li>Development in Webflow, Next.js, or your stack</li>
-                <li>SEO foundations, performance tuning, documentation</li>
+                <li
+                  data-i18n-pl="Badanie odbiorców i architektura informacji"
+                  data-i18n-uk="Дослідження аудиторії та інформаційна архітектура"
+                  data-i18n-en="Audience research and sitemap architecture"
+                >
+                  Badanie odbiorców i architektura informacji
+                </li>
+                <li
+                  data-i18n-pl="Design system wraz z biblioteką komponentów"
+                  data-i18n-uk="Дизайн-система з бібліотекою компонентів"
+                  data-i18n-en="Design system with component library"
+                >
+                  Design system wraz z biblioteką komponentów
+                </li>
+                <li
+                  data-i18n-pl="Copy, sekcje i zasoby wizualne w spójnym stylu"
+                  data-i18n-uk="Копірайт, секції та візуали в єдиному стилі"
+                  data-i18n-en="Copy, section layout, and visual assets"
+                >
+                  Copy, sekcje i zasoby wizualne w spójnym stylu
+                </li>
+                <li
+                  data-i18n-pl="Integracje CRM, CMS oraz automaty marketingowe"
+                  data-i18n-uk="Інтеграції CRM, CMS та маркетингові автомати"
+                  data-i18n-en="CRM, CMS, and marketing automation integrations"
+                >
+                  Integracje CRM, CMS oraz automaty marketingowe
+                </li>
+                <li
+                  data-i18n-pl="Pełne wdrożenie lub przekazanie do zespołu dev"
+                  data-i18n-uk="Повне впровадження або хендовер у dev-команду"
+                  data-i18n-en="Full implementation or dev handoff"
+                >
+                  Pełne wdrożenie lub przekazanie do zespołu dev
+                </li>
               </ul>
               <footer>
-                <span class="pricing-card__price">From EUR 7 800</span>
-                <span class="pricing-card__meta">Timeline: 6-8 weeks</span>
+                <span
+                  class="pricing-card__price"
+                  data-i18n-pl="od 6 500 EUR"
+                  data-i18n-uk="від 6 500 EUR"
+                  data-i18n-en="From EUR 6 500"
+                >
+                  od 6 500 EUR
+                </span>
+                <span
+                  class="pricing-card__meta"
+                  data-i18n-pl="Czas: 6-8 tygodni"
+                  data-i18n-uk="Термін: 6‑8 тижнів"
+                  data-i18n-en="Timeline: 6-8 weeks"
+                >
+                  Czas: 6-8 tygodni
+                </span>
               </footer>
             </article>
             <article class="pricing-card">
               <header>
-                <h3>Growth retainer</h3>
-                <p>Experiment roadmap, optimisation, and continuous design support.</p>
+                <h3
+                  data-i18n-pl="Growth Partner"
+                  data-i18n-uk="Growth Partner"
+                  data-i18n-en="Growth partner"
+                >
+                  Growth Partner
+                </h3>
+                <p
+                  data-i18n-pl="Retainer nastawiony na backlog eksperymentów i optymalizację."
+                  data-i18n-uk="Ретейнер, сфокусований на беклозі експериментів та оптимізації."
+                  data-i18n-en="Retainer focused on experiment backlog and optimisation."
+                >
+                  Retainer nastawiony na backlog eksperymentów i optymalizację.
+                </p>
               </header>
               <ul>
-                <li>Prioritised backlog aligned with revenue goals</li>
-                <li>Monthly design and build cycles with analytics reviews</li>
-                <li>Design system and component maintenance</li>
-                <li>Quarterly strategy workshops and roadmap refresh</li>
+                <li
+                  data-i18n-pl="Mapa hipotez i kalendarz testów A/B"
+                  data-i18n-uk="Карта гіпотез і календар A/B тестів"
+                  data-i18n-en="Hypothesis roadmap and A/B testing plan"
+                >
+                  Mapa hipotez i kalendarz testów A/B
+                </li>
+                <li
+                  data-i18n-pl="Optymalizacja lejka, onboarding i retencja"
+                  data-i18n-uk="Оптимізація воронки, онбордингу та ретенції"
+                  data-i18n-en="Funnel optimisation, onboarding, and retention"
+                >
+                  Optymalizacja lejka, onboarding i retencja
+                </li>
+                <li
+                  data-i18n-pl="Produkcja materiałów wspierających kampanie"
+                  data-i18n-uk="Виробництво матеріалів для підтримки кампаній"
+                  data-i18n-en="Supporting assets for campaigns"
+                >
+                  Produkcja materiałów wspierających kampanie
+                </li>
+                <li
+                  data-i18n-pl="Stałe monitorowanie KPI i raportowanie wyników"
+                  data-i18n-uk="Постійний моніторинг KPI та звітування результатів"
+                  data-i18n-en="Ongoing KPI monitoring and reporting"
+                >
+                  Stałe monitorowanie KPI i raportowanie wyników
+                </li>
               </ul>
               <footer>
-                <span class="pricing-card__price">From EUR 2 200 per month</span>
-                <span class="pricing-card__meta">Minimum term: 3 months</span>
+                <span
+                  class="pricing-card__price"
+                  data-i18n-pl="od 2 400 EUR / mies."
+                  data-i18n-uk="від 2 400 EUR / міс."
+                  data-i18n-en="From EUR 2 400 / month"
+                >
+                  od 2 400 EUR / mies.
+                </span>
+                <span
+                  class="pricing-card__meta"
+                  data-i18n-pl="Retainer: min. 3 miesiące"
+                  data-i18n-uk="Ретейнер: мінімум 3 місяці"
+                  data-i18n-en="Retainer: min. 3 months"
+                >
+                  Retainer: min. 3 miesiące
+                </span>
               </footer>
             </article>
           </div>
         </div>
       </section>
-
       <section class="pricing-addons" aria-labelledby="addons-title">
         <div class="container">
           <div class="pricing-section-header">
-            <h2 id="addons-title">Popular add ons</h2>
-            <p>
-              Extend any package with specialised modules. We will price these during
-              discovery once we understand the scope.
+            <h2
+              id="addons-title"
+              data-i18n-pl="Moduły do rozbudowy"
+              data-i18n-uk="Модулі для розширення"
+              data-i18n-en="Add-on modules"
+            >
+              Moduły do rozbudowy
+            </h2>
+            <p
+              data-i18n-pl="Połącz pakiety z dodatkowymi usługami, aby przyspieszyć content, marketing lub migrację platformy."
+              data-i18n-uk="Поєднайте пакети з додатковими сервісами, щоб прискорити контент, маркетинг чи міграцію платформи."
+              data-i18n-en="Combine packages with additional services to accelerate content, marketing, or platform migration."
+            >
+              Połącz pakiety z dodatkowymi usługami, aby przyspieszyć content, marketing lub migrację
+              platformy.
             </p>
           </div>
           <div class="pricing-addons__grid">
             <article>
-              <h3>Content lab</h3>
-              <p>Article series, gated assets, and nurture flows for your inbound engine.</p>
+              <h3
+                data-i18n-pl="Content & Thought Leadership"
+                data-i18n-uk="Контент та thought leadership"
+                data-i18n-en="Content & Thought Leadership"
+              >
+                Content & Thought Leadership
+              </h3>
+              <p
+                data-i18n-pl="Strategia redakcyjna, narracje sprzedażowe i aktywa launchowe."
+                data-i18n-uk="Редакційна стратегія, sales-нейративи та launch-активи."
+                data-i18n-en="Editorial strategy, sales narratives, and launch assets."
+              >
+                Strategia redakcyjna, narracje sprzedażowe i aktywa launchowe.
+              </p>
               <ul>
-                <li>Editorial strategy and brand voice guide</li>
-                <li>Monthly content calendar and production</li>
-                <li>Marketing automation and lead capture setup</li>
+                <li
+                  data-i18n-pl="Przewodniki, artykuły i case studies"
+                  data-i18n-uk="Гіди, статті та кейс-стаді"
+                  data-i18n-en="Guides, articles, and case studies"
+                >
+                  Przewodniki, artykuły i case studies
+                </li>
+                <li
+                  data-i18n-pl="Newslettery, social media i sekwencje kampanii"
+                  data-i18n-uk="Розсилки, соціальні мережі та послідовності кампаній"
+                  data-i18n-en="Newsletters, social, and campaign sequences"
+                >
+                  Newslettery, social media i sekwencje kampanii
+                </li>
+                <li
+                  data-i18n-pl="Automaty marketingowe i lead capture"
+                  data-i18n-uk="Маркетингові автомати та lead capture"
+                  data-i18n-en="Marketing automation and lead capture"
+                >
+                  Automaty marketingowe i lead capture
+                </li>
               </ul>
             </article>
             <article>
-              <h3>Product marketing toolkit</h3>
-              <p>Messaging, sales enablement, and launch assets aligned with your GTM.</p>
+              <h3
+                data-i18n-pl="Product Marketing Toolkit"
+                data-i18n-uk="Product Marketing Toolkit"
+                data-i18n-en="Product Marketing Toolkit"
+              >
+                Product Marketing Toolkit
+              </h3>
+              <p
+                data-i18n-pl="Messaging, enablement i materiały launchowe spójne z Twoim GTM."
+                data-i18n-uk="Меседжинг, enablement і launch-матеріали, узгоджені з вашим GTM."
+                data-i18n-en="Messaging, enablement, and launch assets aligned with your GTM."
+              >
+                Messaging, enablement i materiały launchowe spójne z Twoim GTM.
+              </p>
               <ul>
-                <li>Pitch decks, one pagers, and solution briefs</li>
-                <li>Feature adoption announcements and playbooks</li>
-                <li>Demo scripts and product walkthrough videos</li>
+                <li
+                  data-i18n-pl="Decki sprzedażowe, one-pagery i solution briefy"
+                  data-i18n-uk="Sales-деки, one-pagery та solution brief'и"
+                  data-i18n-en="Pitch decks, one pagers, and solution briefs"
+                >
+                  Decki sprzedażowe, one-pagery i solution briefy
+                </li>
+                <li
+                  data-i18n-pl="Playbooki adopcji funkcji i announcementy"
+                  data-i18n-uk="Плейбуки adopції функцій та announcement-и"
+                  data-i18n-en="Feature adoption playbooks and announcements"
+                >
+                  Playbooki adopcji funkcji i announcementy
+                </li>
+                <li
+                  data-i18n-pl="Scenariusze demo i materiały video"
+                  data-i18n-uk="Сценарії демо та відеоматеріали"
+                  data-i18n-en="Demo scripts and walkthrough videos"
+                >
+                  Scenariusze demo i materiały video
+                </li>
               </ul>
             </article>
             <article>
-              <h3>Platform migration</h3>
-              <p>Move from legacy CMS or ecommerce stack into a modern setup.</p>
+              <h3
+                data-i18n-pl="Platform Migration"
+                data-i18n-uk="Platform Migration"
+                data-i18n-en="Platform migration"
+              >
+                Platform Migration
+              </h3>
+              <p
+                data-i18n-pl="Migracja z legacy CMS lub ecommerce do nowoczesnego stacku."
+                data-i18n-uk="Міграція з legacy CMS чи ecommerce до сучасного стеку."
+                data-i18n-en="Move from legacy CMS or ecommerce stack into a modern setup."
+              >
+                Migracja z legacy CMS lub ecommerce do nowoczesnego stacku.
+              </p>
               <ul>
-                <li>Audit of existing content, SEO, and integrations</li>
-                <li>Migration plan with risk mitigation and QA</li>
-                <li>Training and documentation for your internal team</li>
+                <li
+                  data-i18n-pl="Audyt treści, SEO i integracji"
+                  data-i18n-uk="Аудит контенту, SEO та інтеграцій"
+                  data-i18n-en="Audit of content, SEO, and integrations"
+                >
+                  Audyt treści, SEO i integracji
+                </li>
+                <li
+                  data-i18n-pl="Plan migracji z zarządzaniem ryzykiem"
+                  data-i18n-uk="План міграції з управлінням ризиками"
+                  data-i18n-en="Migration plan with risk mitigation and QA"
+                >
+                  Plan migracji z zarządzaniem ryzykiem
+                </li>
+                <li
+                  data-i18n-pl="Szkolenia i dokumentacja dla zespołu"
+                  data-i18n-uk="Навчання та документація для команди"
+                  data-i18n-en="Training and documentation for your internal team"
+                >
+                  Szkolenia i dokumentacja dla zespołu
+                </li>
               </ul>
             </article>
           </div>
         </div>
       </section>
-
       <section class="pricing-process" aria-labelledby="process-title">
         <div class="container">
           <div class="pricing-section-header">
-            <h2 id="process-title">Engagement roadmap</h2>
-            <p>
-              Four phases keep projects transparent, collaborative, and measurable from day
-              one.
+            <h2
+              id="process-title"
+              data-i18n-pl="Mapa współpracy"
+              data-i18n-uk="Дорожня карта співпраці"
+              data-i18n-en="Engagement roadmap"
+            >
+              Mapa współpracy
+            </h2>
+            <p
+              data-i18n-pl="Cztery fazy utrzymują projekty w transparentnym, współpracującym i mierzalnym rytmie od pierwszego dnia."
+              data-i18n-uk="Чотири фази тримають проєкти прозорими, скоординованими та вимірюваними з першого дня."
+              data-i18n-en="Four phases keep projects transparent, collaborative, and measurable from day one."
+            >
+              Cztery fazy utrzymują projekty w transparentnym, współpracującym i mierzalnym rytmie od
+              pierwszego dnia.
             </p>
           </div>
           <ol class="pricing-process__timeline">
             <li>
               <span class="timeline-step">01</span>
               <div>
-                <h3>Discovery</h3>
-                <p>Kick off workshop, analytics review, stakeholder interviews, and scope confirmation.</p>
+                <h3
+                  data-i18n-pl="Discovery"
+                  data-i18n-uk="Discovery"
+                  data-i18n-en="Discovery"
+                >
+                  Discovery
+                </h3>
+                <p
+                  data-i18n-pl="Warsztat kick-off, przegląd analityki, wywiady i doprecyzowanie zakresu."
+                  data-i18n-uk="Kick-off воркшоп, аналіз аналітики, інтерв'ю та уточнення обсягу."
+                  data-i18n-en="Kick off workshop, analytics review, stakeholder interviews, and scope confirmation."
+                >
+                  Warsztat kick-off, przegląd analityki, wywiady i doprecyzowanie zakresu.
+                </p>
               </div>
             </li>
             <li>
               <span class="timeline-step">02</span>
               <div>
-                <h3>Design</h3>
-                <p>UX, content, and UI delivery in weekly sprints with feedback checkpoints.</p>
+                <h3
+                  data-i18n-pl="Design"
+                  data-i18n-uk="Design"
+                  data-i18n-en="Design"
+                >
+                  Design
+                </h3>
+                <p
+                  data-i18n-pl="UX, content i UI w tygodniowych sprintach z punktami feedbacku."
+                  data-i18n-uk="UX, контент і UI в тижневих спринтах із точками фідбеку."
+                  data-i18n-en="UX, content, and UI delivery in weekly sprints with feedback checkpoints."
+                >
+                  UX, content i UI w tygodniowych sprintach z punktami feedbacku.
+                </p>
               </div>
             </li>
             <li>
               <span class="timeline-step">03</span>
               <div>
-                <h3>Build</h3>
-                <p>Implementation, QA, performance tuning, automation, and analytics setup.</p>
+                <h3
+                  data-i18n-pl="Build"
+                  data-i18n-uk="Build"
+                  data-i18n-en="Build"
+                >
+                  Build
+                </h3>
+                <p
+                  data-i18n-pl="Implementacja, QA, optymalizacja, automatyzacje i analityka."
+                  data-i18n-uk="Впровадження, QA, оптимізація, автомати та аналітика."
+                  data-i18n-en="Implementation, QA, performance tuning, automation, and analytics setup."
+                >
+                  Implementacja, QA, optymalizacja, automatyzacje i analityka.
+                </p>
               </div>
             </li>
             <li>
               <span class="timeline-step">04</span>
               <div>
-                <h3>Launch and grow</h3>
-                <p>Rollout support, training, experiment planning, and performance reporting.</p>
+                <h3
+                  data-i18n-pl="Launch & Grow"
+                  data-i18n-uk="Launch & Grow"
+                  data-i18n-en="Launch and grow"
+                >
+                  Launch & Grow
+                </h3>
+                <p
+                  data-i18n-pl="Wsparcie rollout'u, szkolenia, plan eksperymentów i raportowanie wyników."
+                  data-i18n-uk="Підтримка запуску, навчання, план експериментів і звітування результатів."
+                  data-i18n-en="Rollout support, training, experiment planning, and performance reporting."
+                >
+                  Wsparcie rollout'u, szkolenia, plan eksperymentów i raportowanie wyników.
+                </p>
               </div>
             </li>
           </ol>
         </div>
       </section>
-
       <section class="pricing-faq" aria-labelledby="faq-title">
         <div class="container">
           <div class="pricing-section-header">
-            <h2 id="faq-title">FAQs</h2>
-            <p>Answers to the most common questions about pricing and collaboration.</p>
+            <h2
+              id="faq-title"
+              data-i18n-pl="Najczęstsze pytania"
+              data-i18n-uk="Поширені питання"
+              data-i18n-en="FAQs"
+            >
+              Najczęstsze pytania
+            </h2>
+            <p
+              data-i18n-pl="Odpowiedzi na najczęściej zadawane pytania o cennik i współpracę."
+              data-i18n-uk="Відповіді на найчастіші питання про ціни та співпрацю."
+              data-i18n-en="Answers to the most common questions about pricing and collaboration."
+            >
+              Odpowiedzi na najczęściej zadawane pytania o cennik i współpracę.
+            </p>
           </div>
           <div class="pricing-faq__grid">
             <article>
-              <h3>Is discovery billed separately?</h3>
-              <p>
-                Discovery is rolled into every package. If you only need a strategy sprint we
-                can scope that as a stand alone engagement starting at EUR 1 500.
+              <h3
+                data-i18n-pl="Czy discovery jest rozliczane osobno?"
+                data-i18n-uk="Чи оплачується discovery окремо?"
+                data-i18n-en="Is discovery billed separately?"
+              >
+                Czy discovery jest rozliczane osobno?
+              </h3>
+              <p
+                data-i18n-pl="Discovery jest częścią każdego pakietu. Jeśli potrzebujesz tylko sprintu strategicznego, możemy wycenić go osobno od 1 500 EUR."
+                data-i18n-uk="Discovery входить до кожного пакета. Якщо вам потрібен лише стратегічний спринт, можемо порахувати його окремо від 1 500 EUR."
+                data-i18n-en="Discovery is rolled into every package. If you only need a strategy sprint we can scope that as a stand alone engagement starting at EUR 1 500."
+              >
+                Discovery jest częścią każdego pakietu. Jeśli potrzebujesz tylko sprintu
+                strategicznego, możemy wycenić go osobno od 1 500 EUR.
               </p>
             </article>
             <article>
-              <h3>What happens if we need extra iterations?</h3>
-              <p>
-                Each package includes structured review cycles. Additional rounds can be
-                added at a predictable day rate or bundled into a retainer.
+              <h3
+                data-i18n-pl="Co jeśli potrzebujemy dodatkowych iteracji?"
+                data-i18n-uk="Що, якщо потрібні додаткові ітерації?"
+                data-i18n-en="What happens if we need extra iterations?"
+              >
+                Co jeśli potrzebujemy dodatkowych iteracji?
+              </h3>
+              <p
+                data-i18n-pl="Każdy pakiet ma zaplanowane cykle review. Dodatkowe rundy możemy wycenić w oparciu o stawkę dzienną lub dodać do retainera."
+                data-i18n-uk="Кожен пакет містить структуровані review. Додаткові раунди можна додати за простою денною ставкою або включити в ретейнер."
+                data-i18n-en="Each package includes structured review cycles. Additional rounds can be added at a predictable day rate or bundled into a retainer."
+              >
+                Każdy pakiet ma zaplanowane cykle review. Dodatkowe rundy możemy wycenić w oparciu o
+                stawkę dzienną lub dodać do retainera.
               </p>
             </article>
             <article>
-              <h3>Do you work with internal teams?</h3>
-              <p>
-                Yes. We integrate with in house designers, developers, and marketers. Shared
-                channels and weekly syncs keep everyone aligned.
+              <h3
+                data-i18n-pl="Czy współpracujecie z zespołami in-house?"
+                data-i18n-uk="Чи працюєте з внутрішніми командами?"
+                data-i18n-en="Do you work with internal teams?"
+              >
+                Czy współpracujecie z zespołami in-house?
+              </h3>
+              <p
+                data-i18n-pl="Tak. Integrujemy się z projektantami, developerami i marketerami po stronie klienta. Wspólne kanały i tygodniowe syncy utrzymują spójność."
+                data-i18n-uk="Так. Ми інтегруємося з дизайнерами, девелоперами й маркетологами з вашої сторони. Спільні канали та щотижневі синки тримають усіх у курсі."
+                data-i18n-en="Yes. We integrate with in house designers, developers, and marketers. Shared channels and weekly syncs keep everyone aligned."
+              >
+                Tak. Integrujemy się z projektantami, developerami i marketerami po stronie klienta.
+                Wspólne kanały i tygodniowe syncy utrzymują spójność.
               </p>
             </article>
             <article>
-              <h3>Can we start small?</h3>
-              <p>
-                Absolutely. Many clients begin with a single landing page or audit before
-                expanding into a larger site or retainer partnership.
+              <h3
+                data-i18n-pl="Czy możemy zacząć małym zakresem?"
+                data-i18n-uk="Чи можемо почати з малого?"
+                data-i18n-en="Can we start small?"
+              >
+                Czy możemy zacząć małym zakresem?
+              </h3>
+              <p
+                data-i18n-pl="Oczywiście. Wielu klientów zaczyna od jednego landing page'a lub audytu zanim rozszerzy współpracę na większy projekt czy retainer."
+                data-i18n-uk="Звісно. Багато клієнтів стартують із одного лендінгу чи аудиту перед масштабуванням до більшого проєкту або ретейнера."
+                data-i18n-en="Absolutely. Many clients begin with a single landing page or audit before expanding into a larger site or retainer partnership."
+              >
+                Oczywiście. Wielu klientów zaczyna od jednego landing page'a lub audytu zanim rozszerzy
+                współpracę na większy projekt czy retainer.
               </p>
             </article>
           </div>
         </div>
       </section>
-
       <section class="pricing-cta" aria-labelledby="pricing-cta-title">
         <div class="container pricing-cta__inner">
-          <h2 id="pricing-cta-title">Ready to map your project?</h2>
-          <p>
-            Share a few details about your goals and constraints. We will recommend the best
-            package, add ons, and timeline based on your priorities.
+          <h2
+            id="pricing-cta-title"
+            data-i18n-pl="Gotowi zaplanować projekt?"
+            data-i18n-uk="Готові спланувати проєкт?"
+            data-i18n-en="Ready to map your project?"
+          >
+            Gotowi zaplanować projekt?
+          </h2>
+          <p
+            data-i18n-pl="Podziel się celami i ograniczeniami. Zarekomendujemy najlepszy pakiet, dodatki i timeline dopasowane do priorytetów."
+            data-i18n-uk="Поділіться цілями та обмеженнями. Ми порекомендуємо оптимальний пакет, адони та таймлайн під ваші пріоритети."
+            data-i18n-en="Share a few details about your goals and constraints. We will recommend the best package, add ons, and timeline based on your priorities."
+          >
+            Podziel się celami i ograniczeniami. Zarekomendujemy najlepszy pakiet, dodatki i timeline
+            dopasowane do priorytetów.
           </p>
           <div class="pricing-cta__actions">
-            <a href="orderasite.html#intake" class="btn">Start intake form</a>
-            <a href="mailto:hello@landingwebstudio.com" class="btn btn-secondary"
-              >Email the team</a
+            <a
+              href="orderasite.html#intake"
+              class="btn"
+              data-i18n-pl="Rozpocznij formularz"
+              data-i18n-uk="Почати форму"
+              data-i18n-en="Start intake form"
             >
+              Rozpocznij formularz
+            </a>
+            <a
+              href="mailto:hello@landingwebstudio.com"
+              class="btn btn-secondary"
+              data-i18n-pl="Napisz do zespołu"
+              data-i18n-uk="Напишіть команді"
+              data-i18n-en="Email the team"
+            >
+              Napisz do zespołu
+            </a>
           </div>
         </div>
       </section>
@@ -316,8 +903,15 @@
         </ul>
       </div>
       <p>
-        &copy; <span id="y"></span> LandingWebStudio. Pricing subject to project scope. Reach
-        out for a tailored proposal.
+        &copy; <span id="y"></span> LandingWebStudio.
+        <span
+          class="footer-note"
+          data-i18n-pl="Cennik zależy od zakresu projektu. Skontaktuj się, aby otrzymać dopasowaną ofertę."
+          data-i18n-uk="Ціна залежить від обсягу проєкту. Напишіть нам, щоб отримати індивідуальну пропозицію."
+          data-i18n-en="Pricing depends on project scope. Reach out for a tailored proposal."
+        >
+          Cennik zależy od zakresu projektu. Skontaktuj się, aby otrzymać dopasowaną ofertę.
+        </span>
       </p>
     </footer>
     <script src="js/swiper-bundle.min.js"></script>

@@ -93,7 +93,6 @@
             </ul>
             <div
               class="lang-switcher"
-              role="group"
               aria-label="Wybierz język"
               data-i18n-pl="Wybierz język"
               data-i18n-uk="Оберіть мову"
@@ -102,28 +101,49 @@
             >
               <button
                 type="button"
-                class="lang-switcher__btn active"
-                data-lang-switcher="pl"
-                aria-pressed="true"
+                class="lang-switcher__toggle"
+                id="lang-toggle"
+                aria-haspopup="listbox"
+                aria-expanded="false"
+                data-i18n-pl="Zmień język"
+                data-i18n-uk="Змінити мову"
+                data-i18n-en="Change language"
+                data-i18n-attr="aria-label"
               >
                 PL
               </button>
-              <button
-                type="button"
-                class="lang-switcher__btn"
-                data-lang-switcher="uk"
-                aria-pressed="false"
-              >
-                UA
-              </button>
-              <button
-                type="button"
-                class="lang-switcher__btn"
-                data-lang-switcher="en"
-                aria-pressed="false"
-              >
-                EN
-              </button>
+              <ul class="lang-switcher__list" role="listbox">
+                <li>
+                  <button
+                    type="button"
+                    class="lang-switcher__option"
+                    data-lang-option="pl"
+                    aria-selected="true"
+                  >
+                    Polski (PL)
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    class="lang-switcher__option"
+                    data-lang-option="uk"
+                    aria-selected="false"
+                  >
+                    Українська (UA)
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    class="lang-switcher__option"
+                    data-lang-option="en"
+                    aria-selected="false"
+                  >
+                    English (EN)
+                  </button>
+                </li>
+              </ul>
             </div>
           </nav>
           <button

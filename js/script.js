@@ -22,6 +22,58 @@ const translationNodes = document.querySelectorAll(
   "[data-i18n-pl], [data-i18n-uk], [data-i18n-en]"
 );
 
+const langSwitcher = document.querySelector(".lang-switcher");
+const langToggle = document.getElementById("lang-toggle");
+const langOptionButtons = langSwitcher
+  ? Array.from(langSwitcher.querySelectorAll("[data-lang-option]"))
+  : [];
+
+const LANG_LABELS = {
+  pl: "PL",
+  uk: "UA",
+  en: "EN",
+};
+
+const updateLangSwitcher = (language) => {
+  if (!langToggle) {
+    return;
+  }
+
+  langToggle.textContent = LANG_LABELS[language] || language.toUpperCase();
+
+  langOptionButtons.forEach((button) => {
+    const optionLang = button.dataset.langOption;
+    const isActive = optionLang === language;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-selected", isActive ? "true" : "false");
+    if (isActive) {
+      button.hidden = true;
+      button.setAttribute("tabindex", "-1");
+    } else {
+      button.hidden = false;
+      button.removeAttribute("tabindex");
+    }
+  });
+};
+
+const closeLangList = () => {
+  if (!langSwitcher || !langToggle) {
+    return;
+  }
+  langSwitcher.classList.remove("open");
+  langToggle.setAttribute("aria-expanded", "false");
+};
+
+const openLangList = () => {
+  if (!langSwitcher || !langToggle) {
+    return;
+  }
+  langSwitcher.classList.add("open");
+  langToggle.setAttribute("aria-expanded", "true");
+  const focusableOption = langOptionButtons.find((btn) => !btn.hidden);
+  focusableOption?.focus();
+};
+
 const applyLanguage = (requestedLang) => {
   const language = SUPPORTED_LANGS.includes(requestedLang) ? requestedLang : DEFAULT_LANG;
 
@@ -49,12 +101,8 @@ const applyLanguage = (requestedLang) => {
 
   document.documentElement.lang = language;
   body?.setAttribute("data-active-lang", language);
-
-  document.querySelectorAll("[data-lang-switcher]").forEach((btn) => {
-    const isActive = btn.dataset.langSwitcher === language;
-    btn.classList.toggle("active", isActive);
-    btn.setAttribute("aria-pressed", isActive ? "true" : "false");
-  });
+  updateLangSwitcher(language);
+  closeLangList();
 
   const nextTitle = DOCUMENT_TITLES[language] ?? DOCUMENT_TITLES[DEFAULT_LANG];
   if (nextTitle) {
@@ -94,9 +142,21 @@ const resolveInitialLanguage = () => {
 
 applyLanguage(resolveInitialLanguage());
 
-document.querySelectorAll("[data-lang-switcher]").forEach((button) => {
+langToggle?.addEventListener("click", () => {
+  if (!langSwitcher) {
+    return;
+  }
+  const isOpen = langSwitcher.classList.contains("open");
+  if (isOpen) {
+    closeLangList();
+  } else {
+    openLangList();
+  }
+});
+
+langOptionButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    const targetLanguage = button.dataset.langSwitcher;
+    const targetLanguage = button.dataset.langOption;
     if (!targetLanguage) {
       return;
     }
@@ -109,7 +169,28 @@ document.querySelectorAll("[data-lang-switcher]").forEach((button) => {
       body?.classList.remove("lock");
       burger?.setAttribute("aria-expanded", "false");
     }
+
+    langToggle?.focus();
   });
+});
+
+document.addEventListener("click", (event) => {
+  if (!langSwitcher || !langToggle) {
+    return;
+  }
+
+  if (event.target === langToggle || langSwitcher.contains(event.target)) {
+    return;
+  }
+
+  closeLangList();
+});
+
+langSwitcher?.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeLangList();
+    langToggle?.focus();
+  }
 });
 
 burger?.addEventListener("click", () => {

@@ -1,8 +1,11 @@
 .home-hero {
   margin-top: 80px;
   padding: 140px 0 90px;
-  background: var(--gradient-main);
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.92) 0%, rgba(226, 233, 245, 0.68) 55%, rgba(10, 16, 28, 0.85) 100%),
+    url("../img/hero3.png") center right/cover no-repeat;
   color: var(--text-ink);
+  position: relative;
 }
 
 .home-hero__inner {
@@ -293,12 +296,15 @@
 
 .chip:hover,
 .chip:focus-visible {
-  background: var(--card);
+  background: var(--btn);
+  color: var(--btn-text-ink);
+  border-color: transparent;
   transform: translateY(-2px);
 }
 
 .chip--active {
   background: var(--btn);
+  border: 1px solid var(--border);
   color: var(--btn-text-ink);
   border-color: transparent;
 }
@@ -322,8 +328,8 @@
 
 .case-card img {
   width: 100%;
-  height: 190px;
-  object-fit: cover;
+  height: 150px;
+  object-fit: fill;
   border-radius: 20px;
 }
 
@@ -333,6 +339,7 @@
   gap: 12px;
   align-items: center;
   text-align: center;
+  justify-content: space-between;
   flex: 1;
 }
 
@@ -397,6 +404,7 @@
   display: grid;
   gap: 16px;
   text-align: center;
+  height: 350px;
 }
 
 .testimonial-card__person {

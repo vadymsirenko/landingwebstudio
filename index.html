@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LandingWebStudio - digital experiences that convert</title>
+    <title>LandingWebStudio - cyfrowe doświadczenia, które konwertują</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
     <link href="css/swiper-bundle.min.css" rel="stylesheet" />
     <link href="css/reset.css" rel="stylesheet" />
@@ -12,30 +12,77 @@
     <link href="css/footer.css" rel="stylesheet" />
     <link href="css/page-home.css" rel="stylesheet" />
   </head>
-  <body id="top">
+  <body id="top" data-active-lang="pl">
     <header class="site-header">
       <div class="container">
         <div class="header-inner">
-          <a href="index.html" class="logo"
-            ><img class="header-logo" src="img/logo.png" alt="LandingWebStudio logo"
-          /></a>
+          <a href="index.html" class="logo">
+            <img
+              class="header-logo"
+              src="img/logo.png"
+              alt="Logo LandingWebStudio"
+              data-i18n-pl="Logo LandingWebStudio"
+              data-i18n-uk="Логотип LandingWebStudio"
+              data-i18n-attr="alt"
+            />
+          </a>
           <h2 class="header-title">LandingWebStudio</h2>
           <nav class="nav" id="nav">
             <ul class="nav-list">
-              <li><a href="#cases">Portfolio</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="pricing.html">Pricing</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contacts.html">Contact</a></li>
+              <li>
+                <a href="#cases" data-i18n-pl="Portfolio" data-i18n-uk="Портфоліо">Portfolio</a>
+              </li>
+              <li>
+                <a href="services.html" data-i18n-pl="Usługi" data-i18n-uk="Послуги">Usługi</a>
+              </li>
+              <li>
+                <a href="pricing.html" data-i18n-pl="Cennik" data-i18n-uk="Ціни">Cennik</a>
+              </li>
+              <li>
+                <a href="blog.html" data-i18n-pl="Blog" data-i18n-uk="Блог">Blog</a>
+              </li>
+              <li>
+                <a href="about.html" data-i18n-pl="O nas" data-i18n-uk="Про нас">O nas</a>
+              </li>
+              <li>
+                <a href="contacts.html" data-i18n-pl="Kontakt" data-i18n-uk="Контакти">Kontakt</a>
+              </li>
             </ul>
+            <div
+              class="lang-switcher"
+              role="group"
+              aria-label="Wybierz język"
+              data-i18n-pl="Wybierz język"
+              data-i18n-uk="Оберіть мову"
+              data-i18n-attr="aria-label"
+            >
+              <button
+                type="button"
+                class="lang-switcher__btn active"
+                data-lang-switcher="pl"
+                aria-pressed="true"
+              >
+                PL
+              </button>
+              <button
+                type="button"
+                class="lang-switcher__btn"
+                data-lang-switcher="uk"
+                aria-pressed="false"
+              >
+                UA
+              </button>
+            </div>
           </nav>
           <button
             class="burger"
             id="burger"
-            aria-label="Toggle navigation"
+            aria-label="Przełącz nawigację"
             aria-controls="nav"
             aria-expanded="false"
+            data-i18n-pl="Przełącz nawigację"
+            data-i18n-uk="Перемкнути навігацію"
+            data-i18n-attr="aria-label"
           >
             <span></span><span></span><span></span>
           </button>
@@ -47,89 +94,205 @@
       <section class="home-hero" aria-labelledby="home-hero-title">
         <div class="container home-hero__inner">
           <div class="home-hero__content">
-            <p class="home-hero__eyebrow">Digital studio</p>
+            <p
+              class="home-hero__eyebrow"
+              data-i18n-pl="Studio cyfrowe"
+              data-i18n-uk="Цифрова студія"
+            >
+              Studio cyfrowe
+            </p>
             <div class="swiper mySwiper" aria-live="polite">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <h1 id="home-hero-title">
-                    Web experiences that move the metrics your team cares about
+                  <h1
+                    id="home-hero-title"
+                    data-i18n-pl="Doświadczenia webowe, które poruszają metryki ważne dla Twojego zespołu"
+                    data-i18n-uk="Вебдосвіди, що рухають метрики, важливі для вашої команди"
+                  >
+                    Doświadczenia webowe, które poruszają metryki ważne dla Twojego zespołu
                   </h1>
-                  <p>
-                    LandingWebStudio blends strategy, UX, and development to launch
-                    conversion-led websites, product stories, and campaign pages.
+                  <p
+                    data-i18n-pl="LandingWebStudio łączy strategię, UX i development, aby uruchamiać konwersyjne strony, historie produktów oraz strony kampanii."
+                    data-i18n-uk="LandingWebStudio поєднує стратегію, UX та розробку, щоб запускати сайти з фокусом на конверсію, історії продуктів і кампанійні сторінки."
+                  >
+                    LandingWebStudio łączy strategię, UX i development, aby uruchamiać
+                    konwersyjne strony, historie produktów oraz strony kampanii.
                   </p>
                 </div>
                 <div class="swiper-slide">
-                  <h1>From MVP launch to growth engine</h1>
-                  <p>
-                    Whether it is a fundraising narrative or an inbound funnel, we design
-                    the journey, create the content, and build the stack end-to-end.
+                  <h1
+                    data-i18n-pl="Od startu MVP po silnik wzrostu"
+                    data-i18n-uk="Від запуску MVP до двигуна зростання"
+                  >
+                    Od startu MVP po silnik wzrostu
+                  </h1>
+                  <p
+                    data-i18n-pl="Niezależnie czy tworzysz narrację pod rundę finansowania, czy lejki inbound, projektujemy podróż użytkownika, tworzymy treści i budujemy cały stos od A do Z."
+                    data-i18n-uk="Чи це історія для залучення інвестицій, чи вхідний воронок, ми проектуємо шлях, створюємо контент і збираємо стек від початку до кінця."
+                  >
+                    Niezależnie czy tworzysz narrację pod rundę finansowania, czy lejki inbound,
+                    projektujemy podróż użytkownika, tworzymy treści i budujemy cały stos od A do Z.
                   </p>
                 </div>
                 <div class="swiper-slide">
-                  <h1>Design, content, and build in one sprint-ready team</h1>
-                  <p>
-                    We partner with founders, marketing leads, and product teams to ship
-                    measurable outcomes, not just pretty visuals.
+                  <h1
+                    data-i18n-pl="Design, content i development w jednym zespole gotowym na sprint"
+                    data-i18n-uk="Дизайн, контент і розробка в одній команді, готовій до спринтів"
+                  >
+                    Design, content i development w jednym zespole gotowym na sprint
+                  </h1>
+                  <p
+                    data-i18n-pl="Współpracujemy z founderami, liderami marketingu i zespołami produktowymi, żeby dowozić mierzalne rezultaty, a nie tylko ładne wizualizacje."
+                    data-i18n-uk="Працюємо з засновниками, маркетинг-лідерами та продуктовими командами, щоб постачати вимірювані результати, а не лише гарні картинки."
+                  >
+                    Współpracujemy z founderami, liderami marketingu i zespołami produktowymi,
+                    żeby dowozić mierzalne rezultaty, a nie tylko ładne wizualizacje.
                   </p>
                 </div>
               </div>
             </div>
             <div class="home-hero__cta">
-              <a href="contacts.html#contact-form" class="btn">Plan a discovery call</a>
-              <a href="services.html" class="btn btn-secondary">Explore services</a>
+              <a
+                href="contacts.html#contact-form"
+                class="btn"
+                data-i18n-pl="Umów rozmowę odkrywczą"
+                data-i18n-uk="Заплануйте ознайомчу розмову"
+              >
+                Umów rozmowę odkrywczą
+              </a>
+              <a
+                href="services.html"
+                class="btn btn-secondary"
+                data-i18n-pl="Poznaj usługi"
+                data-i18n-uk="Перегляньте послуги"
+              >
+                Poznaj usługi
+              </a>
             </div>
             <dl class="home-hero__pillars">
               <div>
-                <dt>Strategy first</dt>
-                <dd>Messaging workshops, user research, and KPI alignment</dd>
+                <dt
+                  data-i18n-pl="Strategia na pierwszym miejscu"
+                  data-i18n-uk="Стратегія передусім"
+                >
+                  Strategia na pierwszym miejscu
+                </dt>
+                <dd
+                  data-i18n-pl="Warsztaty messagingowe, badania użytkowników i uzgadnianie KPI"
+                  data-i18n-uk="Меседжингові воркшопи, дослідження користувачів та узгодження KPI"
+                >
+                  Warsztaty messagingowe, badania użytkowników i uzgadnianie KPI
+                </dd>
               </div>
               <div>
-                <dt>Design systems</dt>
-                <dd>Reusable components and documentation for faster releases</dd>
+                <dt data-i18n-pl="Systemy projektowe" data-i18n-uk="Дизайн-системи">
+                  Systemy projektowe
+                </dt>
+                <dd
+                  data-i18n-pl="Wielorazowe komponenty i dokumentacja dla szybszych wdrożeń"
+                  data-i18n-uk="Повторно використовувані компоненти й документація для швидших релізів"
+                >
+                  Wielorazowe komponenty i dokumentacja dla szybszych wdrożeń
+                </dd>
               </div>
               <div>
-                <dt>Launch ready</dt>
-                <dd>No-code or code implementation with automation and analytics</dd>
+                <dt data-i18n-pl="Gotowość do startu" data-i18n-uk="Готовність до запуску">
+                  Gotowość do startu
+                </dt>
+                <dd
+                  data-i18n-pl="Implementacja no-code lub kodowa z automatyzacją i analityką"
+                  data-i18n-uk="Реалізація без коду або з кодом з автоматизацією та аналітикою"
+                >
+                  Implementacja no-code lub kodowa z automatyzacją i analityką
+                </dd>
               </div>
             </dl>
           </div>
-          <aside class="home-hero__stats" aria-label="Key results">
+          <aside
+            class="home-hero__stats"
+            aria-label="Kluczowe wyniki"
+            data-i18n-pl="Kluczowe wyniki"
+            data-i18n-uk="Ключові результати"
+            data-i18n-attr="aria-label"
+          >
             <ul>
               <li class="stat-card">
                 <span class="stat-card__value">62%</span>
-                <span class="stat-card__label">Increase in demo bookings</span>
+                <span
+                  class="stat-card__label"
+                  data-i18n-pl="Wzrost liczby rezerwacji demo"
+                  data-i18n-uk="Збільшення записів на демо"
+                >
+                  Wzrost liczby rezerwacji demo
+                </span>
               </li>
               <li class="stat-card">
                 <span class="stat-card__value">38%</span>
-                <span class="stat-card__label">Bounce rate drop post relaunch</span>
+                <span
+                  class="stat-card__label"
+                  data-i18n-pl="Spadek współczynnika odrzuceń po relaunchu"
+                  data-i18n-uk="Зниження показника відмов після реланчу"
+                >
+                  Spadek współczynnika odrzuceń po relaunchu
+                </span>
               </li>
               <li class="stat-card">
                 <span class="stat-card__value">4.9/5</span>
-                <span class="stat-card__label">Client satisfaction score</span>
+                <span
+                  class="stat-card__label"
+                  data-i18n-pl="Ocena satysfakcji klientów"
+                  data-i18n-uk="Оцінка задоволеності клієнтів"
+                >
+                  Ocena satysfakcji klientów
+                </span>
               </li>
               <li class="stat-card">
                 <span class="stat-card__value">3.5x</span>
-                <span class="stat-card__label">Faster iteration cycle</span>
+                <span
+                  class="stat-card__label"
+                  data-i18n-pl="Szybszy cykl iteracji"
+                  data-i18n-uk="Швидший цикл ітерацій"
+                >
+                  Szybszy cykl iteracji
+                </span>
               </li>
             </ul>
           </aside>
         </div>
       </section>
-
       <section class="home-clients" aria-labelledby="clients-title">
         <div class="container">
           <header class="home-section-header">
-            <h2 id="clients-title">Trusted by teams across industries</h2>
-            <p>We partner with founders, marketing leads, and product squads in EU & UK.</p>
+            <h2
+              id="clients-title"
+              data-i18n-pl="Zaufanie zespołów z wielu branż"
+              data-i18n-uk="Нам довіряють команди з різних галузей"
+            >
+              Zaufanie zespołów z wielu branż
+            </h2>
+            <p
+              data-i18n-pl="Współpracujemy z founderami, liderami marketingu i zespołami produktowymi w UE i Wielkiej Brytanii."
+              data-i18n-uk="Співпрацюємо із засновниками, маркетинг-лідерами та продуктовими командами в ЄС та Великій Британії."
+            >
+              Współpracujemy z founderami, liderami marketingu i zespołami produktowymi w UE i
+              Wielkiej Brytanii.
+            </p>
           </header>
-          <ul class="home-clients__logos" aria-label="Industries we work with">
+          <ul
+            class="home-clients__logos"
+            aria-label="Branże, z którymi pracujemy"
+            data-i18n-pl="Branże, z którymi pracujemy"
+            data-i18n-uk="Галузі, з якими ми працюємо"
+            data-i18n-attr="aria-label"
+          >
             <li>Fintech</li>
             <li>HealthTech</li>
             <li>SaaS</li>
             <li>E-commerce</li>
-            <li>Professional services</li>
-            <li>Education</li>
+            <li data-i18n-pl="Usługi profesjonalne" data-i18n-uk="Професійні послуги">
+              Usługi profesjonalne
+            </li>
+            <li data-i18n-pl="Edukacja" data-i18n-uk="Освіта">Edukacja</li>
           </ul>
         </div>
       </section>
@@ -137,38 +300,84 @@
       <section class="home-services" aria-labelledby="services-preview-title">
         <div class="container">
           <header class="home-section-header">
-            <h2 id="services-preview-title">How we can help</h2>
-            <p>
-              Shaping positioning, crafting UX, running experiments, and keeping everything
-              measurable from day one.
+            <h2
+              id="services-preview-title"
+              data-i18n-pl="Jak możemy pomóc"
+              data-i18n-uk="Як ми можемо допомогти"
+            >
+              Jak możemy pomóc
+            </h2>
+            <p
+              data-i18n-pl="Tworzymy pozycjonowanie, projektujemy UX, prowadzimy eksperymenty i dbamy o mierzalność od pierwszego dnia."
+              data-i18n-uk="Формуємо позиціонування, проектуємо UX, запускаємо експерименти та робимо все вимірюваним з першого дня."
+            >
+              Tworzymy pozycjonowanie, projektujemy UX, prowadzimy eksperymenty i dbamy o
+              mierzalność od pierwszego dnia.
             </p>
           </header>
           <ul class="home-services__grid">
             <li class="home-service-card">
-              <h3>Launch accelerators</h3>
-              <p>
-                MVP and campaign landings, copywriting, automation, and analytics setup to
-                kickstart demand generation quickly.
-              </p>
-              <a href="services.html" class="home-service-card__link">View packages</a>
-            </li>
-            <li class="home-service-card">
-              <h3>Product websites</h3>
-              <p>
-                Multi-page experiences with conversion-optimised architecture, design
-                systems, and dev-ready handoff or implementation.
-              </p>
-              <a href="services.html#packages-title" class="home-service-card__link"
-                >See what's inside</a
+              <h3
+                data-i18n-pl="Przyspieszacze startu"
+                data-i18n-uk="Прискорювачі запуску"
               >
+                Przyspieszacze startu
+              </h3>
+              <p
+                data-i18n-pl="Landing page'e MVP i kampanijne, copywriting, automatyzacja oraz konfiguracja analityki, aby szybko uruchomić generowanie popytu."
+                data-i18n-uk="Лендінги для MVP і кампаній, копірайтинг, автоматизація та налаштування аналітики, щоб швидко запустити генерацію попиту."
+              >
+                Landing page'e MVP i kampanijne, copywriting, automatyzacja oraz konfiguracja
+                analityki, aby szybko uruchomić generowanie popytu.
+              </p>
+              <a
+                href="services.html"
+                class="home-service-card__link"
+                data-i18n-pl="Zobacz pakiety"
+                data-i18n-uk="Перегляньте пакети"
+              >
+                Zobacz pakiety
+              </a>
             </li>
             <li class="home-service-card">
-              <h3>Growth optimisation</h3>
-              <p>
-                Experiment roadmaps, CRO, and performance improvements to keep your funnel
-                learning and iterating every month.
+              <h3 data-i18n-pl="Strony produktowe" data-i18n-uk="Продуктові сайти">
+                Strony produktowe
+              </h3>
+              <p
+                data-i18n-pl="Wielostronicowe doświadczenia z architekturą nastawioną na konwersję, systemami projektowymi i przekazaniem do wdrożenia lub implementacją."
+                data-i18n-uk="Багатосторінкові досвіди з архітектурою, оптимізованою під конверсію, дизайн-системами та передачею в розробку або реалізацією."
+              >
+                Wielostronicowe doświadczenia z architekturą nastawioną na konwersję, systemami
+                projektowymi i przekazaniem do wdrożenia lub implementacją.
               </p>
-              <a href="contacts.html" class="home-service-card__link">Book a strategy chat</a>
+              <a
+                href="services.html#packages-title"
+                class="home-service-card__link"
+                data-i18n-pl="Zobacz, co zawiera"
+                data-i18n-uk="Дізнайтесь, що всередині"
+              >
+                Zobacz, co zawiera
+              </a>
+            </li>
+            <li class="home-service-card">
+              <h3 data-i18n-pl="Optymalizacja wzrostu" data-i18n-uk="Оптимізація зростання">
+                Optymalizacja wzrostu
+              </h3>
+              <p
+                data-i18n-pl="Mapy eksperymentów, CRO i usprawnienia wydajności, aby Twój lejek uczył się i iterował każdego miesiąca."
+                data-i18n-uk="Дорожні карти експериментів, CRO та покращення продуктивності, щоб ваша воронка навчалася й ітерувалася щомісяця."
+              >
+                Mapy eksperymentów, CRO i usprawnienia wydajności, aby Twój lejek uczył się i
+                iterował każdego miesiąca.
+              </p>
+              <a
+                href="contacts.html"
+                class="home-service-card__link"
+                data-i18n-pl="Umów rozmowę strategiczną"
+                data-i18n-uk="Заплануйте стратегічну розмову"
+              >
+                Umów rozmowę strategiczną
+              </a>
             </li>
           </ul>
         </div>
@@ -177,187 +386,369 @@
       <section class="home-process" aria-labelledby="process-title">
         <div class="container">
           <header class="home-section-header">
-            <h2 id="process-title">A process built for clarity and velocity</h2>
-            <p>
-              Every engagement follows a transparent cadence so you always know what is in
-              progress, what's next, and how success is tracked.
+            <h2
+              id="process-title"
+              data-i18n-pl="Proces stworzony dla jasności i szybkości"
+              data-i18n-uk="Процес, створений для прозорості й темпу"
+            >
+              Proces stworzony dla jasności i szybkości
+            </h2>
+            <p
+              data-i18n-pl="Każda współpraca podąża za przejrzystym rytmem, więc zawsze wiesz, co jest w toku, co dalej i jak mierzymy sukces."
+              data-i18n-uk="Кожна співпраця йде прозорим ритмом, тож ви завжди знаєте, що в роботі, що далі і як вимірюємо успіх."
+            >
+              Każda współpraca podąża za przejrzystym rytmem, więc zawsze wiesz, co jest w toku,
+              co dalej i jak mierzymy sukces.
             </p>
           </header>
           <ol class="home-process__timeline">
             <li>
               <span class="timeline-step">01</span>
               <div>
-                <h3>Discover</h3>
-                <p>We dive into goals, audience insights, existing data, and success metrics.</p>
+                <h3 data-i18n-pl="Odkryj" data-i18n-uk="Відкриття">Odkryj</h3>
+                <p
+                  data-i18n-pl="Zagłębiamy się w cele, insighty o odbiorcach, istniejące dane i metryki sukcesu."
+                  data-i18n-uk="Занурюємося в цілі, інсайти про аудиторію, наявні дані та метрики успіху."
+                >
+                  Zagłębiamy się w cele, insighty o odbiorcach, istniejące dane i metryki sukcesu.
+                </p>
               </div>
             </li>
             <li>
               <span class="timeline-step">02</span>
               <div>
-                <h3>Design</h3>
-                <p>Strategy, UX, and content come together with weekly reviews to stay aligned.</p>
+                <h3 data-i18n-pl="Projektuj" data-i18n-uk="Дизайн">Projektuj</h3>
+                <p
+                  data-i18n-pl="Strategia, UX i treści powstają razem, z cotygodniowymi przeglądami, aby utrzymać zgodność."
+                  data-i18n-uk="Стратегія, UX і контент створюються разом із щотижневими рев'ю, щоб залишатися синхронними."
+                >
+                  Strategia, UX i treści powstają razem, z cotygodniowymi przeglądami, aby utrzymać
+                  zgodność.
+                </p>
               </div>
             </li>
             <li>
               <span class="timeline-step">03</span>
               <div>
-                <h3>Build</h3>
-                <p>Implementation in Webflow, React, or your stack with QA, automation, and analytics.</p>
+                <h3 data-i18n-pl="Buduj" data-i18n-uk="Розробляй">Buduj</h3>
+                <p
+                  data-i18n-pl="Implementacja w Webflow, React lub Twoim stacku wraz z QA, automatyzacją i analityką."
+                  data-i18n-uk="Реалізація у Webflow, React або вашому стеку з QA, автоматизацією та аналітикою."
+                >
+                  Implementacja w Webflow, React lub Twoim stacku wraz z QA, automatyzacją i
+                  analityką.
+                </p>
               </div>
             </li>
             <li>
               <span class="timeline-step">04</span>
               <div>
-                <h3>Grow</h3>
-                <p>Launch, measure, experiment, and scale with a backlog focused on ROI.</p>
+                <h3 data-i18n-pl="Wzrastaj" data-i18n-uk="Зростай">Wzrastaj</h3>
+                <p
+                  data-i18n-pl="Uruchamiamy, mierzymy, eksperymentujemy i skalujemy z backlogiem nastawionym na ROI."
+                  data-i18n-uk="Запускаємо, вимірюємо, експериментуємо та масштабуємо з беклогом, сфокусованим на ROI."
+                >
+                  Uruchamiamy, mierzymy, eksperymentujemy i skalujemy z backlogiem nastawionym na
+                  ROI.
+                </p>
               </div>
             </li>
           </ol>
         </div>
       </section>
-
       <section class="home-cases" id="cases" aria-labelledby="cases-title">
         <div class="container">
           <header class="home-section-header">
-            <h2 id="cases-title">Selected collaborations</h2>
-            <p>Highlights from recent work launching new ideas and reinventing established brands.</p>
+            <h2
+              id="cases-title"
+              data-i18n-pl="Wybrane współprace"
+              data-i18n-uk="Відібрані колаборації"
+            >
+              Wybrane współprace
+            </h2>
+            <p
+              data-i18n-pl="Najważniejsze projekty z ostatnich wdrożeń nowych pomysłów i odświeżania dojrzałych marek."
+              data-i18n-uk="Головні кейси з останніх запусків нових ідей та переосмислення відомих брендів."
+            >
+              Najważniejsze projekty z ostatnich wdrożeń nowych pomysłów i odświeżania dojrzałych
+              marek.
+            </p>
           </header>
-          <div class="home-cases__filters" role="group" aria-label="Filter by project type">
-            <button class="chip chip--active" type="button">All</button>
-            <button class="chip" type="button">Landings</button>
-            <button class="chip" type="button">Corporate</button>
-            <button class="chip" type="button">E-commerce</button>
+          <div
+            class="home-cases__filters"
+            role="group"
+            aria-label="Filtruj według typu projektu"
+            data-i18n-pl="Filtruj według typu projektu"
+            data-i18n-uk="Фільтруйте за типом проєкту"
+            data-i18n-attr="aria-label"
+          >
+            <button class="chip chip--active" type="button" data-i18n-pl="Wszystkie" data-i18n-uk="Усі">
+              Wszystkie
+            </button>
+            <button class="chip" type="button" data-i18n-pl="Landingi" data-i18n-uk="Лендінги">
+              Landingi
+            </button>
+            <button class="chip" type="button" data-i18n-pl="Korporacyjne" data-i18n-uk="Корпоративні">
+              Korporacyjne
+            </button>
+            <button class="chip" type="button" data-i18n-pl="E-commerce" data-i18n-uk="E-commerce">
+              E-commerce
+            </button>
           </div>
           <div class="home-cases__grid">
             <article class="case-card">
-              <img src="img/lending0.jpg" alt="Landing page for wellness startup" />
+              <img
+                src="img/lending0.jpg"
+                alt="Strona docelowa dla startupu wellness"
+                data-i18n-pl="Strona docelowa dla startupu wellness"
+                data-i18n-uk="Лендінг для wellness-стартапу"
+                data-i18n-attr="alt"
+              />
               <div class="case-card__body">
-                <h3>Wellness startup launch</h3>
-                <p>
-                  Crafted a benefits-led narrative, designed the UX, and shipped a Webflow build
-                  integrated with HubSpot and Zapier automations.
+                <h3
+                  data-i18n-pl="Start wellnessowego startupu"
+                  data-i18n-uk="Запуск wellness-стартапу"
+                >
+                  Start wellnessowego startupu
+                </h3>
+                <p
+                  data-i18n-pl="Stworzyliśmy narrację opartą na korzyściach, zaprojektowaliśmy UX i wdrożyliśmy stronę w Webflow z integracją HubSpot i automatyzacjami Zapier."
+                  data-i18n-uk="Створили наратив, зосереджений на вигодах, спроєктували UX та запустили сайт у Webflow з інтеграціями HubSpot і автоматизаціями Zapier."
+                >
+                  Stworzyliśmy narrację opartą na korzyściach, zaprojektowaliśmy UX i wdrożyliśmy
+                  stronę w Webflow z integracją HubSpot i automatyzacjami Zapier.
                 </p>
-                <p class="case-card__tag">Сайт-візитка</p>
+                <p
+                  class="case-card__tag"
+                  data-i18n-pl="Webflow • Automatyzacje"
+                  data-i18n-uk="Webflow • Автоматизації"
+                >
+                  Webflow • Automatyzacje
+                </p>
                 <a
                   href="https://podologkalisz.com"
                   target="_blank"
                   rel="noopener"
                   class="case-card__button"
-                  >Короткий опис роботи</a
+                  data-i18n-pl="Zobacz case study"
+                  data-i18n-uk="Переглянути кейс"
                 >
+                  Zobacz case study
+                </a>
                 <a
                   href="https://podologkalisz.com"
                   target="_blank"
                   rel="noopener"
                   class="case-card__site"
-                  >podologkalisz.com</a
                 >
+                  podologkalisz.com
+                </a>
               </div>
             </article>
             <article class="case-card">
-              <img src="img/lending1.jpg" alt="Healthcare services website redesign" />
+              <img
+                src="img/lending1.jpg"
+                alt="Przebudowa strony usług medycznych"
+                data-i18n-pl="Przebudowa strony usług medycznych"
+                data-i18n-uk="Редизайн сайту медичних послуг"
+                data-i18n-attr="alt"
+              />
               <div class="case-card__body">
-                <h3>Healthcare services relaunch</h3>
-                <p>
-                  Rebuilt the site architecture, refreshed the brand system, and implemented the
-                  experience in React with multilingual support.
+                <h3
+                  data-i18n-pl="Relaunch usług medycznych"
+                  data-i18n-uk="Релаунч медичних послуг"
+                >
+                  Relaunch usług medycznych
+                </h3>
+                <p
+                  data-i18n-pl="Przebudowaliśmy architekturę strony, odświeżyliśmy system identyfikacji i wdrożyliśmy doświadczenie w React z wielojęzycznym wsparciem."
+                  data-i18n-uk="Перебудували архітектуру сайту, оновили систему бренду та реалізували рішення в React із багатомовною підтримкою."
+                >
+                  Przebudowaliśmy architekturę strony, odświeżyliśmy system identyfikacji i
+                  wdrożyliśmy doświadczenie w React z wielojęzycznym wsparciem.
                 </p>
-                <p class="case-card__tag">Лендінг</p>
+                <p
+                  class="case-card__tag"
+                  data-i18n-pl="React • Wielojęzyczność"
+                  data-i18n-uk="React • Багатомовність"
+                >
+                  React • Wielojęzyczność
+                </p>
                 <a
                   href="https://sterylizacjanarzendzi.pl/"
                   target="_blank"
                   rel="noopener"
                   class="case-card__button"
-                  >Короткий опис роботи</a
+                  data-i18n-pl="Zobacz case study"
+                  data-i18n-uk="Переглянути кейс"
                 >
+                  Zobacz case study
+                </a>
                 <a
                   href="https://sterylizacjanarzendzi.pl/"
                   target="_blank"
                   rel="noopener"
                   class="case-card__site"
-                  >sterylizacjanarzendzi.pl</a
                 >
+                  sterylizacjanarzendzi.pl
+                </a>
               </div>
             </article>
             <article class="case-card">
-              <img src="img/lending2.jpg" alt="Marketplace platform product showcase" />
+              <img
+                src="img/lending2.jpg"
+                alt="Prezentacja produktu platformy marketplace"
+                data-i18n-pl="Prezentacja produktu platformy marketplace"
+                data-i18n-uk="Презентація продукту маркетплейс-платформи"
+                data-i18n-attr="alt"
+              />
               <div class="case-card__body">
-                <h3>Marketplace product story</h3>
-                <p>
-                  Delivered a conversion-focused marketing site with scripted demo walkthrough,
-                  interactive pricing, and performance-friendly build.
+                <h3
+                  data-i18n-pl="Historia produktu marketplace'u"
+                  data-i18n-uk="Історія продукту маркетплейсу"
+                >
+                  Historia produktu marketplace'u
+                </h3>
+                <p
+                  data-i18n-pl="Dostarczyliśmy marketingową stronę nastawioną na konwersję ze scenariuszem demo, interaktywnym cennikiem i lekką implementacją."
+                  data-i18n-uk="Доставили маркетинговий сайт, сфокусований на конверсії, зі сценарієм демо, інтерактивним прайсом та продуктивною реалізацією."
+                >
+                  Dostarczyliśmy marketingową stronę nastawioną na konwersję ze scenariuszem demo,
+                  interaktywnym cennikiem i lekką implementacją.
                 </p>
-                <p class="case-card__tag">Корпоративний сайт</p>
+                <p
+                  class="case-card__tag"
+                  data-i18n-pl="Strona marketingowa • Wydajność"
+                  data-i18n-uk="Маркетинг-сайт • Продуктивність"
+                >
+                  Strona marketingowa • Wydajność
+                </p>
                 <a
                   href="https://sterylizacjanarzendzi.pl/"
                   target="_blank"
                   rel="noopener"
                   class="case-card__button"
-                  >Короткий опис роботи</a
+                  data-i18n-pl="Zobacz case study"
+                  data-i18n-uk="Переглянути кейс"
                 >
+                  Zobacz case study
+                </a>
                 <a
                   href="https://sterylizacjanarzendzi.pl/"
                   target="_blank"
                   rel="noopener"
                   class="case-card__site"
-                  >sterylizacjanarzendzi.pl</a
                 >
+                  sterylizacjanarzendzi.pl
+                </a>
               </div>
             </article>
           </div>
         </div>
       </section>
-
       <section class="home-testimonials" aria-labelledby="testimonials-title">
         <div class="container">
           <header class="home-section-header">
-            <h2 id="testimonials-title">Clients about our partnership</h2>
-            <p>Real feedback from teams who entrust us with their launches and growth cycles.</p>
+            <h2
+              id="testimonials-title"
+              data-i18n-pl="Klienci o naszej współpracy"
+              data-i18n-uk="Клієнти про нашу співпрацю"
+            >
+              Klienci o naszej współpracy
+            </h2>
+            <p
+              data-i18n-pl="Rzeczywiste opinie zespołów, które powierzają nam starty i wzrost."
+              data-i18n-uk="Реальні відгуки команд, які довіряють нам запуски та зростання."
+            >
+              Rzeczywiste opinie zespołów, które powierzają nam starty i wzrost.
+            </p>
           </header>
           <div class="swiper reviewsSwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="testimonial-card">
                   <div class="testimonial-card__person">
-                    <img src="img/person.jpg" alt="Portrait of Anna Kowalska" />
+                    <img
+                      src="img/person.jpg"
+                      alt="Portret Anny Kowalskiej"
+                      data-i18n-pl="Portret Anny Kowalskiej"
+                      data-i18n-uk="Портрет Анни Ковальської"
+                      data-i18n-attr="alt"
+                    />
                     <div>
                       <strong>Anna Kowalska</strong>
-                      <span>VP Marketing, HealthBridge</span>
+                      <span
+                        data-i18n-pl="VP Marketing, HealthBridge"
+                        data-i18n-uk="VP Marketing, HealthBridge"
+                      >
+                        VP Marketing, HealthBridge
+                      </span>
                     </div>
                   </div>
-                  <p>
-                    "The team translated a complex product story into a website that keeps
-                    generating qualified leads every week. Their process is structured yet flexible."
+                  <p
+                    data-i18n-pl="Zespół przełożył złożoną historię produktu na stronę, która co tydzień dostarcza kwalifikowane leady. Ich proces jest uporządkowany, a jednocześnie elastyczny."
+                    data-i18n-uk="Команда перетворила складну історію продукту на сайт, який щотижня приносить кваліфіковані ліди. Їхній процес структурований, але гнучкий."
+                  >
+                    Zespół przełożył złożoną historię produktu na stronę, która co tydzień dostarcza
+                    kwalifikowane leady. Ich proces jest uporządkowany, a jednocześnie elastyczny.
                   </p>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="testimonial-card">
                   <div class="testimonial-card__person">
-                    <img src="img/person.jpg" alt="Portrait of Marek Nowak" />
+                    <img
+                      src="img/person.jpg"
+                      alt="Portret Marka Nowaka"
+                      data-i18n-pl="Portret Marka Nowaka"
+                      data-i18n-uk="Портрет Марека Новака"
+                      data-i18n-attr="alt"
+                    />
                     <div>
                       <strong>Marek Nowak</strong>
-                      <span>Co-founder, AutomateIQ</span>
+                      <span
+                        data-i18n-pl="Współzałożyciel, AutomateIQ"
+                        data-i18n-uk="Співзасновник, AutomateIQ"
+                      >
+                        Współzałożyciel, AutomateIQ
+                      </span>
                     </div>
                   </div>
-                  <p>
-                    "We went from blank page to launch in under a month. LandingWebStudio handled
-                    research, design, copy, and build while keeping everyone in the loop."
+                  <p
+                    data-i18n-pl="Od pustej kartki do startu w niecały miesiąc. LandingWebStudio poprowadziło badania, design, copy i development, trzymając wszystkich w bieżącej informacji."
+                    data-i18n-uk="Ми пройшли шлях від чистого аркуша до запуску менш ніж за місяць. LandingWebStudio взяла на себе дослідження, дизайн, копірайт і розробку, тримаючи всіх у курсі."
+                  >
+                    Od pustej kartki do startu w niecały miesiąc. LandingWebStudio poprowadziło
+                    badania, design, copy i development, trzymając wszystkich w bieżącej informacji.
                   </p>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="testimonial-card">
                   <div class="testimonial-card__person">
-                    <img src="img/person.jpg" alt="Portrait of Sofia Hernandez" />
+                    <img
+                      src="img/person.jpg"
+                      alt="Portret Sofii Hernandez"
+                      data-i18n-pl="Portret Sofii Hernandez"
+                      data-i18n-uk="Портрет Софії Ернандес"
+                      data-i18n-attr="alt"
+                    />
                     <div>
                       <strong>Sofia Hernandez</strong>
-                      <span>Head of Product, InsightFlow</span>
+                      <span
+                        data-i18n-pl="Head of Product, InsightFlow"
+                        data-i18n-uk="Head of Product, InsightFlow"
+                      >
+                        Head of Product, InsightFlow
+                      </span>
                     </div>
                   </div>
-                  <p>
-                    "Their experiment backlog and execution helped us uncover new revenue and boost
-                    onboarding. The collaboration felt like an extension of our own team."
+                  <p
+                    data-i18n-pl="Ich backlog eksperymentów i egzekucja pomogły nam odkryć nowe przychody i podnieść onboarding. Współpraca była jak przedłużenie naszego zespołu."
+                    data-i18n-uk="Їхній беклог експериментів і виконання допомогли нам відкрити нові доходи та покращити онбординг. Співпраця відчувалася як продовження нашої команди."
+                  >
+                    Ich backlog eksperymentów i egzekucja pomogły nam odkryć nowe przychody i
+                    podnieść onboarding. Współpraca była jak przedłużenie naszego zespołu.
                   </p>
                 </div>
               </div>
@@ -369,19 +760,41 @@
 
       <section class="home-cta" aria-labelledby="home-cta-title">
         <div class="container home-cta__inner">
-          <h2 id="home-cta-title">Ready to align your next release around real outcomes?</h2>
-          <p>
-            Tell us about your goals and constraints. We will propose the approach, scope, and
-            timeline so you can make confident decisions fast.
+          <h2
+            id="home-cta-title"
+            data-i18n-pl="Gotowi, by oprzeć kolejny release na realnych rezultatach?"
+            data-i18n-uk="Готові вирівняти наступний реліз під реальні результати?"
+          >
+            Gotowi, by oprzeć kolejny release na realnych rezultatach?
+          </h2>
+          <p
+            data-i18n-pl="Opowiedz nam o celach i ograniczeniach. Zaproponujemy podejście, zakres i harmonogram, abyś mógł szybko podjąć świadome decyzje."
+            data-i18n-uk="Розкажіть про свої цілі та обмеження. Ми запропонуємо підхід, обсяг і таймлайн, щоб ви могли швидко прийняти впевнені рішення."
+          >
+            Opowiedz nam o celach i ograniczeniach. Zaproponujemy podejście, zakres i harmonogram,
+            abyś mógł szybko podjąć świadome decyzje.
           </p>
           <div class="home-cta__actions">
-            <a href="contacts.html#contact-form" class="btn">Start a project</a>
-            <a href="orderasite.html" class="btn btn-secondary">Order a site</a>
+            <a
+              href="contacts.html#contact-form"
+              class="btn"
+              data-i18n-pl="Zacznij projekt"
+              data-i18n-uk="Розпочати проєкт"
+            >
+              Zacznij projekt
+            </a>
+            <a
+              href="orderasite.html"
+              class="btn btn-secondary"
+              data-i18n-pl="Zamów stronę"
+              data-i18n-uk="Замовити сайт"
+            >
+              Zamów stronę
+            </a>
           </div>
         </div>
       </section>
     </main>
-
     <footer>
       <div class="socials">
         <ul class="footer-socials">
@@ -415,8 +828,14 @@
         </ul>
       </div>
       <p>
-        &copy; <span id="y"></span> LandingWebStudio. All rights reserved. Building digital
-        products with measurable outcomes.
+        &copy; <span id="y"></span> LandingWebStudio.
+        <span
+          class="footer-note"
+          data-i18n-pl="Wszelkie prawa zastrzeżone. Tworzymy cyfrowe produkty z mierzalnymi wynikami."
+          data-i18n-uk="Всі права захищені. Створюємо цифрові продукти з вимірюваними результатами."
+        >
+          Wszelkie prawa zastrzeżone. Tworzymy cyfrowe produkty z mierzalnymi wynikami.
+        </span>
       </p>
     </footer>
     <script src="js/swiper-bundle.min.js"></script>

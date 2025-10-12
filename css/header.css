@@ -38,6 +38,7 @@
 .nav {
   display: flex;
   align-items: center;
+  gap: 16px;
 }
 
 .nav-list {
@@ -63,6 +64,38 @@
 }
 
 .nav-list a[aria-current="page"] {
+  background: var(--btn);
+  color: var(--btn-text-ink);
+  box-shadow: 0 10px 18px var(--btn-hover-shadow);
+}
+
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 24px;
+}
+
+.lang-switcher__btn {
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: rgba(248, 249, 252, 0.85);
+  color: var(--text-ink);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.lang-switcher__btn:hover,
+.lang-switcher__btn:focus-visible {
+  background: rgba(47, 62, 96, 0.08);
+  color: var(--btn);
+  transform: translateY(-2px);
+}
+
+.lang-switcher__btn.active {
   background: var(--btn);
   color: var(--btn-text-ink);
   box-shadow: 0 10px 18px var(--btn-hover-shadow);
@@ -122,6 +155,18 @@
   .nav-list a {
     width: 100%;
     padding: 12px 18px;
+  }
+
+  .lang-switcher {
+    margin-left: 0;
+    width: 100%;
+    justify-content: space-between;
+    gap: 14px;
+  }
+
+  .lang-switcher__btn {
+    flex: 1;
+    padding: 12px 0;
   }
 
   .header-phone {

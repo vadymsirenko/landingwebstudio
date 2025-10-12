@@ -2,6 +2,94 @@
 const burger = document.getElementById("burger");
 const nav = document.getElementById("nav");
 const body = document.getElementById("top");
+
+const LANGUAGE_STORAGE_KEY = "landingwebstudio-lang";
+const SUPPORTED_LANGS = ["pl", "uk"];
+const DEFAULT_LANG = "pl";
+const DOCUMENT_TITLES = {
+  pl: "LandingWebStudio - cyfrowe doświadczenia, które konwertują",
+  uk: "LandingWebStudio - цифрові враження, що приводять до конверсій",
+};
+
+const translationNodes = document.querySelectorAll("[data-i18n-pl]");
+
+const applyLanguage = (requestedLang) => {
+  const language = SUPPORTED_LANGS.includes(requestedLang) ? requestedLang : DEFAULT_LANG;
+
+  translationNodes.forEach((node) => {
+    const attr = node.dataset.i18nAttr || "text";
+    const targetValue = language === "uk" ? node.dataset.i18nUk : node.dataset.i18nPl;
+    if (typeof targetValue === "undefined") {
+      return;
+    }
+
+    if (attr === "text") {
+      node.textContent = targetValue;
+    } else if (attr === "html") {
+      node.innerHTML = targetValue;
+    } else {
+      node.setAttribute(attr, targetValue);
+    }
+  });
+
+  document.documentElement.lang = language === "uk" ? "uk" : "pl";
+  body?.setAttribute("data-active-lang", language);
+
+  document.querySelectorAll("[data-lang-switcher]").forEach((btn) => {
+    const isActive = btn.dataset.langSwitcher === language;
+    btn.classList.toggle("active", isActive);
+    btn.setAttribute("aria-pressed", isActive ? "true" : "false");
+  });
+
+  const nextTitle = DOCUMENT_TITLES[language] ?? DOCUMENT_TITLES[DEFAULT_LANG];
+  if (nextTitle) {
+    document.title = nextTitle;
+  }
+
+  try {
+    localStorage.setItem(LANGUAGE_STORAGE_KEY, language);
+  } catch (error) {
+    /* no-op */
+  }
+};
+
+const resolveInitialLanguage = () => {
+  try {
+    const stored = localStorage.getItem(LANGUAGE_STORAGE_KEY);
+    if (stored && SUPPORTED_LANGS.includes(stored)) {
+      return stored;
+    }
+  } catch (error) {
+    /* ignore stored language errors */
+  }
+
+  const browserLanguage = (navigator.language || navigator.userLanguage || "").toLowerCase();
+  if (browserLanguage.startsWith("uk")) {
+    return "uk";
+  }
+
+  return DEFAULT_LANG;
+};
+
+applyLanguage(resolveInitialLanguage());
+
+document.querySelectorAll("[data-lang-switcher]").forEach((button) => {
+  button.addEventListener("click", () => {
+    const targetLanguage = button.dataset.langSwitcher;
+    if (!targetLanguage) {
+      return;
+    }
+
+    applyLanguage(targetLanguage);
+
+    if (nav?.classList.contains("open")) {
+      nav.classList.remove("open");
+      burger?.classList.remove("active");
+      body?.classList.remove("lock");
+      burger?.setAttribute("aria-expanded", "false");
+    }
+  });
+});
 // const aboutHeader = document.getElementById("header-about");
 // const phoneHeader = document.getElementById("header-phone");
 // const contactsHeader = document.getElementById("header-contacts");

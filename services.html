@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LandingWebStudio - services & engagement models</title>
+    <title>LandingWebStudio - usługi i modele współpracy</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
     <link href="css/swiper-bundle.min.css" rel="stylesheet" />
     <link href="css/reset.css" rel="stylesheet" />
@@ -12,30 +12,151 @@
     <link href="css/footer.css" rel="stylesheet" />
     <link href="css/page-services.css" rel="stylesheet" />
   </head>
-  <body class="services-page" id="top">
+  <body class="services-page" id="top" data-active-lang="pl">
     <header class="site-header">
       <div class="container">
         <div class="header-inner">
-          <a href="index.html" class="logo"
-            ><img class="header-logo" src="img/logo.png" alt="LandingWebStudio logo"
-          /></a>
+          <a href="index.html" class="logo">
+            <img
+              class="header-logo"
+              src="img/logo.png"
+              alt="Logo LandingWebStudio"
+              data-i18n-pl="Logo LandingWebStudio"
+              data-i18n-uk="Логотип LandingWebStudio"
+              data-i18n-en="LandingWebStudio logo"
+              data-i18n-attr="alt"
+            />
+          </a>
           <h2 class="header-title">LandingWebStudio</h2>
           <nav class="nav" id="nav">
             <ul class="nav-list">
-              <li><a href="index.html#cases">Portfolio</a></li>
-              <li><a href="services.html" aria-current="page">Services</a></li>
-              <li><a href="pricing.html">Pricing</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contacts.html">Contact</a></li>
+              <li>
+                <a
+                  href="index.html#cases"
+                  data-i18n-pl="Portfolio"
+                  data-i18n-uk="Портфоліо"
+                  data-i18n-en="Portfolio"
+                >
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  aria-current="page"
+                  data-i18n-pl="Usługi"
+                  data-i18n-uk="Послуги"
+                  data-i18n-en="Services"
+                >
+                  Usługi
+                </a>
+              </li>
+              <li>
+                <a
+                  href="pricing.html"
+                  data-i18n-pl="Cennik"
+                  data-i18n-uk="Ціни"
+                  data-i18n-en="Pricing"
+                >
+                  Cennik
+                </a>
+              </li>
+              <li>
+                <a
+                  href="blog.html"
+                  data-i18n-pl="Blog"
+                  data-i18n-uk="Блог"
+                  data-i18n-en="Blog"
+                >
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  data-i18n-pl="O nas"
+                  data-i18n-uk="Про нас"
+                  data-i18n-en="About"
+                >
+                  O nas
+                </a>
+              </li>
+              <li>
+                <a
+                  href="contacts.html"
+                  data-i18n-pl="Kontakt"
+                  data-i18n-uk="Контакти"
+                  data-i18n-en="Contact"
+                >
+                  Kontakt
+                </a>
+              </li>
             </ul>
+            <div
+              class="lang-switcher"
+              aria-label="Wybierz język"
+              data-i18n-pl="Wybierz język"
+              data-i18n-uk="Оберіть мову"
+              data-i18n-en="Choose language"
+              data-i18n-attr="aria-label"
+            >
+              <button
+                type="button"
+                class="lang-switcher__toggle"
+                id="lang-toggle"
+                aria-haspopup="listbox"
+                aria-expanded="false"
+                data-i18n-pl="Zmień język"
+                data-i18n-uk="Змінити мову"
+                data-i18n-en="Change language"
+                data-i18n-attr="aria-label"
+              >
+                PL
+              </button>
+              <ul class="lang-switcher__list" role="listbox">
+                <li>
+                  <button
+                    type="button"
+                    class="lang-switcher__option"
+                    data-lang-option="pl"
+                    aria-selected="true"
+                  >
+                    Polski (PL)
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    class="lang-switcher__option"
+                    data-lang-option="uk"
+                    aria-selected="false"
+                  >
+                    Українська (UA)
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    class="lang-switcher__option"
+                    data-lang-option="en"
+                    aria-selected="false"
+                  >
+                    English (EN)
+                  </button>
+                </li>
+              </ul>
+            </div>
           </nav>
           <button
             class="burger"
             id="burger"
-            aria-label="Toggle navigation"
+            aria-label="Przełącz nawigację"
             aria-controls="nav"
             aria-expanded="false"
+            data-i18n-pl="Przełącz nawigację"
+            data-i18n-uk="Перемкнути навігацію"
+            data-i18n-en="Toggle navigation"
+            data-i18n-attr="aria-label"
           >
             <span></span><span></span><span></span>
           </button>
@@ -47,174 +168,441 @@
       <section class="services-hero" aria-labelledby="services-hero-title">
         <div class="container services-hero__inner">
           <div class="services-hero__content">
-            <p class="services-hero__eyebrow">Services</p>
-            <h1 id="services-hero-title">
-              Web experiences that are designed to move business metrics
+            <p
+              class="services-hero__eyebrow"
+              data-i18n-pl="Usługi"
+              data-i18n-uk="Послуги"
+              data-i18n-en="Services"
+            >
+              Usługi
+            </p>
+            <h1
+              id="services-hero-title"
+              data-i18n-pl="Doświadczenia webowe projektowane, by poruszać metryki biznesowe"
+              data-i18n-uk="Вебдосвіди, створені, щоб рухати бізнесові метрики"
+              data-i18n-en="Web experiences that are designed to move business metrics"
+            >
+              Doświadczenia webowe projektowane, by poruszać metryki biznesowe
             </h1>
-            <p class="services-hero__lead">
-              From first launch to iteration cycles, LandingWebStudio combines
-              strategy, UX, visuals, and build to ship digital journeys that your
-              customers remember - and your business can measure.
+            <p
+              class="services-hero__lead"
+              data-i18n-pl="Od pierwszego launchu po cykle iteracji, LandingWebStudio łączy strategię, UX, design i wdrożenie, aby dostarczać cyfrowe podróże, które zapadają w pamięć klientom i są mierzalne dla biznesu."
+              data-i18n-uk="Від першого запуску до ітерацій LandingWebStudio поєднує стратегію, UX, візуал і розробку, щоб запускати цифрові подорожі, які запам'ятовують клієнти і які вимірює бізнес."
+              data-i18n-en="From first launch to iteration cycles, LandingWebStudio combines strategy, UX, visuals, and build to ship digital journeys that your customers remember - and your business can measure."
+            >
+              Od pierwszego launchu po cykle iteracji, LandingWebStudio łączy strategię, UX, design
+              i wdrożenie, aby dostarczać cyfrowe podróże, które zapadają w pamięć klientom i są
+              mierzalne dla biznesu.
             </p>
             <div class="services-hero__cta">
-              <a href="contacts.html" class="btn">Plan a discovery call</a>
-              <a href="orderasite.html" class="btn btn-secondary">See launch packages</a>
+              <a
+                href="contacts.html"
+                class="btn"
+                data-i18n-pl="Umów rozmowę odkrywczą"
+                data-i18n-uk="Заплануйте ознайомчу розмову"
+                data-i18n-en="Plan a discovery call"
+              >
+                Umów rozmowę odkrywczą
+              </a>
+              <a
+                href="orderasite.html"
+                class="btn btn-secondary"
+                data-i18n-pl="Zobacz pakiety startowe"
+                data-i18n-uk="Перегляньте пакети запуску"
+                data-i18n-en="See launch packages"
+              >
+                Zobacz pakiety startowe
+              </a>
             </div>
-            <dl class="services-hero__pills" aria-label="Key service outcomes">
+            <dl
+              class="services-hero__pills"
+              aria-label="Kluczowe rezultaty usług"
+              data-i18n-pl="Kluczowe rezultaty usług"
+              data-i18n-uk="Ключові результати послуг"
+              data-i18n-en="Key service outcomes"
+              data-i18n-attr="aria-label"
+            >
               <div>
-                <dt>Conversions</dt>
-                <dd>Landing optimisation, offer clarity, funnel design</dd>
+                <dt
+                  data-i18n-pl="Konwersje"
+                  data-i18n-uk="Конверсії"
+                  data-i18n-en="Conversions"
+                >
+                  Konwersje
+                </dt>
+                <dd
+                  data-i18n-pl="Optymalizacja landingów, klarowna oferta, projekt lejków"
+                  data-i18n-uk="Оптимізація лендінгів, чітка пропозиція, дизайн воронок"
+                  data-i18n-en="Landing optimisation, offer clarity, funnel design"
+                >
+                  Optymalizacja landingów, klarowna oferta, projekt lejków
+                </dd>
               </div>
               <div>
-                <dt>Credibility</dt>
-                <dd>Brand storytelling, proof assets, social validation</dd>
+                <dt
+                  data-i18n-pl="Wiarygodność"
+                  data-i18n-uk="Довіра"
+                  data-i18n-en="Credibility"
+                >
+                  Wiarygodność
+                </dt>
+                <dd
+                  data-i18n-pl="Storytelling marki, dowody społeczne, materiały referencyjne"
+                  data-i18n-uk="Сторітелінг бренду, соціальні докази, референс-матеріали"
+                  data-i18n-en="Brand storytelling, proof assets, social validation"
+                >
+                  Storytelling marki, dowody społeczne, materiały referencyjne
+                </dd>
               </div>
               <div>
-                <dt>Momentum</dt>
-                <dd>No-code or code delivery, fast iteration roadmap</dd>
+                <dt
+                  data-i18n-pl="Momentum"
+                  data-i18n-uk="Моментум"
+                  data-i18n-en="Momentum"
+                >
+                  Momentum
+                </dt>
+                <dd
+                  data-i18n-pl="Wdrożenie no-code lub kodowe, roadmapa szybkich iteracji"
+                  data-i18n-uk="No-code чи кодове впровадження, дорожня карта швидких ітерацій"
+                  data-i18n-en="No-code or code delivery, fast iteration roadmap"
+                >
+                  Wdrożenie no-code lub kodowe, roadmapa szybkich iteracji
+                </dd>
               </div>
             </dl>
           </div>
           <aside class="services-hero__aside">
             <div class="services-highlight-card">
-              <h2>Where we add the most value</h2>
+              <h2
+                data-i18n-pl="Gdzie dowozimy najwięcej wartości"
+                data-i18n-uk="Де ми створюємо найбільшу цінність"
+                data-i18n-en="Where we add the most value"
+              >
+                Gdzie dowozimy najwięcej wartości
+              </h2>
               <ul>
-                <li>Startups preparing for launch or fundraising</li>
-                <li>Service brands relaunching their positioning</li>
-                <li>E-commerce teams migrating to modern stacks</li>
-                <li>Product teams that need design systems fast</li>
+                <li
+                  data-i18n-pl="Start-upy szykujące się do launchu lub fundrisingu"
+                  data-i18n-uk="Стартапи, що готуються до запуску або фандрейзингу"
+                  data-i18n-en="Startups preparing for launch or fundraising"
+                >
+                  Start-upy szykujące się do launchu lub fundrisingu
+                </li>
+                <li
+                  data-i18n-pl="Marki usługowe, które relaunchują pozycjonowanie"
+                  data-i18n-uk="Сервісні бренди, що оновлюють позиціонування"
+                  data-i18n-en="Service brands relaunching their positioning"
+                >
+                  Marki usługowe, które relaunchują pozycjonowanie
+                </li>
+                <li
+                  data-i18n-pl="Zespoły e-commerce migrujące na nowoczesne stacki"
+                  data-i18n-uk="Команди e-commerce, що переходять на сучасні стеки"
+                  data-i18n-en="E-commerce teams migrating to modern stacks"
+                >
+                  Zespoły e-commerce migrujące na nowoczesne stacki
+                </li>
+                <li
+                  data-i18n-pl="Zespoły produktowe potrzebujące design systemu na już"
+                  data-i18n-uk="Продуктові команди, яким потрібна дизайн-система швидко"
+                  data-i18n-en="Product teams that need design systems fast"
+                >
+                  Zespoły produktowe potrzebujące design systemu na już
+                </li>
               </ul>
-              <p class="services-highlight-card__note">
-                Timeline depends on scope, but most engagements start with a
-                strategy sprint in the first week.
+              <p
+                class="services-highlight-card__note"
+                data-i18n-pl="Harmonogram zależy od zakresu, ale większość współprac zaczyna się sprintem strategicznym w pierwszym tygodniu."
+                data-i18n-uk="Таймлайн залежить від обсягу, але більшість проєктів стартує зі стратегічного спринту в перший тиждень."
+                data-i18n-en="Timeline depends on scope, but most engagements start with a strategy sprint in the first week."
+              >
+                Harmonogram zależy od zakresu, ale większość współprac zaczyna się sprintem
+                strategicznym w pierwszym tygodniu.
               </p>
             </div>
           </aside>
         </div>
       </section>
-
       <section
         class="services-section services-packages"
         aria-labelledby="packages-title"
       >
         <div class="container">
           <div class="services-section__header">
-            <h2 id="packages-title">Engagement models tailored to your stage</h2>
-            <p>
-              Pick the track that fits today's needs. We can mix and match deliverables
-              from each package to craft a custom scope.
+            <h2
+              id="packages-title"
+              data-i18n-pl="Modele współpracy dopasowane do etapu"
+              data-i18n-uk="Моделі співпраці, підібрані під ваш етап"
+              data-i18n-en="Engagement models tailored to your stage"
+            >
+              Modele współpracy dopasowane do etapu
+            </h2>
+            <p
+              data-i18n-pl="Wybierz ścieżkę dopasowaną do dzisiejszych potrzeb. Możemy łączyć elementy z każdego pakietu, by zbudować indywidualny zakres."
+              data-i18n-uk="Обирайте трек під поточні потреби. Ми можемо комбінувати deliverables з кожного пакета, щоб зібрати індивідуальний обсяг."
+              data-i18n-en="Pick the track that fits today's needs. We can mix and match deliverables from each package to craft a custom scope."
+            >
+              Wybierz ścieżkę dopasowaną do dzisiejszych potrzeb. Możemy łączyć elementy z każdego
+              pakietu, by zbudować indywidualny zakres.
             </p>
           </div>
           <div class="services-packages__grid">
             <article class="service-card">
               <header>
-                <h3>Launch Accelerator</h3>
-                <p>Perfect for first releases, campaigns, and lead generation.</p>
-              </header>
-              <ul>
-                <li>Brand discovery and messaging workshop</li>
-                <li>Conversion-focused landing page or microsite</li>
-                <li>Copywriting and proof asset curation</li>
-                <li>No-code build (Webflow, Framer, Tilda)</li>
-                <li>Analytics & automation setup (GA4, Make/Zapier)</li>
-              </ul>
-              <footer>
-                <p class="service-card__meta">Timeline: 3-4 weeks | From EUR 3 500</p>
-                <a href="contacts.html#contact-form" class="btn btn-secondary"
-                  >Check availability</a
+                <h3
+                  data-i18n-pl="Launch Accelerator"
+                  data-i18n-uk="Launch Accelerator"
+                  data-i18n-en="Launch Accelerator"
                 >
-              </footer>
-            </article>
-
-            <article class="service-card">
-              <header>
-                <h3>Product Website Revamp</h3>
-                <p>For companies scaling up and needing a deeper storytelling layer.</p>
+                  Launch Accelerator
+                </h3>
+                <p
+                  data-i18n-pl="Idealny dla pierwszych release'ów, kampanii i generowania leadów."
+                  data-i18n-uk="Ідеально для перших релізів, кампаній та генерації лідів."
+                  data-i18n-en="Perfect for first releases, campaigns, and lead generation."
+                >
+                  Idealny dla pierwszych release'ów, kampanii i generowania leadów.
+                </p>
               </header>
               <ul>
-                <li>UX audit and analytics review</li>
-                <li>Content architecture and multi-page design</li>
-                <li>Component-based UI system (Figma + dev handoff)</li>
-                <li>Headless/no-code build or dev team collaboration</li>
-                <li>SEO foundations and performance optimisation</li>
+                <li
+                  data-i18n-pl="Warsztat odkrycia marki i komunikacji"
+                  data-i18n-uk="Discovery-сесія бренду та меседжингу"
+                  data-i18n-en="Brand discovery and messaging workshop"
+                >
+                  Warsztat odkrycia marki i komunikacji
+                </li>
+                <li
+                  data-i18n-pl="Landing lub mikrosite nastawiony na konwersje"
+                  data-i18n-uk="Лендінг чи мікросайт, зосереджений на конверсії"
+                  data-i18n-en="Conversion-focused landing page or microsite"
+                >
+                  Landing lub mikrosite nastawiony na konwersje
+                </li>
+                <li
+                  data-i18n-pl="Copywriting i kuracja materiałów dowodowych"
+                  data-i18n-uk="Копірайтинг і підбір доказових матеріалів"
+                  data-i18n-en="Copywriting and proof asset curation"
+                >
+                  Copywriting i kuracja materiałów dowodowych
+                </li>
+                <li
+                  data-i18n-pl="Budowa no-code (Webflow, Framer, Tilda)"
+                  data-i18n-uk="No-code розробка (Webflow, Framer, Tilda)"
+                  data-i18n-en="No-code build (Webflow, Framer, Tilda)"
+                >
+                  Budowa no-code (Webflow, Framer, Tilda)
+                </li>
+                <li
+                  data-i18n-pl="Analityka i automatyzacje startowe"
+                  data-i18n-uk="Базова аналітика та автомати"
+                  data-i18n-en="Analytics & automation setup"
+                >
+                  Analityka i automatyzacje startowe
+                </li>
               </ul>
-              <footer>
-                <p class="service-card__meta">Timeline: 6-8 weeks | From EUR 7 800</p>
-                <a href="orderasite.html" class="btn btn-secondary">Explore scope</a>
-              </footer>
             </article>
-
             <article class="service-card">
               <header>
-                <h3>Growth Optimisation Retainer</h3>
-                <p>Keep momentum with continuous experimentation and support.</p>
+                <h3
+                  data-i18n-pl="Product Website"
+                  data-i18n-uk="Product Website"
+                  data-i18n-en="Product Website"
+                >
+                  Product Website
+                </h3>
+                <p
+                  data-i18n-pl="Dla marek skalujących ofertę, onboarding i pipeline sprzedaży."
+                  data-i18n-uk="Для брендів, що масштабують пропозицію, онбординг і sales pipeline."
+                  data-i18n-en="For brands scaling their offering, onboarding, and sales pipeline."
+                >
+                  Dla marek skalujących ofertę, onboarding i pipeline sprzedaży.
+                </p>
               </header>
               <ul>
-                <li>Prioritised backlog of experiments and UX improvements</li>
-                <li>Monthly design & development cycles</li>
-                <li>A/B testing and insight reporting</li>
-                <li>Design system upkeep and documentation</li>
-                <li>Quarterly strategy reviews with leadership</li>
+                <li
+                  data-i18n-pl="Architektura informacji i storyboard ścieżek"
+                  data-i18n-uk="Інформаційна архітектура та сторіборди journey"
+                  data-i18n-en="Information architecture and journey storyboards"
+                >
+                  Architektura informacji i storyboard ścieżek
+                </li>
+                <li
+                  data-i18n-pl="Projekt UI z systemem komponentów"
+                  data-i18n-uk="UI-дизайн з системою компонентів"
+                  data-i18n-en="UI design with component system"
+                >
+                  Projekt UI z systemem komponentów
+                </li>
+                <li
+                  data-i18n-pl="Copy, struktura sekcji i warstwy wizualne"
+                  data-i18n-uk="Копірайтинг, структура секцій та візуальні шари"
+                  data-i18n-en="Copy, section structure, and visual layers"
+                >
+                  Copy, struktura sekcji i warstwy wizualne
+                </li>
+                <li
+                  data-i18n-pl="Integracje CRM, CMS i automaty marketingowe"
+                  data-i18n-uk="Інтеграції CRM, CMS та маркетингові автомати"
+                  data-i18n-en="CRM, CMS, and marketing automation integrations"
+                >
+                  Integracje CRM, CMS i automaty marketingowe
+                </li>
+                <li
+                  data-i18n-pl="Przekazanie do dev lub pełne wdrożenie"
+                  data-i18n-uk="Хендовер у dev або повне впровадження"
+                  data-i18n-en="Dev handoff or full implementation"
+                >
+                  Przekazanie do dev lub pełne wdrożenie
+                </li>
               </ul>
-              <footer>
-                <p class="service-card__meta">Ongoing: 3+ months | From EUR 2 200/mo</p>
-                <a href="contacts.html" class="btn btn-secondary">Request proposal</a>
-              </footer>
+            </article>
+            <article class="service-card">
+              <header>
+                <h3
+                  data-i18n-pl="Growth Partner"
+                  data-i18n-uk="Growth Partner"
+                  data-i18n-en="Growth Partner"
+                >
+                  Growth Partner
+                </h3>
+                <p
+                  data-i18n-pl="Dla zespołów, które potrzebują stałego backlogu eksperymentów."
+                  data-i18n-uk="Для команд, яким потрібен сталий беклог експериментів."
+                  data-i18n-en="For teams that need a standing experiment backlog."
+                >
+                  Dla zespołów, które potrzebują stałego backlogu eksperymentów.
+                </p>
+              </header>
+              <ul>
+                <li
+                  data-i18n-pl="Strategia testów A/B i roadmapa hipotez"
+                  data-i18n-uk="Стратегія A/B тестів і дорожня карта гіпотез"
+                  data-i18n-en="A/B testing strategy and hypothesis roadmap"
+                >
+                  Strategia testów A/B i roadmapa hipotez
+                </li>
+                <li
+                  data-i18n-pl="Optymalizacja lejka, onboarding i retencja"
+                  data-i18n-uk="Оптимізація воронки, онбордингу та ретенції"
+                  data-i18n-en="Funnel optimisation, onboarding, and retention"
+                >
+                  Optymalizacja lejka, onboarding i retencja
+                </li>
+                <li
+                  data-i18n-pl="Warsztaty contentowe i supporting collateral"
+                  data-i18n-uk="Контент-воркшопи та supporting collateral"
+                  data-i18n-en="Content workshops and supporting collateral"
+                >
+                  Warsztaty contentowe i supporting collateral
+                </li>
+                <li
+                  data-i18n-pl="Monitoring KPI oraz raportowanie eksperymentów"
+                  data-i18n-uk="Моніторинг KPI та звітність по експериментам"
+                  data-i18n-en="KPI monitoring and experiment reporting"
+                >
+                  Monitoring KPI oraz raportowanie eksperymentów
+                </li>
+              </ul>
             </article>
           </div>
         </div>
       </section>
-
-      <section
-        class="services-section services-process"
-        aria-labelledby="process-title"
-      >
-        <div class="container">
-          <div class="services-section__header">
-            <h2 id="process-title">How we collaborate</h2>
-            <p>
-              Repeatable rituals keep projects transparent and on schedule - whether we
-              ship end-to-end or work alongside your team.
+      <section class="services-section services-process" aria-labelledby="process-title">
+        <div class="container services-process__inner">
+          <div class="services-process__intro">
+            <h2
+              id="process-title"
+              data-i18n-pl="Proces, który zapewnia przejrzystość"
+              data-i18n-uk="Процес, що гарантує прозорість"
+              data-i18n-en="A process that keeps everything transparent"
+            >
+              Proces, który zapewnia przejrzystość
+            </h2>
+            <p
+              data-i18n-pl="Każdy etap ma jasny zakres, artefakty i momenty feedbacku, żeby Twój zespół zawsze wiedział, co powstaje."
+              data-i18n-uk="Кожен етап має чіткий обсяг, артефакти й точки фідбеку, тож команда завжди знає, що у роботі."
+              data-i18n-en="Every stage comes with clear scope, artifacts, and feedback moments so your team always knows what's in motion."
+            >
+              Każdy etap ma jasny zakres, artefakty i momenty feedbacku, żeby Twój zespół zawsze
+              wiedział, co powstaje.
             </p>
           </div>
-          <ol class="services-timeline">
+          <ol class="services-process__list">
             <li>
-              <span class="services-timeline__step">01</span>
+              <span class="step-number">01</span>
               <div>
-                <h3>Discover & align</h3>
-                <p>
-                  Kick-off workshop, goal setting, stakeholder interviews, and analytics
-                  review. We map success metrics and project milestones.
+                <h3
+                  data-i18n-pl="Odkryj"
+                  data-i18n-uk="Відкриття"
+                  data-i18n-en="Discover"
+                >
+                  Odkryj
+                </h3>
+                <p
+                  data-i18n-pl="Analizujemy cele, kontekst biznesowy, dane i persony, aby zbudować fundamenty."
+                  data-i18n-uk="Аналізуємо цілі, бізнес-контекст, дані й персони, щоб вибудувати фундамент."
+                  data-i18n-en="We analyse goals, business context, data, and personas to build the foundation."
+                >
+                  Analizujemy cele, kontekst biznesowy, dane i persony, aby zbudować fundamenty.
                 </p>
               </div>
             </li>
             <li>
-              <span class="services-timeline__step">02</span>
+              <span class="step-number">02</span>
               <div>
-                <h3>Design the experience</h3>
-                <p>
-                  Rapid prototyping, UX flows, content strategy, and high-fidelity UI.
-                  Weekly reviews keep everyone synced.
+                <h3
+                  data-i18n-pl="Projektuj"
+                  data-i18n-uk="Дизайн"
+                  data-i18n-en="Design"
+                >
+                  Projektuj
+                </h3>
+                <p
+                  data-i18n-pl="Łączymy strategię, UX, copy i wizual z cotygodniowymi synchronizacjami."
+                  data-i18n-uk="Поєднуємо стратегію, UX, копі й візуал із щотижневими синками."
+                  data-i18n-en="We bring strategy, UX, copy, and visuals together with weekly syncs."
+                >
+                  Łączymy strategię, UX, copy i wizual z cotygodniowymi synchronizacjami.
                 </p>
               </div>
             </li>
             <li>
-              <span class="services-timeline__step">03</span>
+              <span class="step-number">03</span>
               <div>
-                <h3>Build & validate</h3>
-                <p>
-                  Implementation in Webflow, React, Next.js, or your stack. QA, speed
-                  optimisation, CRO setup, and launch checklist.
+                <h3
+                  data-i18n-pl="Buduj"
+                  data-i18n-uk="Розробляй"
+                  data-i18n-en="Build"
+                >
+                  Buduj
+                </h3>
+                <p
+                  data-i18n-pl="Wdrażamy w Webflow, Next.js, Shopify lub Twoim stacku wraz z QA i analityką."
+                  data-i18n-uk="Впроваджуємо у Webflow, Next.js, Shopify чи вашому стеку разом із QA та аналітикою."
+                  data-i18n-en="We implement in Webflow, Next.js, Shopify, or your stack with QA and analytics."
+                >
+                  Wdrażamy w Webflow, Next.js, Shopify lub Twoim stacku wraz z QA i analityką.
                 </p>
               </div>
             </li>
             <li>
-              <span class="services-timeline__step">04</span>
+              <span class="step-number">04</span>
               <div>
-                <h3>Iterate & grow</h3>
-                <p>
-                  Post-launch monitoring, experiments, and handover to internal teams with
-                  playbooks and documentation.
+                <h3
+                  data-i18n-pl="Skaluj"
+                  data-i18n-uk="Масштабуй"
+                  data-i18n-en="Scale"
+                >
+                  Skaluj
+                </h3>
+                <p
+                  data-i18n-pl="Mierzymy wpływ, planujemy kolejne eksperymenty i iteracje z ROI w centrum."
+                  data-i18n-uk="Вимірюємо вплив, плануємо наступні експерименти та ітерації з ROI у центрі."
+                  data-i18n-en="We measure impact, plan the next experiments, and iterate with ROI at the centre."
+                >
+                  Mierzymy wpływ, planujemy kolejne eksperymenty i iteracje z ROI w centrum.
                 </p>
               </div>
             </li>
@@ -222,103 +610,100 @@
         </div>
       </section>
 
-      <section
-        class="services-section services-capabilities"
-        aria-labelledby="capabilities-title"
-      >
-        <div class="container services-capabilities__inner">
-          <div class="services-capabilities__intro">
-            <h2 id="capabilities-title">Capabilities across the full lifecycle</h2>
-            <p>
-              Each engagement can include a combination of strategy, creative, and
-              technical services. Bring us in for the whole journey or a focused sprint.
-            </p>
-          </div>
-          <div class="services-capabilities__grid">
-            <article>
-              <h3>Strategy & Research</h3>
-              <ul>
-                <li>Customer interviews & JTBD mapping</li>
-                <li>Analytics deep dives and KPI alignment</li>
-                <li>Competitor, category, and keyword insights</li>
-                <li>Product positioning & messaging frameworks</li>
-              </ul>
-            </article>
-            <article>
-              <h3>UX & Content</h3>
-              <ul>
-                <li>Information architecture & flows</li>
-                <li>Wireframes, prototypes, interaction design</li>
-                <li>Conversion copywriting and content plans</li>
-                <li>Accessibility audits and localisation support</li>
-              </ul>
-            </article>
-            <article>
-              <h3>Visual & Brand</h3>
-              <ul>
-                <li>Design systems and component libraries</li>
-                <li>Illustrations, iconography, motion guidelines</li>
-                <li>Marketing collateral and launch assets</li>
-                <li>Art direction for photo/video production</li>
-              </ul>
-            </article>
-            <article>
-              <h3>Build & Optimise</h3>
-              <ul>
-                <li>Webflow, Framer, Next.js, Shopify development</li>
-                <li>CMS migrations and integrations</li>
-                <li>Performance tuning and Core Web Vitals</li>
-                <li>A/B testing, CRO, and marketing automation</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
       <section class="services-section services-proof" aria-labelledby="proof-title">
         <div class="container services-proof__inner">
           <div>
-            <h2 id="proof-title">Proof in numbers</h2>
-            <p>
-              We track the impact from every project. Here is what recent clients have
-              achieved after partnering with LandingWebStudio.
+            <h2
+              id="proof-title"
+              data-i18n-pl="Dowody w liczbach"
+              data-i18n-uk="Докази в цифрах"
+              data-i18n-en="Proof in numbers"
+            >
+              Dowody w liczbach
+            </h2>
+            <p
+              data-i18n-pl="Mierzymy wpływ każdej realizacji. Oto co osiągnęli klienci po współpracy z LandingWebStudio."
+              data-i18n-uk="Ми фіксуємо вплив кожного проєкту. Ось результати клієнтів після роботи з LandingWebStudio."
+              data-i18n-en="We track the impact from every project. Here is what recent clients have achieved after partnering with LandingWebStudio."
+            >
+              Mierzymy wpływ każdej realizacji. Oto co osiągnęli klienci po współpracy z
+              LandingWebStudio.
             </p>
           </div>
           <div class="services-proof__stats">
             <div class="services-proof__stat">
               <span class="services-proof__value">+62%</span>
-              <span class="services-proof__label"
-                >Increase in qualified demo bookings within 90 days</span
+              <span
+                class="services-proof__label"
+                data-i18n-pl="Wzrost liczby kwalifikowanych demo w 90 dni"
+                data-i18n-uk="Зростання кількості кваліфікованих демо за 90 днів"
+                data-i18n-en="Increase in qualified demo bookings within 90 days"
               >
+                Wzrost liczby kwalifikowanych demo w 90 dni
+              </span>
             </div>
             <div class="services-proof__stat">
               <span class="services-proof__value">-38%</span>
-              <span class="services-proof__label"
-                >Reduction in bounce rate after content architecture rebuild</span
+              <span
+                class="services-proof__label"
+                data-i18n-pl="Spadek bounce rate po przebudowie architektury treści"
+                data-i18n-uk="Зниження bounce rate після перебудови архітектури контенту"
+                data-i18n-en="Reduction in bounce rate after content architecture rebuild"
               >
+                Spadek bounce rate po przebudowie architektury treści
+              </span>
             </div>
             <div class="services-proof__stat">
               <span class="services-proof__value">3.5x</span>
-              <span class="services-proof__label"
-                >Faster iteration cycle using a reusable design system</span
+              <span
+                class="services-proof__label"
+                data-i18n-pl="Szybszy cykl iteracji dzięki modułowemu design systemowi"
+                data-i18n-uk="Швидший у 3,5 раза цикл ітерацій завдяки модульній дизайн-системі"
+                data-i18n-en="Faster iteration cycle using a reusable design system"
               >
+                Szybszy cykl iteracji dzięki modułowemu design systemowi
+              </span>
             </div>
           </div>
         </div>
       </section>
-
       <section class="services-section services-cta" aria-labelledby="services-cta-title">
         <div class="container services-cta__inner">
-          <h2 id="services-cta-title">Need a tailored scope?</h2>
-          <p>
-            Tell us about your goals, team structure, and timelines. We will suggest the
-            best collaboration model and line up the right specialists.
+          <h2
+            id="services-cta-title"
+            data-i18n-pl="Potrzebujesz dopasowanego zakresu?"
+            data-i18n-uk="Потрібен індивідуальний обсяг?"
+            data-i18n-en="Need a tailored scope?"
+          >
+            Potrzebujesz dopasowanego zakresu?
+          </h2>
+          <p
+            data-i18n-pl="Opowiedz o celach, strukturze zespołu i timeline'ie. Zaproponujemy najlepszy model współpracy i dobierzemy specjalistów."
+            data-i18n-uk="Розкажіть про цілі, структуру команди та таймлайн. Ми запропонуємо оптимальний формат співпраці й підберемо спеціалістів."
+            data-i18n-en="Tell us about your goals, team structure, and timelines. We will suggest the best collaboration model and line up the right specialists."
+          >
+            Opowiedz o celach, strukturze zespołu i timeline'ie. Zaproponujemy najlepszy model
+            współpracy i dobierzemy specjalistów.
           </p>
           <div class="services-cta__actions">
-            <a href="contacts.html#contact-form" class="btn">Start a project</a>
-            <a href="mailto:hello@landingwebstudio.com" class="btn btn-secondary"
-              >Email the team</a
+            <a
+              href="contacts.html#contact-form"
+              class="btn"
+              data-i18n-pl="Zacznij projekt"
+              data-i18n-uk="Розпочати проєкт"
+              data-i18n-en="Start a project"
             >
+              Zacznij projekt
+            </a>
+            <a
+              href="mailto:hello@landingwebstudio.com"
+              class="btn btn-secondary"
+              data-i18n-pl="Napisz do zespołu"
+              data-i18n-uk="Напишіть команді"
+              data-i18n-en="Email the team"
+            >
+              Napisz do zespołu
+            </a>
           </div>
         </div>
       </section>
@@ -357,8 +742,15 @@
         </ul>
       </div>
       <p>
-        &copy; <span id="y"></span> LandingWebStudio. All rights reserved. We turn ideas
-        into measurable digital outcomes.
+        &copy; <span id="y"></span> LandingWebStudio.
+        <span
+          class="footer-note"
+          data-i18n-pl="Zmieniamy pomysły w mierzalne rezultaty cyfrowe."
+          data-i18n-uk="Перетворюємо ідеї на вимірювані цифрові результати."
+          data-i18n-en="We turn ideas into measurable digital outcomes."
+        >
+          Zmieniamy pomysły w mierzalne rezultaty cyfrowe.
+        </span>
       </p>
     </footer>
     <script src="js/swiper-bundle.min.js"></script>

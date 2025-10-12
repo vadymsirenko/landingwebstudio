@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LandingWebStudio - start your project</title>
+    <title>LandingWebStudio - rozpocznij projekt</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
     <link href="css/swiper-bundle.min.css" rel="stylesheet" />
     <link href="css/reset.css" rel="stylesheet" />
@@ -13,30 +13,135 @@
     <link href="css/evaluating-site-goals.css" rel="stylesheet" />
     <link href="css/page-order.css" rel="stylesheet" />
   </head>
-  <body id="top" class="order-page">
+  <body id="top" class="order-page" data-active-lang="pl">
     <header class="site-header">
       <div class="container">
         <div class="header-inner">
-          <a href="index.html" class="logo"
-            ><img class="header-logo" src="img/logo.png" alt="LandingWebStudio logo"
-          /></a>
+          <a href="index.html" class="logo">
+            <img
+              class="header-logo"
+              src="img/logo.png"
+              alt="Logo LandingWebStudio"
+              data-i18n-pl="Logo LandingWebStudio"
+              data-i18n-uk="Логотип LandingWebStudio"
+              data-i18n-en="LandingWebStudio logo"
+              data-i18n-attr="alt"
+            />
+          </a>
           <h2 class="header-title">LandingWebStudio</h2>
           <nav class="nav" id="nav">
             <ul class="nav-list">
-              <li><a href="index.html#cases">Portfolio</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="pricing.html">Pricing</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contacts.html">Contact</a></li>
+              <li>
+                <a
+                  href="index.html#cases"
+                  data-i18n-pl="Portfolio"
+                  data-i18n-uk="Портфоліо"
+                  data-i18n-en="Portfolio"
+                >
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  data-i18n-pl="Usługi"
+                  data-i18n-uk="Послуги"
+                  data-i18n-en="Services"
+                >
+                  Usługi
+                </a>
+              </li>
+              <li>
+                <a
+                  href="pricing.html"
+                  data-i18n-pl="Cennik"
+                  data-i18n-uk="Ціни"
+                  data-i18n-en="Pricing"
+                >
+                  Cennik
+                </a>
+              </li>
+              <li>
+                <a
+                  href="blog.html"
+                  data-i18n-pl="Blog"
+                  data-i18n-uk="Блог"
+                  data-i18n-en="Blog"
+                >
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  data-i18n-pl="O nas"
+                  data-i18n-uk="Про нас"
+                  data-i18n-en="About"
+                >
+                  O nas
+                </a>
+              </li>
+              <li>
+                <a
+                  href="contacts.html"
+                  data-i18n-pl="Kontakt"
+                  data-i18n-uk="Контакти"
+                  data-i18n-en="Contact"
+                >
+                  Kontakt
+                </a>
+              </li>
             </ul>
+            <div
+              class="lang-switcher"
+              aria-label="Wybierz język"
+              data-i18n-pl="Wybierz język"
+              data-i18n-uk="Оберіть мову"
+              data-i18n-en="Choose language"
+              data-i18n-attr="aria-label"
+            >
+              <button
+                type="button"
+                class="lang-switcher__toggle"
+                id="lang-toggle"
+                aria-haspopup="listbox"
+                aria-expanded="false"
+                data-i18n-pl="Zmień język"
+                data-i18n-uk="Змінити мову"
+                data-i18n-en="Change language"
+                data-i18n-attr="aria-label"
+              >
+                PL
+              </button>
+              <ul class="lang-switcher__list" role="listbox">
+                <li>
+                  <button type="button" class="lang-switcher__option" data-lang-option="pl" aria-selected="true">
+                    Polski (PL)
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="lang-switcher__option" data-lang-option="uk" aria-selected="false">
+                    Українська (UA)
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="lang-switcher__option" data-lang-option="en" aria-selected="false">
+                    English (EN)
+                  </button>
+                </li>
+              </ul>
+            </div>
           </nav>
           <button
             class="burger"
             id="burger"
-            aria-label="Toggle navigation"
+            aria-label="Przełącz nawigację"
             aria-controls="nav"
             aria-expanded="false"
+            data-i18n-pl="Przełącz nawigację"
+            data-i18n-uk="Перемкнути навігацію"
+            data-i18n-en="Toggle navigation"
+            data-i18n-attr="aria-label"
           >
             <span></span><span></span><span></span>
           </button>
@@ -48,116 +153,369 @@
       <section class="order-hero" aria-labelledby="order-hero-title">
         <div class="container order-hero__inner">
           <div class="order-hero__content">
-            <p class="order-hero__eyebrow">Start a project</p>
-            <h1 id="order-hero-title">
-              Design, build, and launch a digital experience that does the heavy lifting
+            <p
+              class="order-hero__eyebrow"
+              data-i18n-pl="Rozpocznij projekt"
+              data-i18n-uk="Розпочніть проєкт"
+              data-i18n-en="Start a project"
+            >
+              Rozpocznij projekt
+            </p>
+            <h1
+              id="order-hero-title"
+              data-i18n-pl="Zaprojektuj, zbuduj i uruchom doświadczenie cyfrowe, które pracuje za Ciebie"
+              data-i18n-uk="Спроєктуйте, збудуйте й запустіть цифровий досвід, який працює за вас"
+              data-i18n-en="Design, build, and launch a digital experience that does the heavy lifting"
+            >
+              Zaprojektuj, zbuduj i uruchom doświadczenie cyfrowe, które pracuje za Ciebie
             </h1>
-            <p class="order-hero__lead">
-              Tell us about the impact you want to make. We'll scope a launch-ready plan that
-              blends strategy, UX, content, and development - ready to activate in weeks, not
-              quarters.
+            <p
+              class="order-hero__lead"
+              data-i18n-pl="Opowiedz nam, jaki wpływ chcesz osiągnąć. Przygotujemy plan gotowy do launchu, który łączy strategię, UX, content i development – gotowy do aktywacji w tygodnie, a nie kwartały."
+              data-i18n-uk="Розкажіть, який вплив прагнете створити. Ми підготуємо план запуску, що поєднує стратегію, UX, контент і розробку — готовий до активації за тижні, а не квартали."
+              data-i18n-en="Tell us about the impact you want to make. We'll scope a launch-ready plan that blends strategy, UX, content, and development - ready to activate in weeks, not quarters."
+            >
+              Opowiedz nam, jaki wpływ chcesz osiągnąć. Przygotujemy plan gotowy do launchu, który
+              łączy strategię, UX, content i development – gotowy do aktywacji w tygodnie, a nie
+              kwartały.
             </p>
             <div class="order-hero__cta">
-              <a href="#intake" class="btn">Share project details</a>
-              <a href="contacts.html#contact-form" class="btn btn-secondary"
-                >Book a discovery call</a
+              <a
+                href="#intake"
+                class="btn"
+                data-i18n-pl="Przekaż szczegóły projektu"
+                data-i18n-uk="Поділіться деталями проєкту"
+                data-i18n-en="Share project details"
               >
+                Przekaż szczegóły projektu
+              </a>
+              <a
+                href="contacts.html#contact-form"
+                class="btn btn-secondary"
+                data-i18n-pl="Umów rozmowę odkrywczą"
+                data-i18n-uk="Заплануйте ознайомчу розмову"
+                data-i18n-en="Book a discovery call"
+              >
+                Umów rozmowę odkrywczą
+              </a>
             </div>
             <ul class="order-hero__highlights">
-              <li>Week 1: Discovery workshop + roadmap</li>
-              <li>Week 2+: UX, UI, content, and build sprints</li>
-              <li>Launch: QA, analytics, automation, and handover</li>
+              <li
+                data-i18n-pl="Tydzień 1: warsztat discovery + roadmapa"
+                data-i18n-uk="Тиждень 1: discovery-воркшоп + roadmap"
+                data-i18n-en="Week 1: Discovery workshop + roadmap"
+              >
+                Tydzień 1: warsztat discovery + roadmapa
+              </li>
+              <li
+                data-i18n-pl="Tydzień 2+: sprinty UX, UI, content i development"
+                data-i18n-uk="Тиждень 2+: спринти UX, UI, контенту й девелопменту"
+                data-i18n-en="Week 2+: UX, UI, content, and build sprints"
+              >
+                Tydzień 2+: sprinty UX, UI, content i development
+              </li>
+              <li
+                data-i18n-pl="Launch: QA, analityka, automatyzacje, handover"
+                data-i18n-uk="Запуск: QA, аналітика, автоматизації, хендовер"
+                data-i18n-en="Launch: QA, analytics, automation, and handover"
+              >
+                Launch: QA, analityka, automatyzacje, handover
+              </li>
             </ul>
           </div>
           <aside class="order-hero__aside">
             <div class="order-hero__card">
-              <h2>What you get</h2>
+              <h2
+                data-i18n-pl="Co otrzymasz"
+                data-i18n-uk="Що ви отримаєте"
+                data-i18n-en="What you get"
+              >
+                Co otrzymasz
+              </h2>
               <ul>
-                <li>Strategy sprint with clear KPIs and milestones</li>
-                <li>Conversion-focused design system and messaging</li>
-                <li>Implementation in Webflow, React, or your stack</li>
-                <li>Analytics, automation, and performance setup</li>
+                <li
+                  data-i18n-pl="Sprint strategiczny z KPI i kamieniami milowymi"
+                  data-i18n-uk="Стратегічний спринт із KPI та майлстоунами"
+                  data-i18n-en="Strategy sprint with clear KPIs and milestones"
+                >
+                  Sprint strategiczny z KPI i kamieniami milowymi
+                </li>
+                <li
+                  data-i18n-pl="Design system i messaging nastawiony na konwersję"
+                  data-i18n-uk="Design-система й меседжинг, сфокусовані на конверсії"
+                  data-i18n-en="Conversion-focused design system and messaging"
+                >
+                  Design system i messaging nastawiony na konwersję
+                </li>
+                <li
+                  data-i18n-pl="Implementacja w Webflow, React lub Twoim stacku"
+                  data-i18n-uk="Впровадження у Webflow, React або вашому стеку"
+                  data-i18n-en="Implementation in Webflow, React, or your stack"
+                >
+                  Implementacja w Webflow, React lub Twoim stacku
+                </li>
+                <li
+                  data-i18n-pl="Analityka, automatyzacje i performance"
+                  data-i18n-uk="Аналітика, автоматизації та performance"
+                  data-i18n-en="Analytics, automation, and performance setup"
+                >
+                  Analityka, automatyzacje i performance
+                </li>
               </ul>
             </div>
             <div class="order-hero__note">
-              <p>
-                Launch timelines depend on scope (3-8 weeks typical). Have a tighter deadline?
-                Mention it in the form and we'll adapt the plan.
+              <p
+                data-i18n-pl="Timeline zależy od zakresu (typowo 3–8 tygodni). Masz ciaśniejszy deadline? W formularzu napisz nam o tym – dostosujemy plan."
+                data-i18n-uk="Таймлайн залежить від обсягу (зазвичай 3–8 тижнів). Маєте стислий дедлайн? Вкажіть у формі — адаптуємо план."
+                data-i18n-en="Launch timelines depend on scope (3-8 weeks typical). Have a tighter deadline? Mention it in the form and we'll adapt the plan."
+              >
+                Timeline zależy od zakresu (typowo 3–8 tygodni). Masz ciaśniejszy deadline? W formularzu
+                napisz nam o tym – dostosujemy plan.
               </p>
             </div>
           </aside>
         </div>
       </section>
-
       <section class="order-packages" aria-labelledby="order-packages-title">
         <div class="container">
           <div class="order-section-header">
-            <h2 id="order-packages-title">Pick the path that fits your stage</h2>
-            <p>
-              Not sure what package works best? Share context below - we'll recommend the most
-              suitable option or customise a scope.
+            <h2
+              id="order-packages-title"
+              data-i18n-pl="Wybierz ścieżkę dopasowaną do etapu"
+              data-i18n-uk="Обирайте шлях під свій етап"
+              data-i18n-en="Pick the path that fits your stage"
+            >
+              Wybierz ścieżkę dopasowaną do etapu
+            </h2>
+            <p
+              data-i18n-pl="Nie wiesz, który pakiet wybrać? Opisz kontekst poniżej – polecimy najlepszą opcję lub stworzymy customowy zakres."
+              data-i18n-uk="Не впевнені, який пакет вибрати? Поділіться контекстом нижче — ми порадимо найкращий варіант або зберемо індивідуальний обсяг."
+              data-i18n-en="Not sure what package works best? Share context below - we'll recommend the most suitable option or customise a scope."
+            >
+              Nie wiesz, który pakiet wybrać? Opisz kontekst poniżej – polecimy najlepszą opcję lub
+              stworzymy customowy zakres.
             </p>
           </div>
           <div class="order-packages__grid">
             <article class="order-package-card">
               <header>
-                <h3>Starter Landing</h3>
-                <p>Ideal for campaigns, MVP launches, and early-stage validation.</p>
+                <h3
+                  data-i18n-pl="Starter Landing"
+                  data-i18n-uk="Starter Landing"
+                  data-i18n-en="Starter Landing"
+                >
+                  Starter Landing
+                </h3>
+                <p
+                  data-i18n-pl="Idealny dla kampanii, launchów MVP i wczesnej walidacji."
+                  data-i18n-uk="Ідеально для кампаній, запусків MVP і ранньої валідації."
+                  data-i18n-en="Ideal for campaigns, MVP launches, and early-stage validation."
+                >
+                  Idealny dla kampanii, launchów MVP i wczesnej walidacji.
+                </p>
               </header>
               <ul>
-                <li>Discovery workshop + positioning</li>
-                <li>Copywriting and benefit mapping</li>
-                <li>Design + build in Webflow or Framer</li>
-                <li>Integrations (CRM, marketing automation, analytics)</li>
+                <li
+                  data-i18n-pl="Warsztat discovery + pozycjonowanie"
+                  data-i18n-uk="Discovery-воркшоп + позиціонування"
+                  data-i18n-en="Discovery workshop + positioning"
+                >
+                  Warsztat discovery + pozycjonowanie
+                </li>
+                <li
+                  data-i18n-pl="Copywriting i mapowanie korzyści"
+                  data-i18n-uk="Копірайтинг і мапування вигод"
+                  data-i18n-en="Copywriting and benefit mapping"
+                >
+                  Copywriting i mapowanie korzyści
+                </li>
+                <li
+                  data-i18n-pl="Design + build w Webflow lub Framer"
+                  data-i18n-uk="Дизайн + розробка у Webflow або Framer"
+                  data-i18n-en="Design + build in Webflow or Framer"
+                >
+                  Design + build w Webflow lub Framer
+                </li>
+                <li
+                  data-i18n-pl="Integracje (CRM, automatyzacje, analityka)"
+                  data-i18n-uk="Інтеграції (CRM, автомати, аналітика)"
+                  data-i18n-en="Integrations (CRM, marketing automation, analytics)"
+                >
+                  Integracje (CRM, automatyzacje, analityka)
+                </li>
               </ul>
               <footer>
-                <span class="order-package__meta">Timeline: 3-4 weeks</span>
-                <span class="order-package__meta">Investment: From EUR 3 200</span>
+                <span
+                  class="order-package__meta"
+                  data-i18n-pl="Czas: 3–4 tygodnie"
+                  data-i18n-uk="Термін: 3–4 тижні"
+                  data-i18n-en="Timeline: 3-4 weeks"
+                >
+                  Czas: 3–4 tygodnie
+                </span>
+                <span
+                  class="order-package__meta"
+                  data-i18n-pl="Budżet: od 3 200 EUR"
+                  data-i18n-uk="Бюджет: від 3 200 EUR"
+                  data-i18n-en="Investment: From EUR 3 200"
+                >
+                  Budżet: od 3 200 EUR
+                </span>
               </footer>
             </article>
             <article class="order-package-card">
               <header>
-                <h3>Product Website</h3>
-                <p>Full multi-page site with conversion strategy and design system.</p>
+                <h3
+                  data-i18n-pl="Product Website"
+                  data-i18n-uk="Product Website"
+                  data-i18n-en="Product Website"
+                >
+                  Product Website
+                </h3>
+                <p
+                  data-i18n-pl="Wielostronicowa strona z architekturą konwersji i design systemem."
+                  data-i18n-uk="Багатосторінковий сайт із конверсійною архітектурою та дизайн-системою."
+                  data-i18n-en="Full multi-page site with conversion strategy and design system."
+                >
+                  Wielostronicowa strona z architekturą konwersji i design systemem.
+                </p>
               </header>
               <ul>
-                <li>UX architecture and content strategy</li>
-                <li>Visual identity expansion and component library</li>
-                <li>Development in Webflow, Next.js, or your stack</li>
-                <li>SEO essentials, performance tuning, documentation</li>
+                <li
+                  data-i18n-pl="Architektura UX i strategia treści"
+                  data-i18n-uk="UX-архітектура та контент-стратегія"
+                  data-i18n-en="UX architecture and content strategy"
+                >
+                  Architektura UX i strategia treści
+                </li>
+                <li
+                  data-i18n-pl="Rozszerzenie identyfikacji i biblioteka komponentów"
+                  data-i18n-uk="Розширення айдентики та бібліотека компонентів"
+                  data-i18n-en="Visual identity expansion and component library"
+                >
+                  Rozszerzenie identyfikacji i biblioteka komponentów
+                </li>
+                <li
+                  data-i18n-pl="Development w Webflow, Next.js lub Twoim stacku"
+                  data-i18n-uk="Development у Webflow, Next.js або вашому стеку"
+                  data-i18n-en="Development in Webflow, Next.js, or your stack"
+                >
+                  Development w Webflow, Next.js lub Twoim stacku
+                </li>
+                <li
+                  data-i18n-pl="SEO essentials, performance i dokumentacja"
+                  data-i18n-uk="SEO essentials, performance та документація"
+                  data-i18n-en="SEO essentials, performance tuning, documentation"
+                >
+                  SEO essentials, performance i dokumentacja
+                </li>
               </ul>
               <footer>
-                <span class="order-package__meta">Timeline: 6-8 weeks</span>
-                <span class="order-package__meta">Investment: From EUR 7 500</span>
+                <span
+                  class="order-package__meta"
+                  data-i18n-pl="Czas: 6–8 tygodni"
+                  data-i18n-uk="Термін: 6–8 тижнів"
+                  data-i18n-en="Timeline: 6-8 weeks"
+                >
+                  Czas: 6–8 tygodni
+                </span>
+                <span
+                  class="order-package__meta"
+                  data-i18n-pl="Budżet: od 7 500 EUR"
+                  data-i18n-uk="Бюджет: від 7 500 EUR"
+                  data-i18n-en="Investment: From EUR 7 500"
+                >
+                  Budżet: od 7 500 EUR
+                </span>
               </footer>
             </article>
             <article class="order-package-card">
               <header>
-                <h3>Growth Partner</h3>
-                <p>Ongoing design, optimisation, and experimentation support.</p>
+                <h3
+                  data-i18n-pl="Growth Partner"
+                  data-i18n-uk="Growth Partner"
+                  data-i18n-en="Growth Partner"
+                >
+                  Growth Partner
+                </h3>
+                <p
+                  data-i18n-pl="Stałe wsparcie w designie, optymalizacji i eksperymentach."
+                  data-i18n-uk="Постійна підтримка в дизайні, оптимізації та експериментах."
+                  data-i18n-en="Ongoing design, optimisation, and experimentation support."
+                >
+                  Stałe wsparcie w designie, optymalizacji i eksperymentach.
+                </p>
               </header>
               <ul>
-                <li>Monthly experiment and CRO roadmap</li>
-                <li>Design & development cycles with analytics reporting</li>
-                <li>Design system maintenance and rollout</li>
-                <li>Quarterly strategy reviews with leadership</li>
+                <li
+                  data-i18n-pl="Miesięczny roadmap eksperymentów i CRO"
+                  data-i18n-uk="Місячний roadmap експериментів та CRO"
+                  data-i18n-en="Monthly experiment and CRO roadmap"
+                >
+                  Miesięczny roadmap eksperymentów i CRO
+                </li>
+                <li
+                  data-i18n-pl="Cykl design + development z raportowaniem"
+                  data-i18n-uk="Цикли дизайн + девелопмент із аналітичними звітами"
+                  data-i18n-en="Design & development cycles with analytics reporting"
+                >
+                  Cykl design + development z raportowaniem
+                </li>
+                <li
+                  data-i18n-pl="Utrzymanie i rollout design systemu"
+                  data-i18n-uk="Підтримка та rollout дизайн-системи"
+                  data-i18n-en="Design system maintenance and rollout"
+                >
+                  Utrzymanie i rollout design systemu
+                </li>
+                <li
+                  data-i18n-pl="Kwartalne przeglądy strategii z leadershipem"
+                  data-i18n-uk="Квартальні огляди стратегії з лідершипом"
+                  data-i18n-en="Quarterly strategy reviews with leadership"
+                >
+                  Kwartalne przeglądy strategii z leadershipem
+                </li>
               </ul>
               <footer>
-                <span class="order-package__meta">Ongoing: 3+ months</span>
-                <span class="order-package__meta">Investment: From EUR 2 000/mo</span>
+                <span
+                  class="order-package__meta"
+                  data-i18n-pl="Retainer: min. 3 miesiące"
+                  data-i18n-uk="Ретейнер: мінімум 3 місяці"
+                  data-i18n-en="Ongoing: 3+ months"
+                >
+                  Retainer: min. 3 miesiące
+                </span>
+                <span
+                  class="order-package__meta"
+                  data-i18n-pl="Budżet: od 2 000 EUR / mies."
+                  data-i18n-uk="Бюджет: від 2 000 EUR / міс."
+                  data-i18n-en="Investment: From EUR 2 000/mo"
+                >
+                  Budżet: od 2 000 EUR / mies.
+                </span>
               </footer>
             </article>
           </div>
         </div>
       </section>
-
       <section class="order-quiz" aria-labelledby="order-quiz-title">
         <div class="container">
           <div class="order-section-header">
-            <h2 id="order-quiz-title">Need help defining the scope?</h2>
-            <p>
-              Answer a few quick questions - the interactive worksheet will outline a suggested
-              timeline and deliverables. Share it with your team or send it to us directly.
+            <h2
+              id="order-quiz-title"
+              data-i18n-pl="Potrzebujesz pomocy w zdefiniowaniu zakresu?"
+              data-i18n-uk="Потрібна допомога із визначенням обсягу?"
+              data-i18n-en="Need help defining the scope?"
+            >
+              Potrzebujesz pomocy w zdefiniowaniu zakresu?
+            </h2>
+            <p
+              data-i18n-pl="Odpowiedz na kilka pytań – interaktywny worksheet podpowie timeline i deliverables. Możesz udostępnić go zespołowi lub wysłać bezpośrednio do nas."
+              data-i18n-uk="Відповідай на кілька питань — інтерактивний worksheet підкаже таймлайн і deliverables. Поділіться ним з командою або надішліть прямо нам."
+              data-i18n-en="Answer a few quick questions - the interactive worksheet will outline a suggested timeline and deliverables. Share it with your team or send it to us directly."
+            >
+              Odpowiedz na kilka pytań – interaktywny worksheet podpowie timeline i deliverables.
+              Możesz udostępnić go zespołowi lub wysłać bezpośrednio do nas.
             </p>
           </div>
           <div class="quiz-shell">
@@ -168,49 +526,69 @@
                   <div class="progress-fill" style="width: 0%"></div>
                 </div>
               </div>
-
               <div class="content-columns">
-                <section
-                  class="panel question-panel"
-                  aria-labelledby="question-title"
-                >
-                  <h2 class="question-title" id="question-title">
-                    Let's understand your goals...
+                <section class="panel question-panel" aria-labelledby="question-title">
+                  <h2
+                    class="question-title"
+                    id="question-title"
+                    data-i18n-pl="Poznajmy Twoje cele..."
+                    data-i18n-uk="Зрозуміймо ваші цілі..."
+                    data-i18n-en="Let's understand your goals..."
+                  >
+                    Poznajmy Twoje cele...
                   </h2>
                   <div
                     class="option-stack"
                     id="optionStack"
                     role="group"
-                    aria-label="Project goals options"
+                    aria-label="options"
+                    data-i18n-pl="Opcje celów"
+                    data-i18n-uk="Опції цілей"
+                    data-i18n-en="Project goals options"
+                    data-i18n-attr="aria-label"
                   ></div>
-
                   <div class="controls">
-                    <button class="glow-btn" type="button" id="backBtn" disabled>
-                      Back
-                    </button>
-                    <button
-                      class="glow-btn primary"
-                      type="button"
-                      id="nextBtn"
-                      disabled
-                    >
+                    <button class="glow-btn" type="button" id="backBtn" disabled>Back</button>
+                    <button class="glow-btn primary" type="button" id="nextBtn" disabled>
                       Next
                     </button>
                   </div>
                 </section>
-
                 <aside class="panel summary-panel" aria-labelledby="summary-title">
                   <div class="summary-header">
-                    <strong>Project brief</strong>
+                    <strong
+                      data-i18n-pl="Brief projektu"
+                      data-i18n-uk="Бриф проєкту"
+                      data-i18n-en="Project brief"
+                    >
+                      Brief projektu
+                    </strong>
                     <nav class="nav-links" aria-label="Quick navigation">
-                      <a href="services.html">Services</a>
-                      <a href="contacts.html">Contact</a>
+                      <a href="services.html" data-i18n-pl="Usługi" data-i18n-uk="Послуги" data-i18n-en="Services">
+                        Usługi
+                      </a>
+                      <a href="contacts.html" data-i18n-pl="Kontakt" data-i18n-uk="Контакти" data-i18n-en="Contact">
+                        Kontakt
+                      </a>
                     </nav>
                   </div>
-                  <h3 id="summary-title">Your answers</h3>
-                  <p class="summary-empty" id="summaryEmpty">
-                    The summary will appear once you select answers. We will compile a PDF
-                    recap for you to share with stakeholders.
+                  <h3
+                    id="summary-title"
+                    data-i18n-pl="Twoje odpowiedzi"
+                    data-i18n-uk="Ваші відповіді"
+                    data-i18n-en="Your answers"
+                  >
+                    Twoje odpowiedzi
+                  </h3>
+                  <p
+                    class="summary-empty"
+                    id="summaryEmpty"
+                    data-i18n-pl="Podsumowanie pojawi się po wyborze odpowiedzi. Przygotujemy PDF do udostępnienia interesariuszom."
+                    data-i18n-uk="Підсумок з'явиться після вибору відповідей. Ми підготуємо PDF для поділу зі стейкхолдерами."
+                    data-i18n-en="The summary will appear once you select answers. We will compile a PDF recap for you to share with stakeholders."
+                  >
+                    Podsumowanie pojawi się po wyborze odpowiedzi. Przygotujemy PDF do udostępnienia
+                    interesariuszom.
                   </p>
                   <div class="summary-answers" id="summaryList" role="list"></div>
                 </aside>
@@ -219,28 +597,69 @@
           </div>
         </div>
       </section>
-
       <section class="order-intake" id="intake" aria-labelledby="intake-title">
         <div class="container order-intake__inner">
           <div class="order-intake__intro">
-            <h2 id="intake-title">Project intake form</h2>
-            <p>
-              The more context you share, the faster we can prepare a plan with accurate
-              timelines, team makeup, and budget expectations.
+            <h2
+              id="intake-title"
+              data-i18n-pl="Formularz projektowy"
+              data-i18n-uk="Форма проєкту"
+              data-i18n-en="Project intake form"
+            >
+              Formularz projektowy
+            </h2>
+            <p
+              data-i18n-pl="Im więcej kontekstu przekażesz, tym szybciej przygotujemy plan z dokładnymi timeline'ami, składem zespołu i budżetem."
+              data-i18n-uk="Чим більше контексту ви дасте, тим швидше ми підготуємо план із точними таймлайнами, командою та бюджетом."
+              data-i18n-en="The more context you share, the faster we can prepare a plan with accurate timelines, team makeup, and budget expectations."
+            >
+              Im więcej kontekstu przekażesz, tym szybciej przygotujemy plan z dokładnymi timeline'ami,
+              składem zespołu i budżetem.
             </p>
             <ul class="order-intake__tips">
-              <li>Attach key docs (briefs, decks, references)</li>
-              <li>Include deadlines, business goals, and stakeholders</li>
-              <li>Tell us how you prefer to collaborate</li>
+              <li
+                data-i18n-pl="Dołącz kluczowe dokumenty (briefy, prezentacje, referencje)"
+                data-i18n-uk="Додайте ключові документи (брифи, презентації, референси)"
+                data-i18n-en="Attach key docs (briefs, decks, references)"
+              >
+                Dołącz kluczowe dokumenty (briefy, prezentacje, referencje)
+              </li>
+              <li
+                data-i18n-pl="Opisz terminy, cele biznesowe i interesariuszy"
+                data-i18n-uk="Опишіть дедлайни, бізнес-цілі та стейкхолдерів"
+                data-i18n-en="Include deadlines, business goals, and stakeholders"
+              >
+                Opisz terminy, cele biznesowe i interesariuszy
+              </li>
+              <li
+                data-i18n-pl="Powiedz nam, jak lubisz współpracować"
+                data-i18n-uk="Розкажіть, як вам зручно співпрацювати"
+                data-i18n-en="Tell us how you prefer to collaborate"
+              >
+                Powiedz nam, jak lubisz współpracować
+              </li>
             </ul>
           </div>
           <form class="order-form">
             <div class="form-row">
-              <label for="name">Full name*</label>
-              <input type="text" id="name" name="name" placeholder="Your name" required />
+              <label for="name" data-i18n-pl="Pełne imię i nazwisko*" data-i18n-uk="Повне ім'я*" data-i18n-en="Full name*">
+                Pełne imię i nazwisko*
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Twoje imię"
+                data-i18n-pl="Twoje imię"
+                data-i18n-uk="Ваше ім'я"
+                data-i18n-en="Your name"
+                required
+              />
             </div>
             <div class="form-row">
-              <label for="email">Work email*</label>
+              <label for="email" data-i18n-pl="Email służbowy*" data-i18n-uk="Робочий email*" data-i18n-en="Work email*">
+                Email służbowy*
+              </label>
               <input
                 type="email"
                 id="email"
@@ -251,105 +670,228 @@
               />
             </div>
             <div class="form-row">
-              <label for="company">Company or brand</label>
+              <label for="company" data-i18n-pl="Firma lub marka" data-i18n-uk="Компанія або бренд" data-i18n-en="Company or brand">
+                Firma lub marka
+              </label>
               <input
                 type="text"
                 id="company"
                 name="company"
-                placeholder="Company, startup, or personal brand"
+                placeholder="Firma, startup lub marka osobista"
+                data-i18n-pl="Firma, startup lub marka osobista"
+                data-i18n-uk="Компанія, стартап або особистий бренд"
+                data-i18n-en="Company, startup, or personal brand"
               />
             </div>
             <div class="form-row">
-              <label for="project">Project type*</label>
+              <label for="project" data-i18n-pl="Typ projektu*" data-i18n-uk="Тип проєкту*" data-i18n-en="Project type*">
+                Typ projektu*
+              </label>
               <select id="project" name="project" required>
-                <option value="" disabled selected>Select an option</option>
-                <option value="landing">Landing launch</option>
-                <option value="website">Website redesign</option>
-                <option value="ecommerce">E-commerce build</option>
-                <option value="product">Product experience</option>
-                <option value="growth">Growth optimisation</option>
-                <option value="other">Other</option>
+                <option value="" disabled selected data-i18n-pl="Wybierz opcję" data-i18n-uk="Оберіть опцію" data-i18n-en="Select an option">
+                  Wybierz opcję
+                </option>
+                <option value="landing" data-i18n-pl="Start strony docelowej" data-i18n-uk="Запуск лендингу" data-i18n-en="Landing launch">
+                  Start strony docelowej
+                </option>
+                <option value="website" data-i18n-pl="Redesign serwisu" data-i18n-uk="Редизайн сайту" data-i18n-en="Website redesign">
+                  Redesign serwisu
+                </option>
+                <option value="ecommerce" data-i18n-pl="Budowa e-commerce" data-i18n-uk="Розробка e-commerce" data-i18n-en="E-commerce build">
+                  Budowa e-commerce
+                </option>
+                <option value="product" data-i18n-pl="Doświadczenie produktowe" data-i18n-uk="Продуктовий досвід" data-i18n-en="Product experience">
+                  Doświadczenie produktowe
+                </option>
+                <option value="growth" data-i18n-pl="Optymalizacja wzrostu" data-i18n-uk="Оптимізація зростання" data-i18n-en="Growth optimisation">
+                  Optymalizacja wzrostu
+                </option>
+                <option value="other" data-i18n-pl="Inne" data-i18n-uk="Інше" data-i18n-en="Other">
+                  Inne
+                </option>
               </select>
             </div>
             <div class="form-row form-row--full">
-              <label for="details">Project goals and challenges*</label>
+              <label
+                for="details"
+                data-i18n-pl="Cele i wyzwania projektu*"
+                data-i18n-uk="Цілі та виклики проєкту*"
+                data-i18n-en="Project goals and challenges*"
+              >
+                Cele i wyzwania projektu*
+              </label>
               <textarea
                 id="details"
                 name="details"
                 rows="5"
-                placeholder="Outline your current situation, success metrics, audience insights, and any requirements or references."
+                placeholder="Opisz obecną sytuację, metryki sukcesu, insighty o odbiorcach oraz wymagania lub referencje."
+                data-i18n-pl="Opisz obecną sytuację, metryki sukcesu, insighty o odbiorcach oraz wymagania lub referencje."
+                data-i18n-uk="Опишіть поточну ситуацію, метрики успіху, інсайти аудиторії та вимоги чи референси."
+                data-i18n-en="Outline your current situation, success metrics, audience insights, and any requirements or references."
                 required
               ></textarea>
             </div>
             <div class="form-row form-row--split">
               <div>
-                <label for="timeline">Ideal launch date</label>
+                <label
+                  for="timeline"
+                  data-i18n-pl="Preferowana data launchu"
+                  data-i18n-uk="Бажана дата запуску"
+                  data-i18n-en="Ideal launch date"
+                >
+                  Preferowana data launchu
+                </label>
                 <input type="date" id="timeline" name="timeline" />
               </div>
               <div>
-                <label for="budget">Estimated budget</label>
+                <label
+                  for="budget"
+                  data-i18n-pl="Szacowany budżet"
+                  data-i18n-uk="Орієнтовний бюджет"
+                  data-i18n-en="Estimated budget"
+                >
+                  Szacowany budżet
+                </label>
                 <select id="budget" name="budget">
-                  <option value="" disabled selected>Select a range</option>
-                  <option value="under5k">Under EUR 5 000</option>
-                  <option value="5-10k">EUR 5 000 - 10 000</option>
-                  <option value="10-20k">EUR 10 000 - 20 000</option>
-                  <option value="20kplus">EUR 20 000+</option>
+                  <option value="" disabled selected data-i18n-pl="Wybierz przedział" data-i18n-uk="Оберіть діапазон" data-i18n-en="Select a range">
+                    Wybierz przedział
+                  </option>
+                  <option value="under5k" data-i18n-pl="Poniżej 5 000 EUR" data-i18n-uk="Менше 5 000 EUR" data-i18n-en="Under EUR 5 000">
+                    Poniżej 5 000 EUR
+                  </option>
+                  <option value="5-10k" data-i18n-pl="5 000 - 10 000 EUR" data-i18n-uk="5 000 - 10 000 EUR" data-i18n-en="EUR 5 000 - 10 000">
+                    5 000 - 10 000 EUR
+                  </option>
+                  <option value="10-20k" data-i18n-pl="10 000 - 20 000 EUR" data-i18n-uk="10 000 - 20 000 EUR" data-i18n-en="EUR 10 000 - 20 000">
+                    10 000 - 20 000 EUR
+                  </option>
+                  <option value="20kplus" data-i18n-pl="20 000+ EUR" data-i18n-uk="20 000+ EUR" data-i18n-en="EUR 20 000+">
+                    20 000+ EUR
+                  </option>
                 </select>
               </div>
             </div>
             <div class="form-row">
               <label class="checkbox">
                 <input type="checkbox" id="nda" name="nda" />
-                <span>We require an NDA before sharing sensitive information</span>
+                <span
+                  data-i18n-pl="Potrzebujemy NDA zanim przekażemy wrażliwe informacje"
+                  data-i18n-uk="Потрібне NDA перед передачею чутливої інформації"
+                  data-i18n-en="We require an NDA before sharing sensitive information"
+                >
+                  Potrzebujemy NDA zanim przekażemy wrażliwe informacje
+                </span>
               </label>
             </div>
             <div class="form-actions">
-              <button type="submit" class="btn large">Submit request</button>
-              <p class="form-note">
-                By submitting this form you agree to receive a follow-up email from
-                LandingWebStudio. We do not add you to a mailing list without consent.
+              <button
+                type="submit"
+                class="btn large"
+                data-i18n-pl="Wyślij zgłoszenie"
+                data-i18n-uk="Надіслати заявку"
+                data-i18n-en="Submit request"
+              >
+                Wyślij zgłoszenie
+              </button>
+              <p
+                class="form-note"
+                data-i18n-pl="Wysyłając formularz zgadzasz się na wiadomość follow-up od LandingWebStudio. Nie zapisujemy Cię na mailing bez zgody."
+                data-i18n-uk="Надсилаючи форму, ви погоджуєтеся отримати follow-up від LandingWebStudio. Ми не додаємо вас у розсилку без згоди."
+                data-i18n-en="By submitting this form you agree to receive a follow-up email from LandingWebStudio. We do not add you to a mailing list without consent."
+              >
+                Wysyłając formularz zgadzasz się na wiadomość follow-up od LandingWebStudio. Nie
+                zapisujemy Cię na mailing bez zgody.
               </p>
             </div>
           </form>
         </div>
       </section>
-
       <section class="order-faq" aria-labelledby="order-faq-title">
         <div class="container">
           <div class="order-section-header">
-            <h2 id="order-faq-title">Frequently asked questions</h2>
-            <p>
-              Still deciding if we are the right fit? These answers cover the most common
-              questions we hear from new partners.
+            <h2
+              id="order-faq-title"
+              data-i18n-pl="Najczęstsze pytania"
+              data-i18n-uk="Поширені питання"
+              data-i18n-en="Frequently asked questions"
+            >
+              Najczęstsze pytania
+            </h2>
+            <p
+              data-i18n-pl="Wciąż się zastanawiasz? Oto odpowiedzi na najczęstsze pytania nowych partnerów."
+              data-i18n-uk="Ще вагаєтесь? Ось відповіді на найчастіші питання нових партнерів."
+              data-i18n-en="Still deciding if we are the right fit? These answers cover the most common questions we hear from new partners."
+            >
+              Wciąż się zastanawiasz? Oto odpowiedzi na najczęstsze pytania nowych partnerów.
             </p>
           </div>
           <div class="order-faq__grid">
             <article>
-              <h3>How quickly can we start?</h3>
-              <p>
-                Discovery kicks off within 5 business days. From there the timeline depends on
-                scope - tell us your deadline and we'll prioritise accordingly.
+              <h3
+                data-i18n-pl="Jak szybko możemy wystartować?"
+                data-i18n-uk="Як швидко можемо стартувати?"
+                data-i18n-en="How quickly can we start?"
+              >
+                Jak szybko możemy wystartować?
+              </h3>
+              <p
+                data-i18n-pl="Discovery startuje w 5 dni roboczych. Dalszy timeline zależy od zakresu – powiedz nam o deadlinie, a dopasujemy priorytety."
+                data-i18n-uk="Discovery стартує протягом 5 робочих днів. Далі таймлайн залежить від обсягу — скажіть про дедлайн, і ми пріоритизуємо роботу."
+                data-i18n-en="Discovery kicks off within 5 business days. From there the timeline depends on scope - tell us your deadline and we'll prioritise accordingly."
+              >
+                Discovery startuje w 5 dni roboczych. Dalszy timeline zależy od zakresu – powiedz nam o
+                deadlinie, a dopasujemy priorytety.
               </p>
             </article>
             <article>
-              <h3>Do you work with in-house teams?</h3>
-              <p>
-                Yes. We can run design and build end-to-end or integrate with your designers,
-                developers, copywriters, or marketers as an embedded partner.
+              <h3
+                data-i18n-pl="Czy współpracujecie z zespołami in-house?"
+                data-i18n-uk="Чи працюєте з внутрішніми командами?"
+                data-i18n-en="Do you work with in-house teams?"
+              >
+                Czy współpracujecie z zespołami in-house?
+              </h3>
+              <p
+                data-i18n-pl="Tak. Możemy prowadzić projekt end-to-end lub dołączyć do Twoich projektantów, developerów, copywriterów i marketerów jako embedded partner."
+                data-i18n-uk="Так. Ми можемо вести проєкт end-to-end або інтегруватися з вашими дизайнерами, девелоперами, копірайтерами чи маркетологами як embedded-партнер."
+                data-i18n-en="Yes. We can run design and build end-to-end or integrate with your designers, developers, copywriters, or marketers as an embedded partner."
+              >
+                Tak. Możemy prowadzić projekt end-to-end lub dołączyć do Twoich projektantów, developerów,
+                copywriterów i marketerów jako embedded partner.
               </p>
             </article>
             <article>
-              <h3>Which platforms do you support?</h3>
-              <p>
-                Webflow, Framer, Shopify, Next.js, and custom stacks. We recommend the platform
-                that best suits your team's maturity and future plans.
+              <h3
+                data-i18n-pl="Na jakich platformach pracujecie?"
+                data-i18n-uk="З якими платформами працюєте?"
+                data-i18n-en="Which platforms do you support?"
+              >
+                Na jakich platformach pracujecie?
+              </h3>
+              <p
+                data-i18n-pl="Webflow, Framer, Shopify, Next.js i customowe stacki. Rekomendujemy platformę dopasowaną do dojrzałości Twojego zespołu i planów na przyszłość."
+                data-i18n-uk="Webflow, Framer, Shopify, Next.js та кастомні стеки. Ми рекомендуємо платформу, що відповідає зрілості вашої команди та майбутнім планам."
+                data-i18n-en="Webflow, Framer, Shopify, Next.js, and custom stacks. We recommend the platform that best suits your team's maturity and future plans."
+              >
+                Webflow, Framer, Shopify, Next.js i customowe stacki. Rekomendujemy platformę dopasowaną do
+                dojrzałości Twojego zespołu i planów na przyszłość.
               </p>
             </article>
             <article>
-              <h3>Can you help post-launch?</h3>
-              <p>
-                Absolutely. Many clients stay on a growth retainer for experiment roadmaps,
-                CRO, automation, and design system updates.
+              <h3
+                data-i18n-pl="Czy pomagacie po launchu?"
+                data-i18n-uk="Чи допомагаєте після запуску?"
+                data-i18n-en="Can you help post-launch?"
+              >
+                Czy pomagacie po launchu?
+              </h3>
+              <p
+                data-i18n-pl="Tak. Wielu klientów zostaje z nami na retainerze growthowym – roadmapy eksperymentów, CRO, automatyzacje i aktualizacje design systemu."
+                data-i18n-uk="Так. Багато клієнтів залишаються з нами на growth-ретейнері — roadmap експериментів, CRO, автоматизації й оновлення дизайн-системи."
+                data-i18n-en="Absolutely. Many clients stay on a growth retainer for experiment roadmaps, CRO, automation, and design system updates."
+              >
+                Tak. Wielu klientów zostaje z nami na retainerze growthowym – roadmapy eksperymentów, CRO,
+                automatyzacje i aktualizacje design systemu.
               </p>
             </article>
           </div>
@@ -382,7 +924,7 @@
             <a href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
               <svg viewBox="0 0 24 24" class="i">
                 <path
-                  d="M20.52 3.48A11.94 11.94 0 0 0 12.02 0C5.43 0 .1 5.32.1 11.9a11.8 11.8 0 0 0 1.6 6l-1.7 6.1 6.26-1.64a12 12 0 0 0 5.76 1.47h.01c6.59 0 11.92-5.33 11.92-11.91 0-3.18-1.24-6.16-3.45-8.45ZM12 21.3a9.3 9.3 0 0 1-4.74-1.3l-.34-.2-3.72.98 1-3.62-.22-.37A9.3 9.3 0 1 1 21.3 12 9.29 9.29 0 0 1 12 21.3Zm5.39-6.86c-.29-.15-1.72-.85-1.99-.95-.27-.1-.47-.15-.67.15-.2.3-.77.95-.94 1.15-.17.2-.35.22-.64.07-.29-.15-1.22-.45-2.33-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.14-.14.3-.36.44-.54.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.11 3.22 5.11 4.51.71.31 1.26.5 1.69.64.71.23 1.35.2 1.86.12.57-.09 1.72-.7 1.96-1.37.24-.67.24-1.24.17-1.37-.07-.13-.26-.2-.55-.35Z"
+                  d="M20.52 3.48A11.94 11.94 0 0 0 12.02 0C5.43 0 .1 5.32.1 11.9a11.8 11.8 0 0 0 1.6 6l-1.7 6.1 6.26-1.64a12 12 0 0 0 5.76 1.47h.01c6.59 0 11.92-5.33 11.92-11.91 0-3.18-1.24-6.16-3.45-8.45ZM12 21.3a9.3 9.3 0 0 1-4.74-1.3l-.34-.2-3.72.98 1-3.62-.22-.37A9.3 9.3 0 1 1 21.3 12 9.29 9.29 0 0 1 12 21.3Zm5.39-6.86c-.29-.15-1.72-.85-1.99-.95-.27-.1-.47-.15-.67.15-.2.3-.77.95-.94 1.15-.17.2-.35.22-.64.07-.29-.15-1.22-.45-2.33-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.14-.14.3-.36.44-.54.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27 .3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15 .2 2.11 3.22 5.11 4.51.71 .31 1.26 .5 1.69 .64.71 .23 1.35 .2 1.86 .12.57-.09 1.72-.7 1.96-1.37.24-.67.24-1.24.17-1.37-.07-.13-.26-.2-.55-.35Z"
                 />
               </svg>
             </a>
@@ -390,8 +932,15 @@
         </ul>
       </div>
       <p>
-        &copy; <span id="y"></span> LandingWebStudio. All rights reserved. We build digital
-        products with clarity and performance in mind.
+        &copy; <span id="y"></span> LandingWebStudio.
+        <span
+          class="footer-note"
+          data-i18n-pl="Tworzymy cyfrowe produkty z jasnością i wydajnością na pierwszym miejscu."
+          data-i18n-uk="Створюємо цифрові продукти з акцентом на ясність та performance."
+          data-i18n-en="We build digital products with clarity and performance in mind."
+        >
+          Tworzymy cyfrowe produkty z jasnością i wydajnością na pierwszym miejscu.
+        </span>
       </p>
     </footer>
     <script src="js/swiper-bundle.min.js"></script>
@@ -399,3 +948,8 @@
     <script src="js/evaluating-site-goals.js"></script>
   </body>
 </html>
+
+
+
+
+

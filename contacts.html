@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LandingWebStudio — contact the team</title>
+    <title>LandingWebStudio - skontaktuj się z zespołem</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
     <link href="css/swiper-bundle.min.css" rel="stylesheet" />
     <link href="css/reset.css" rel="stylesheet" />
@@ -12,278 +12,434 @@
     <link href="css/footer.css" rel="stylesheet" />
     <link href="css/page-contacts.css" rel="stylesheet" />
   </head>
-  <body class="contacts-page" id="top">
+  <body class="contacts-page" id="top" data-active-lang="pl">
     <header class="site-header">
       <div class="container">
         <div class="header-inner">
-          <a href="index.html" class="logo"
-            ><img class="header-logo" src="img/logo.png" alt="LandingWebStudio logo"
-          /></a>
+          <a href="index.html" class="logo">
+            <img
+              class="header-logo"
+              src="img/logo.png"
+              alt="Logo LandingWebStudio"
+              data-i18n-pl="Logo LandingWebStudio"
+              data-i18n-uk="Логотип LandingWebStudio"
+              data-i18n-en="LandingWebStudio logo"
+              data-i18n-attr="alt"
+            />
+          </a>
           <h2 class="header-title">LandingWebStudio</h2>
           <nav class="nav" id="nav">
             <ul class="nav-list">
-              <li><a href="index.html#cases">Portfolio</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="pricing.html">Pricing</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contacts.html" aria-current="page">Contact</a></li>
+              <li>
+                <a
+                  href="index.html#cases"
+                  data-i18n-pl="Portfolio"
+                  data-i18n-uk="Портфоліо"
+                  data-i18n-en="Portfolio"
+                >
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  data-i18n-pl="Usługi"
+                  data-i18n-uk="Послуги"
+                  data-i18n-en="Services"
+                >
+                  Usługi
+                </a>
+              </li>
+              <li>
+                <a
+                  href="pricing.html"
+                  data-i18n-pl="Cennik"
+                  data-i18n-uk="Ціни"
+                  data-i18n-en="Pricing"
+                >
+                  Cennik
+                </a>
+              </li>
+              <li>
+                <a
+                  href="blog.html"
+                  data-i18n-pl="Blog"
+                  data-i18n-uk="Блог"
+                  data-i18n-en="Blog"
+                >
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  data-i18n-pl="O nas"
+                  data-i18n-uk="Про нас"
+                  data-i18n-en="About"
+                >
+                  O nas
+                </a>
+              </li>
+              <li>
+                <a
+                  href="contacts.html"
+                  aria-current="page"
+                  data-i18n-pl="Kontakt"
+                  data-i18n-uk="Контакти"
+                  data-i18n-en="Contact"
+                >
+                  Kontakt
+                </a>
+              </li>
             </ul>
+            <div
+              class="lang-switcher"
+              aria-label="Wybierz język"
+              data-i18n-pl="Wybierz język"
+              data-i18n-uk="Оберіть мову"
+              data-i18n-en="Choose language"
+              data-i18n-attr="aria-label"
+            >
+              <button
+                type="button"
+                class="lang-switcher__toggle"
+                id="lang-toggle"
+                aria-haspopup="listbox"
+                aria-expanded="false"
+                data-i18n-pl="Zmień język"
+                data-i18n-uk="Змінити мову"
+                data-i18n-en="Change language"
+                data-i18n-attr="aria-label"
+              >
+                PL
+              </button>
+              <ul class="lang-switcher__list" role="listbox">
+                <li>
+                  <button type="button" class="lang-switcher__option" data-lang-option="pl" aria-selected="true">
+                    Polski (PL)
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="lang-switcher__option" data-lang-option="uk" aria-selected="false">
+                    Українська (UA)
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="lang-switcher__option" data-lang-option="en" aria-selected="false">
+                    English (EN)
+                  </button>
+                </li>
+              </ul>
+            </div>
           </nav>
           <button
             class="burger"
             id="burger"
-            aria-label="Toggle navigation"
+            aria-label="Przełącz nawigację"
             aria-controls="nav"
             aria-expanded="false"
+            data-i18n-pl="Przełącz nawigację"
+            data-i18n-uk="Перемкнути навігацію"
+            data-i18n-en="Toggle navigation"
+            data-i18n-attr="aria-label"
           >
             <span></span><span></span><span></span>
           </button>
         </div>
       </div>
     </header>
-
     <main>
       <section class="contacts-hero" aria-labelledby="contacts-hero-title">
         <div class="container contacts-hero__inner">
           <div class="contacts-hero__content">
-            <p class="contacts-hero__eyebrow">Get in touch</p>
-            <h1 id="contacts-hero-title">
-              Let’s align on your next launch, redesign, or experiment
+            <p
+              class="contacts-hero__eyebrow"
+              data-i18n-pl="Skontaktuj się"
+              data-i18n-uk="Зв'яжіться"
+              data-i18n-en="Get in touch"
+            >
+              Skontaktuj się
+            </p>
+            <h1
+              id="contacts-hero-title"
+              data-i18n-pl="Ustalmy kolejny launch, redesign lub eksperyment"
+              data-i18n-uk="Узгодьмо наступний launch, редизайн чи експеримент"
+              data-i18n-en="Let's align on your next launch, redesign, or experiment"
+            >
+              Ustalmy kolejny launch, redesign lub eksperyment
             </h1>
-            <p class="contacts-hero__lead">
-              Share a few quick details and we will reply within one business day
-              with next steps, timeline estimates, and available collaboration
-              slots.
+            <p
+              class="contacts-hero__lead"
+              data-i18n-pl="Podziel się krótkim kontekstem, a odpowiemy w ciągu jednego dnia roboczego z kolejnymi krokami, timeline'em i proponowanym sposobem współpracy."
+              data-i18n-uk="Поділіться коротким контекстом, і ми відповімо протягом одного робочого дня з наступними кроками, таймлайном і варіантами співпраці."
+              data-i18n-en="Share a few quick details and we will reply within one business day with next steps, timeline estimates, and available collaboration slots."
+            >
+              Podziel się krótkim kontekstem, a odpowiemy w ciągu jednego dnia roboczego z kolejnymi
+              krokami, timeline'em i proponowanym sposobem współpracy.
             </p>
             <div class="contacts-hero__cta">
-              <a href="#contact-form" class="btn">Book a short intro call</a>
-              <a href="mailto:hello@landingwebstudio.com" class="btn btn-secondary"
-                >Email the team</a
+              <a
+                href="#contact-form"
+                class="btn"
+                data-i18n-pl="Umów krótką rozmowę"
+                data-i18n-uk="Заплануйте коротку розмову"
+                data-i18n-en="Book a short intro call"
               >
+                Umów krótką rozmowę
+              </a>
+              <a
+                href="mailto:hello@landingwebstudio.com"
+                class="btn btn-secondary"
+                data-i18n-pl="Napisz do zespołu"
+                data-i18n-uk="Напишіть команді"
+                data-i18n-en="Email the team"
+              >
+                Napisz do zespołu
+              </a>
             </div>
           </div>
           <div class="contacts-hero__aside">
             <div class="availability-card">
-              <h2>Availability snapshot</h2>
+              <h2
+                data-i18n-pl="Dostępność w skrócie"
+                data-i18n-uk="Доступність коротко"
+                data-i18n-en="Availability snapshot"
+              >
+                Dostępność w skrócie
+              </h2>
               <ul>
-                <li><strong>Product websites:</strong> 2 slots open for November</li>
-                <li><strong>Landing launch packages:</strong> onboarding in 7 days</li>
-                <li><strong>Consulting sprints:</strong> weekly sessions on Fridays</li>
+                <li
+                  data-i18n-pl="Product websites: 2 sloty wolne na listopad"
+                  data-i18n-uk="Product websites: 2 слоти вільні на листопад"
+                  data-i18n-en="Product websites: 2 slots open for November"
+                >
+                  Product websites: 2 sloty wolne na listopad
+                </li>
+                <li
+                  data-i18n-pl="Pakiety launchowe: onboarding w 7 dni"
+                  data-i18n-uk="Пакети launch: onboarding за 7 днів"
+                  data-i18n-en="Landing launch packages: onboarding in 7 days"
+                >
+                  Pakiety launchowe: onboarding w 7 dni
+                </li>
+                <li
+                  data-i18n-pl="Sprinty konsultacyjne: piątkowe sesje tygodniowe"
+                  data-i18n-uk="Консультаційні спринти: щотижневі сесії у п'ятницю"
+                  data-i18n-en="Consulting sprints: weekly sessions on Fridays"
+                >
+                  Sprinty konsultacyjne: piątkowe sesje tygodniowe
+                </li>
               </ul>
-              <p>Need something sooner? Tell us your dates — we keep room for rush jobs.</p>
+              <p
+                data-i18n-pl="Potrzebujesz szybciej? Daj znać w wiadomości – mamy bufor na pilne projekty."
+                data-i18n-uk="Потрібно швидше? Повідомте у листі — ми маємо буфер для термінових проєктів."
+                data-i18н-en="Need something sooner? Tell us your dates – we keep room for rush jobs."
+              >
+                Potrzebujesz szybciej? Daj znać w wiadomości – mamy bufor na pilne projekty.
+              </p>
             </div>
           </div>
         </div>
       </section>
-
       <section class="contacts-section contacts-channels" aria-labelledby="channels-title">
         <div class="container">
           <div class="contacts-section__header">
-            <h2 id="channels-title">Choose the channel that fits best</h2>
-            <p>
-              We are a distributed team that works across GMT+1 — GMT+3. Expect a
-              response in up to 24 hours, usually faster.
+            <h2
+              id="channels-title"
+              data-i18n-pl="Wybierz najlepszy kanał"
+              data-i18n-uk="Оберіть зручний канал"
+              data-i18n-en="Choose the channel that fits best"
+            >
+              Wybierz najlepszy kanał
+            </h2>
+            <p
+              data-i18n-pl="Pracujemy rozproszenie w strefach GMT+1 – GMT+3. Odpowiadamy do 24 godzin, zazwyczaj szybciej."
+              data-i18n-uk="Ми працюємо розподілено в GMT+1 – GMT+3. Відповідаємо до 24 годин, зазвичай швидше."
+              data-i18n-en="We are a distributed team that works across GMT+1 – GMT+3. Expect a response in up to 24 hours, usually faster."
+            >
+              Pracujemy rozproszenie w strefach GMT+1 – GMT+3. Odpowiadamy do 24 godzin, zazwyczaj szybciej.
             </p>
           </div>
           <div class="contacts-grid">
             <article class="contact-card">
-              <h3>Email & documents</h3>
-              <p>
-                hello@landingwebstudio.com<br />
-                Send briefs, RFPs, brand guides, or anything that needs context.
+              <h3 data-i18n-pl="Email i dokumenty" data-i18n-uk="Email та документи" data-i18n-en="Email & documents">
+                Email i dokumenty
+              </h3>
+              <p data-i18n-pl="hello@landingwebstudio.com\nPrześlij brief, RFP, brand book lub materiały referencyjne." data-i18n-uk="hello@landingwebstudio.com\nНадішліть бриф, RFP, брендбук чи референси." data-i18n-en="hello@landingwebstudio.com\nSend briefs, RFPs, brand guides, or anything that needs context.">
+                hello@landingwebstudio.com<br />Prześlij brief, RFP, brand book lub materiały referencyjne.
               </p>
-              <a class="contact-card__link" href="mailto:hello@landingwebstudio.com"
-                >Compose email</a
-              >
+              <a class="contact-card__link" href="mailto:hello@landingwebstudio.com" data-i18n-pl="Napisz mail" data-i18n-uk="Написати лист" data-i18n-en="Compose email">
+                Napisz mail
+              </a>
             </article>
             <article class="contact-card">
-              <h3>Direct call</h3>
-              <p>
-                +48 000 000 000<br />
-                Best time: 09:00 – 17:00 CET. Outside hours, leave a voice note.
+              <h3 data-i18n-pl="Bezpośredni telefon" data-i18n-uk="Прямий дзвінок" data-i18n-en="Direct call">
+                Bezpośredni telefon
+              </h3>
+              <p data-i18n-pl="+48 000 000 000<br />Najlepszy czas: 09:00–17:00 CET. Po godzinach zostaw wiadomość." data-i18n-uk="+48 000 000 000<br />Краще дзвонити 09:00–17:00 CET. Поза годинами залиште voice note." data-i18n-en="+48 000 000 000<br />Best time: 09:00 – 17:00 CET. Outside hours, leave a voice note.">
+                +48 000 000 000<br />Najlepszy czas: 09:00–17:00 CET. Po godzinach zostaw wiadomość.
               </p>
-              <a class="contact-card__link" href="tel:+48000000000"
-                >Call or schedule</a
-              >
+              <a class="contact-card__link" href="tel:+48000000000" data-i18n-pl="Zadzwoń lub umów" data-i18n-uk="Подзвонити або домовитись" data-i18n-en="Call or schedule">
+                Zadzwoń lub umów
+              </a>
             </article>
             <article class="contact-card" id="messengers">
-              <h3>Messengers</h3>
-              <p>
-                Telegram / WhatsApp<br />
-                @landingwebstudio — quick questions, project status updates.
+              <h3 data-i18n-pl="Komunikatory" data-i18n-uk="Месенджери" data-i18n-en="Messengers">
+                Komunikatory
+              </h3>
+              <p data-i18n-pl="Telegram / WhatsApp<br />@landingwebstudio – krótkie pytania i statusy projektów." data-i18n-uk="Telegram / WhatsApp<br />@landingwebstudio — короткі питання та статуси проєктів." data-i18n-en="Telegram / WhatsApp<br />@landingwebstudio – quick questions, project status updates.">
+                Telegram / WhatsApp<br />@landingwebstudio – krótkie pytania i statusy projektów.
               </p>
-              <a class="contact-card__link" href="#messengers"
-                >Request a chat invite</a
-              >
+              <a class="contact-card__link" href="#messengers" data-i18n-pl="Poproś o zaproszenie" data-i18n-uk="Запросити інвайт" data-i18n-en="Request a chat invite">
+                Poproś o zaproszenie
+              </a>
             </article>
             <article class="contact-card">
-              <h3>Project portal</h3>
-              <p>
-                Existing clients can use the Notion dashboard for tickets, docs,
-                and sprint plans.
+              <h3 data-i18n-pl="Project portal" data-i18n-uk="Project portal" data-i18n-en="Project portal">
+                Project portal
+              </h3>
+              <p data-i18n-pl="Notion + Slack<br />Dostarczamy dashboard z harmonogramem, backlogiem i materiałami." data-i18n-uk="Notion + Slack<br />Надаємо дашборд із таймлайном, беклогом і матеріалами." data-i18n-en="Notion + Slack<br />We provide a dashboard with timeline, backlog, and assets.">
+                Notion + Slack<br />Dostarczamy dashboard z harmonogramem, backlogiem i materiałami.
               </p>
-              <a class="contact-card__link" href="#" aria-disabled="true"
-                >Sign in (coming soon)</a
-              >
+              <a class="contact-card__link" href="#contact-form" data-i18n-pl="Poproś o dostęp" data-i18n-uk="Запросити доступ" data-i18n-en="Request access">
+                Poproś o dostęp
+              </a>
             </article>
           </div>
         </div>
       </section>
-
-      <section class="contacts-section contacts-form" aria-labelledby="contact-form-title">
-        <div class="container contacts-form__inner">
-          <div class="contacts-form__intro">
-            <h2 id="contact-form-title">Share your idea — we’ll prepare a roadmap</h2>
-            <p>
-              Tell us about the challenge, timeline, and desired outcomes. The more
-              context we have, the faster you get an actionable proposal.
+      <section class="contacts-section contacts-form" aria-labelledby="contacts-form-title">
+        <div class="container" id="contact-form">
+          <div class="contacts-section__header">
+            <h2
+              id="contacts-form-title"
+              data-i18n-pl="Opowiedz nam o projekcie"
+              data-i18n-uk="Розкажіть про проєкт"
+              data-i18n-en="Tell us about your project"
+            >
+              Opowiedz nam o projekcie
+            </h2>
+            <p
+              data-i18n-pl="Wypełnij formularz, a odezwiemy się z propozycją kolejnych kroków, timeline'em i składem zespołu."
+              data-i18n-uk="Заповніть форму, і ми відповімо з наступними кроками, таймлайном та командою."
+              data-i18n-en="Fill out the form and we will follow up with suggested next steps, timeline, and team setup."
+            >
+              Wypełnij formularz, a odezwiemy się z propozycją kolejnych kroków, timeline'em i składem
+              zespołu.
             </p>
-            <ul class="contacts-form__highlights">
-              <li>Initial audit and timeline estimate</li>
-              <li>Suggested scope with deliverables</li>
-              <li>Recommended tools and tech stack</li>
-            </ul>
           </div>
-          <form class="contact-form" id="contact-form" aria-describedby="contact-form-title">
-            <div class="form-field">
-              <label for="fullname">Full name</label>
-              <input type="text" id="fullname" name="fullname" placeholder="Your full name" required />
-            </div>
-            <div class="form-field">
-              <label for="email">Business email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="name@company.com"
-                inputmode="email"
-                required
-              />
-            </div>
-            <div class="form-field">
-              <label for="company">Company or brand</label>
-              <input
-                type="text"
-                id="company"
-                name="company"
-                placeholder="Company, startup, or personal brand"
-              />
-            </div>
-            <div class="form-field">
-              <label for="project-type">Project focus</label>
-              <select id="project-type" name="project-type" required>
-                <option value="" disabled selected>Select project type</option>
-                <option value="website">Website redesign</option>
-                <option value="landing">Landing launch</option>
-                <option value="ecommerce">E-commerce experience</option>
-                <option value="product">Product design & implementation</option>
-                <option value="consulting">Strategy consulting</option>
-                <option value="other">Something else</option>
-              </select>
-            </div>
-            <div class="form-field form-field--full">
-              <label for="message">What goals do you want to achieve?</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                placeholder="Share current challenges, deadlines, audience insights, or links to reference materials."
-                required
-              ></textarea>
-            </div>
-            <div class="form-field form-field--split">
-              <div>
-                <label for="budget">Estimated budget</label>
-                <select id="budget" name="budget">
-                  <option value="" disabled selected>Choose a range</option>
-                  <option value="under2k">Under €2 000</option>
-                  <option value="2-5k">€2 000 – €5 000</option>
-                  <option value="5-10k">€5 000 – €10 000</option>
-                  <option value="10kplus">€10 000+</option>
+          <form class="contact-form">
+            <div class="form-grid">
+              <label>
+                <span data-i18n-pl="Imię i nazwisko*" data-i18n-uk="Ім'я та прізвище*" data-i18n-en="Full name*">
+                  Imię i nazwisko*
+                </span>
+                <input type="text" name="name" required placeholder="Twoje imię" data-i18n-pl="Twoje imię" data-i18n-uk="Ваше ім'я" data-i18n-en="Your name" />
+              </label>
+              <label>
+                <span data-i18n-pl="Email służbowy*" data-i18n-uk="Робочий email*" data-i18n-en="Work email*">
+                  Email służbowy*
+                </span>
+                <input type="email" name="email" required placeholder="name@company.com" />
+              </label>
+              <label>
+                <span data-i18n-pl="Firma lub marka" data-i18n-uk="Компанія або бренд" data-i18n-en="Company or brand">
+                  Firma lub marka
+                </span>
+                <input type="text" name="company" placeholder="Firma, startup lub marka osobista" data-i18n-pl="Firma, startup lub marka osobista" data-i18n-uk="Компанія, стартап або особистий бренд" data-i18n-en="Company, startup, or personal brand" />
+              </label>
+              <label>
+                <span data-i18n-pl="Strona internetowa" data-i18n-uk="Вебсайт" data-i18n-en="Website">
+                  Strona internetowa
+                </span>
+                <input type="url" name="website" placeholder="https://" />
+              </label>
+              <label class="full-width">
+                <span data-i18n-pl="Cel kontaktu*" data-i18n-uk="Мета звернення*" data-i18n-en="Reason for contact*">
+                  Cel kontaktu*
+                </span>
+                <select name="reason" required>
+                  <option value="" disabled selected data-i18n-pl="Wybierz opcję" data-i18n-uk="Оберіть опцію" data-i18n-en="Select an option">
+                    Wybierz opcję
+                  </option>
+                  <option value="project" data-i18n-pl="Nowy projekt" data-i18n-uk="Новий проєкт" data-i18n-en="New project">
+                    Nowy projekt
+                  </option>
+                  <option value="support" data-i18н-pl="Wsparcie po launchu" data-i18n-uk="Підтримка після запуску" data-i18n-en="Post-launch support">
+                    Wsparcie po launchu
+                  </option>
+                  <option value="partnership" data-i18n-pl="Partnerstwo / współpraca" data-i18n-uk="Партнерство / співпраця" data-i18n-en="Partnership / collaboration">
+                    Partnerstwo / współpraca
+                  </option>
                 </select>
-              </div>
-              <div>
-                <label for="timeline">Desired start date</label>
-                <input type="date" id="timeline" name="timeline" />
-              </div>
-            </div>
-            <div class="form-field form-field--full">
-              <label class="checkbox">
-                <input type="checkbox" name="nda" id="nda" />
-                <span>I’d like to sign an NDA before we share details</span>
+              </label>
+              <label class="full-width">
+                <span data-i18n-pl="Szczegóły projektu*" data-i18n-uk="Деталі проєкту*" data-i18n-en="Project details*">
+                  Szczegóły projektu*
+                </span>
+                <textarea
+                  name="details"
+                  rows="5"
+                  required
+                  placeholder="Opisz cele, metryki sukcesu, terminy i wymagania."
+                  data-i18n-pl="Opisz cele, metryki sukcesu, terminy i wymagania."
+                  data-i18н-uk="Опишіть цілі, метрики успіху, дедлайни та вимоги."
+                  data-i18n-en="Outline goals, success metrics, timelines, and requirements."
+                ></textarea>
+              </label>
+              <label class="full-width">
+                <span data-i18n-pl="Załączniki (linki do Google Drive, Notion, itp.)" data-i18n-uk="Посилання на додатки" data-i18n-en="Attachments (links)">
+                  Załączniki (linki do Google Drive, Notion, itp.)
+                </span>
+                <input type="url" name="attachments" placeholder="https://link.do/materialów" />
+              </label>
+              <label class="checkbox full-width">
+                <input type="checkbox" name="nda" />
+                <span data-i18n-pl="Potrzebujemy NDA zanim przejdziemy do wrażliwych informacji" data-i18n-uk="Потрібне NDA перед чутливою інформацією" data-i18n-en="We require an NDA before sharing sensitive information">
+                  Potrzebujemy NDA zanim przejdziemy do wrażliwych informacji
+                </span>
               </label>
             </div>
-            <button class="btn contact-form__submit" type="submit">Send request</button>
-            <p class="contact-form__note">
-              By sending this form you agree to receive an email response from
-              LandingWebStudio. No newsletter, no spam.
-            </p>
+            <div class="form-actions">
+              <button type="submit" class="btn" data-i18n-pl="Wyślij wiadomość" data-i18n-uk="Надіслати повідомлення" data-i18n-en="Submit message">
+                Wyślij wiadomość
+              </button>
+              <p class="form-note" data-i18n-pl="Wysyłając formularz zgadzasz się na wiadomość zwrotną od LandingWebStudio. Nie zapisujemy Cię na newsletter bez zgody." data-i18n-uk="Надсилаючи форму, ви погоджуєтесь отримати відповідь від LandingWebStudio. Ми не додаємо до розсилки без згоди." data-i18n-en="By submitting this form you agree to receive a follow-up email from LandingWebStudio. We do not add you to a mailing list without consent.">
+                Wysyłając formularz zgadzasz się na wiadomość zwrotną od LandingWebStudio. Nie zapisujemy Cię na newsletter bez zgody.
+              </p>
+            </div>
           </form>
         </div>
       </section>
-
-      <section class="contacts-section contacts-faq" aria-labelledby="faq-title">
-        <div class="container">
-          <div class="contacts-section__header">
-            <h2 id="faq-title">FAQ & collaboration essentials</h2>
-            <p>
-              Here are the top questions we receive. Need more clarity? Just let us
-              know in your message.
-            </p>
-          </div>
-          <div class="contacts-faq__grid">
-            <article class="faq-card">
-              <h3>How soon can we start?</h3>
-              <p>
-                Discovery begins within 5 business days. Launch timelines depend on
-                scope and readiness of content/assets. We often start with a short
-                strategy sprint to validate priorities.
-              </p>
-            </article>
-            <article class="faq-card">
-              <h3>What tools do you use?</h3>
-              <p>
-                Figma, Notion, Webflow, Next.js, Shopify, Make/Zapier, and the
-                analytics stack your team prefers. We adapt to existing workflows.
-              </p>
-            </article>
-            <article class="faq-card">
-              <h3>Can you work with our in-house devs?</h3>
-              <p>
-                Absolutely. We can hand off production-ready designs, collaborate
-                on component libraries, or plug into your CI/CD process.
-              </p>
-            </article>
-            <article class="faq-card">
-              <h3>Do you offer ongoing support?</h3>
-              <p>
-                Yes — monthly retainers cover optimization, experimentation, and
-                new feature rollouts. We can tailor a package that matches your
-                roadmap.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
       <section class="contacts-section contacts-cta" aria-labelledby="contacts-cta-title">
         <div class="container contacts-cta__inner">
-          <h2 id="contacts-cta-title">Prefer to talk now?</h2>
-          <p>
-            Call, drop an email, or send over a deck — we’ll get back quickly with
-            recommendations and first steps.
+          <h2
+            id="contacts-cta-title"
+            data-i18n-pl="Wolisz porozmawiać teraz?"
+            data-i18n-uk="Хочете поговорити зараз?"
+            data-i18n-en="Prefer to talk now?"
+          >
+            Wolisz porozmawiać teraz?
+          </h2>
+          <p
+            data-i18n-pl="Zadzwoń, napisz mail lub prześlij deck – szybko wrócimy z rekomendacjami i kolejnymi krokami."
+            data-i18n-uk="Подзвоніть, напишіть лист чи надішліть deck – швидко повернемося з рекомендаціями та наступними кроками."
+            data-i18n-en="Call, drop an email, or send over a deck – we'll get back quickly with recommendations and first steps."
+          >
+            Zadzwoń, napisz mail lub prześlij deck – szybko wrócimy z rekomendacjami i kolejnymi
+            krokami.
           </p>
           <div class="contacts-cta__actions">
-            <a href="tel:+48000000000" class="btn">Call the studio</a>
-            <a href="mailto:hello@landingwebstudio.com" class="btn btn-secondary"
-              >Email us</a
-            >
+            <a href="tel:+48000000000" class="btn" data-i18n-pl="Zadzwoń do studia" data-i18n-uk="Подзвонити студії" data-i18n-en="Call the studio">
+              Zadzwoń do studia
+            </a>
+            <a href="mailto:hello@landingwebstudio.com" class="btn btn-secondary" data-i18n-pl="Wyślij email" data-i18n-uk="Надіслати email" data-i18n-en="Email us">
+              Wyślij email
+            </a>
           </div>
         </div>
       </section>
     </main>
-
     <footer>
       <div class="socials">
         <ul class="footer-socials">
@@ -317,8 +473,15 @@
         </ul>
       </div>
       <p>
-        © <span id="y"></span> LandingWebStudio. All rights reserved. Let’s build
-        digital products your customers love.
+        &copy; <span id="y"></span> LandingWebStudio.
+        <span
+          class="footer-note"
+          data-i18n-pl="Budujemy cyfrowe produkty, które klienci lubią używać."
+          data-i18n-uk="Створюємо цифрові продукти, які подобаються користувачам."
+          data-i18n-en="We build digital products your customers love."
+        >
+          Budujemy cyfrowe produkty, które klienci lubią używać.
+        </span>
       </p>
     </footer>
     <script src="js/swiper-bundle.min.js"></script>

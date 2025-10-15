@@ -2,11 +2,25 @@
   margin-top: 80px;
   padding: 140px 0 90px;
   background:
+    
+    url("../img/hero3.png") center center/cover no-repeat;
+  /* background:
     linear-gradient(180deg, rgba(248, 249, 252, 0.9) 0%, rgba(219, 226, 239, 0.9) 100%),
-    url("../img/hero3.png") center right/cover no-repeat;
+    url("../img/hero3.png") center right/cover no-repeat; */
   color: var(--text-ink);
   position: relative;
 }
+.home-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(248, 249, 252, 0.9) 0%, rgba(219, 226, 239, 0.9) 100%);
+}
+
 
 .home-hero__inner {
   display: grid;

@@ -201,6 +201,7 @@
   box-shadow: 0 20px 42px rgba(200, 207, 223, 0.22);
   display: grid;
   gap: 12px;
+  margin-bottom: 15px;
 }
 
 .blog-post-card__meta {

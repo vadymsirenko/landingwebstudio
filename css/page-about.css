@@ -170,6 +170,7 @@
   grid-template-columns: auto 1fr;
   align-items: start;
   box-shadow: 0 12px 28px rgba(200, 207, 223, 0.25);
+  margin-bottom: 15px;
 }
 
 .about-timeline__step {

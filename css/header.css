@@ -3,12 +3,12 @@
   position: fixed;
   top: 0;
   z-index: 1000;
-  background: var(--transparent);
+  background: transparent;
   backdrop-filter: saturate(180%) blur(5px);
   width: 100%;
   margin: 0 auto;
   padding: 7px 0;
-  border-bottom: 1px solid var(--btn);
+  border-bottom: 1px solid var(--border);
 }
 
 .header-inner {
@@ -20,7 +20,7 @@
 
 .header-title {
   font-size: clamp(18px, 3.5vw, 22px);
-  color: var(--muted);
+  color: var(--text-muted);
   font-weight: 600;
   min-width: 70px;
 }
@@ -38,6 +38,7 @@
 .nav {
   display: flex;
   align-items: center;
+  gap: 16px;
 }
 
 .nav-list {
@@ -57,15 +58,94 @@
 
 .nav-list a:hover,
 .nav-list a:focus-visible {
-  background: rgba(102, 146, 217, 0.12);
-  color: var(--text-ink-secondary);
+  background: rgba(47, 62, 96, 0.08);
+  color: var(--btn);
   transform: translateY(-2px);
 }
 
 .nav-list a[aria-current="page"] {
-  background: linear-gradient(135deg, #7c5cff, #5f9dff);
-  color: #ffffff;
-  box-shadow: 0 10px 18px rgba(102, 146, 217, 0.25);
+  background: var(--btn);
+  color: var(--btn-text-ink);
+  box-shadow: 0 10px 18px var(--btn-hover-shadow);
+}
+
+.lang-switcher {
+  position: relative;
+  margin-left: 24px;
+}
+
+.lang-switcher__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: rgba(248, 249, 252, 0.85);
+  color: var(--text-ink);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.lang-switcher__toggle:hover,
+.lang-switcher__toggle:focus-visible {
+  background: rgba(47, 62, 96, 0.08);
+  color: var(--btn);
+  transform: translateY(-2px);
+}
+
+.lang-switcher.open .lang-switcher__toggle {
+  background: var(--btn);
+  color: var(--btn-text-ink);
+  box-shadow: 0 10px 18px var(--btn-hover-shadow);
+}
+
+.lang-switcher__list {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px;
+  background: rgba(248, 249, 252, 0.97);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 12px 24px rgba(35, 40, 54, 0.15);
+  min-width: 140px;
+  z-index: 1001;
+}
+
+.lang-switcher.open .lang-switcher__list {
+  display: flex;
+}
+
+.lang-switcher__option {
+  width: 100%;
+  border-radius: 12px;
+  border: none;
+  background: transparent;
+  color: var(--text-ink);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 10px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.lang-switcher__option:hover,
+.lang-switcher__option:focus-visible {
+  background: rgba(47, 62, 96, 0.08);
+  color: var(--btn);
+}
+
+.lang-switcher__option.is-active {
+  background: var(--btn);
+  color: var(--btn-text-ink);
+  box-shadow: 0 10px 18px var(--btn-hover-shadow);
 }
 
 .burger {
@@ -76,8 +156,8 @@
   width: 44px;
   height: 44px;
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.85);
-  border: 1px solid rgba(102, 146, 217, 0.28);
+  background: rgba(248, 249, 252, 0.85);
+  border: 1px solid var(--border);
   cursor: pointer;
   transition: 0.25s ease;
 }
@@ -97,8 +177,8 @@
     inset: 0 0 0 auto;
     width: min(84vw, 360px);
     height: 100vh;
-    background: rgba(255, 255, 255, 0.95);
-    border-left: 1px solid rgba(102, 146, 217, 0.25);
+    background: rgba(248, 249, 252, 0.95);
+    border-left: 1px solid var(--border);
     transform: translateX(100%);
     transition: transform 0.35s ease;
     flex-direction: column;
@@ -124,6 +204,31 @@
     padding: 12px 18px;
   }
 
+  .lang-switcher {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .lang-switcher__toggle {
+    width: 100%;
+    justify-content: space-between;
+    padding: 12px 18px;
+  }
+
+  .lang-switcher__list {
+    position: static;
+    display: none;
+    width: 100%;
+    margin-top: 8px;
+    padding: 10px;
+    gap: 8px;
+    box-shadow: none;
+  }
+
+  .lang-switcher.open .lang-switcher__list {
+    display: flex;
+  }
+
   .header-phone {
     margin-top: 8px;
   }
@@ -143,3 +248,10 @@
 .burger.active span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
+
+
+
+
+
+
+

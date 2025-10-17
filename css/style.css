@@ -1,4 +1,4 @@
-﻿body {
+body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -46,20 +46,21 @@ body.lock {
 
 .btn-secondary {
   background: transparent;
-  border: 1px solid var(--btn-border);
+  border: 1px solid var(--border);
   color: var(--btn-border);
   box-shadow: 0 18px 40px var(--shadow) !important;
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.65);
-  color: var(--text-ink-secondary);
+  background: var(--btn);
+  color: var(--btn-text-ink);
+  border-color: var(--border);
 }
 
 .i {
   width: 24px;
   height: 24px;
-  fill: var(--border);
+  fill: var(--btn);
 }
 
 .footer-socials {
@@ -77,3 +78,11 @@ body.lock {
   margin: 20px auto;
   border-radius: 5px;
 }
+
+
+
+
+
+
+
+

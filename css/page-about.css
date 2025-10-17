@@ -1,5 +1,9 @@
 .about-page {
-  background: var(--gradient-main);
+  background: linear-gradient(
+    140deg,
+    rgba(248, 249, 252, 0.9) 0%,
+    rgba(219, 226, 239, 0.9) 100%
+  );
   color: var(--text-ink);
 }
 
@@ -46,12 +50,14 @@
 
 .btn-secondary {
   background: transparent;
-  border: 1px solid var(--btn-border);
+  border: 1px solid var(--border);
   color: var(--btn-border);
 }
 
 .btn-secondary:hover {
-  background: rgba(102, 146, 217, 0.12);
+  background: var(--btn);
+  color: var(--btn-text-ink);
+  border-color: var(--border);
 }
 
 .about-hero__stats {
@@ -63,9 +69,9 @@
 .about-stat {
   padding: 26px 22px;
   border-radius: 18px;
-  background: var(--card);
-  border: 1px solid rgba(102, 146, 217, 0.2);
-  
+  background: rgba(248, 249, 252, 0.9);
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 32px rgba(200, 207, 223, 0.25);
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -125,11 +131,11 @@
 }
 
 .about-card {
-  background: var(--card);
-  border: 1px solid rgba(102, 146, 217, 0.18);
+  background: linear-gradient(232deg,rgba(235, 192, 204, 1) 0%, rgba(218, 225, 237, 1) 100%);
+  border: 1px solid var(--border);
   border-radius: 22px;
   padding: 32px;
-  
+  box-shadow: 0 10px 30px rgba(200, 207, 223, 0.22);
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -167,25 +173,26 @@
 }
 
 .about-timeline__item {
-  background: var(--card);
+  background: rgba(248, 249, 252, 0.92);
   border-radius: 20px;
-  border: 1px solid rgba(102, 146, 217, 0.18);
+  border: 1px solid var(--border);
   padding: 24px;
   display: grid;
   gap: 16px;
   grid-template-columns: auto 1fr;
   align-items: start;
-  
+  box-shadow: 0 12px 28px rgba(200, 207, 223, 0.25);
+  margin-bottom: 15px;
 }
 
 .about-timeline__step {
   width: 48px;
   height: 48px;
   border-radius: 12px;
-  background: linear-gradient(135deg, #7c5cff, #5f9dff);
+  background: rgba(219, 226, 239, 0.9);
   display: grid;
   place-items: center;
-  color: #fff;
+  color: var(--text-ink-secondary);
   font-weight: 700;
   font-size: 16px;
 }
@@ -218,11 +225,11 @@
 
 .about-values__list li {
   list-style: none;
-  background: var(--card);
-  border: 1px solid rgba(102, 146, 217, 0.18);
+  background: rgba(248, 249, 252, 0.92);
+  border: 1px solid var(--border);
   border-radius: 18px;
   padding: 22px;
-  
+  box-shadow: 0 10px 26px rgba(200, 207, 223, 0.22);
 }
 
 .about-values__list h3 {
@@ -242,12 +249,16 @@
 }
 
 .about-cta__inner {
-  background: var(--card);
+  background: linear-gradient(
+    135deg,
+    rgba(248, 249, 252, 0.92),
+    rgba(219, 226, 239, 0.92)
+  );
   border-radius: 26px;
   padding: 60px 40px;
   text-align: center;
-  border: 1px solid rgba(102, 146, 217, 0.25);
-  
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 50px rgba(200, 207, 223, 0.25);
   display: grid;
   gap: 18px;
   justify-items: center;
@@ -300,3 +311,11 @@
     padding: 48px 24px;
   }
 }
+
+
+
+
+
+
+
+

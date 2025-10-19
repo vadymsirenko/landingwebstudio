@@ -1,38 +1,38 @@
 # AGENTS.md
 
-## 🎨 Використання палітри кольорів
-- Усі стилі кольорів у проекті повинні братися з файлу `reset.css`.  
-- Якщо потрібно створити новий компонент, використовуй змінні або класи, які вже визначені у `reset.css`.  
-- Не додавай довільні HEX / RGB коди напряму в компоненти. Якщо потрібен новий колір, додай його спочатку в `reset.css` і задокументуй.  
+## 🎨 Color Palette Usage
+- All color styles in the project must be taken from the `reset.css` file.  
+- When creating a new component, always use variables or classes already defined in `reset.css`.  
+- Do not hardcode HEX / RGB values directly in components. If a new color is needed, add it first to `reset.css` and document it.  
 
-## 🌐 Локалізація
-- Проєкт підтримує три мови: **польська (pl)**, **українська (uk)**, **англійська (en)**.  
-- Усі текстові ресурси повинні зберігатися в окремих JSON-файлах (`/locales/en.json`, `/locales/uk.json`, `/locales/pl.json`).  
-- При створенні нового інтерфейсного елемента додавай ключ у всі мовні файли одночасно.  
-- Використовуй динамічне завантаження перекладів через i18n-бібліотеку.  
-- обов'язково перевіряй, щоб текст у будь-якій локалізації **не виходив за межі батьківського контейнера**. Якщо є ризик — використовуй адаптивні стилі (наприклад, `word-wrap`, `flex`, `overflow`).  
+## 🌐 Localization
+- The project supports three languages: **Polish (pl)**, **Ukrainian (uk)**, **English (en)**.  
+- All text resources must be stored in separate JSON files (`/locales/en.json`, `/locales/uk.json`, `/locales/pl.json`).  
+- When adding a new UI element, always add the translation key in **all locale files at the same time**.  
+- Use dynamic loading of translations via an i18n library.  
+- Always verify that text in any localization **does not overflow the parent container**. If there is a risk, apply responsive styles (`word-wrap`, `flex`, `overflow`, etc.).  
 
-## 🔤 Кодування
-- Усі файли проєкту повинні зберігатися у кодуванні **UTF-8 (без BOM)**.  
-- Переконайся, що в коді немає "битих" символів при зміні локалей.  
-- Тести повинні включати перевірку на правильне кодування й відображення текстів для всіх мов.  
+## 🔤 Encoding
+- All project files must use **UTF-8 (without BOM)** encoding.  
+- Make sure there are no broken characters when switching between locales.  
+- Tests must include validation of proper encoding and rendering of text for all supported languages.  
 
-## 🖥️ Адаптивна верстка (Computer First)
-- Верстка будується за принципом **computer first**.  
-- Використовуй такі breakpoints:
+## 🖥️ Responsive Design (Computer First)
+- The layout must follow the **computer-first** approach.  
+- Use the following breakpoints:
   - **320px** (extra small)  
   - **360px** (small phones)  
   - **768px** (tablets)  
   - **1024px** (small laptops)  
   - **1400px** (large laptops / desktops)  
   - **1920px** (full HD monitors)  
-- При розробці компонентів враховуй, що базова верстка створюється під **desktop**, а далі адаптується під менші екрани через `@media`.  
-- Всі елементи повинні зберігати читабельність і не ламати сітку незалежно від мови.  
+- Base layout should be designed for **desktop first**, then adapted for smaller screens using `@media`.  
+- All components must remain readable and preserve layout integrity across all supported languages.  
 
-## ✅ Тестування
-- Після зміни стилів обов'язково перевірити:
-  - відповідність кольорів до визначених у `reset.css`;  
-  - правильне завантаження перекладів у трьох мовах;  
-  - відображення текстів у браузері без проблем із кодуванням;  
-  - адаптивність інтерфейсу на **всіх breakpoints (320, 360, 768, 1024, 1400, 1920)**;  
-  - щоб текст не виходив за межі контейнерів при зміні мови.  
+## ✅ Testing
+- After making changes, always verify:
+  - color consistency with the definitions in `reset.css`;  
+  - proper loading of translations in all three languages;  
+  - correct text rendering in browsers without encoding issues;  
+  - responsiveness of the interface at **all breakpoints (320, 360, 768, 1024, 1400, 1920)**;  
+  - text does not overflow parent containers when switching languages.  

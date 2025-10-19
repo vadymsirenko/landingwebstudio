@@ -103,87 +103,36 @@ h6 {
 
 /*--------------------*/
 :root {
-  /* Standard colors */
-  --color-transparent: rgba(0, 0, 0, 0);
+  /* Base */
   --color-white: #ffffff;
   --color-black: #000000;
-  --color-black-10: rgba(0, 0, 0, 0.1);
-  --color-black-15: rgba(0, 0, 0, 0.15);
-  --color-black-25: rgba(0, 0, 0, 0.25);
-  --color-black-50: rgba(0, 0, 0, 0.5);
-
-  /* Text colors */
+  --color-primary: #3a302e;
+  /* --color-primary: #2f3e60; */
+  /* --color-accent-secondary: #d9cbe7; */
+  --color-accent-secondary: #facdbc;
   --color-text-primary: #161d2f;
-  --color-text-secondary: #111c36;
-  --color-text-tertiary: #254264;
-  --color-text-muted: #596273;
 
-  /* Accent and buttons */
-  --color-button-bg: #2f3e60;
-  --color-button-text: var(--color-white);
-  --color-button-border: var(--color-button-bg);
-  --color-button-shadow: rgba(126, 139, 168, 0.26);
-  --color-accent: var(--color-button-bg);
-  --color-border-accent: #bf44d4;
-  --color-border-focus: rgba(218, 225, 237, 0.4);
-  --color-info: #007aff;
+  /* Backgrounds */
+  --color-bg-primary: color-mix(in srgb, var(--color-white) 92%, var(--color-accent-secondary) 8%);
+  --color-bg-secondary: color-mix(in srgb, var(--color-white) 85%, var(--color-accent-secondary) 15%);
+  --color-bg-contrast: color-mix(in srgb, var(--color-accent-secondary) 55%, transparent 45%);
+  --color-bg-overlay-soft: color-mix(in srgb, var(--color-bg-primary) 80%, transparent 20%);
+  --color-bg-overlay-strong: color-mix(in srgb, var(--color-bg-secondary) 65%, transparent 35%);
 
-  /* Background palette */
-  --color-bg-header-08: rgba(47, 62, 96, 0.08);
-  --color-bg-primary-40: rgba(248, 249, 252, 0.4);
-  --color-bg-primary-45: rgba(248, 249, 252, 0.45);
-  --color-bg-primary-60: rgba(248, 249, 252, 0.6);
-  --color-bg-primary-70: rgba(248, 249, 252, 0.7);
-  --color-bg-primary-75: rgba(248, 249, 252, 0.75);
-  --color-bg-primary-85: rgba(248, 249, 252, 0.85);
-  --color-bg-primary-88: rgba(248, 249, 252, 0.88);
-  --color-bg-primary-90: rgba(248, 249, 252, 0.9);
-  --color-bg-primary-92: rgba(248, 249, 252, 0.92);
-  --color-bg-primary-94: rgba(248, 249, 252, 0.94);
-  --color-bg-primary-95: rgba(248, 249, 252, 0.95);
-  --color-bg-primary-96: rgba(248, 249, 252, 0.96);
-  --color-bg-primary-97: rgba(248, 249, 252, 0.97);
-  --color-bg-primary-98: rgba(248, 249, 252, 0.98);
-  --color-bg-primary-100: #f8f9fc;
-  --color-bg-secondary-20: rgba(219, 226, 239, 0.2);
-  --color-bg-secondary-55: rgba(219, 226, 239, 0.55);
-  --color-bg-secondary-60: rgba(219, 226, 239, 0.6);
-  --color-bg-secondary-70: rgba(219, 226, 239, 0.7);
-  --color-bg-secondary-75: rgba(219, 226, 239, 0.75);
-  --color-bg-secondary-85: rgba(219, 226, 239, 0.85);
-  --color-bg-secondary-90: rgba(219, 226, 239, 0.9);
-  --color-bg-secondary-92: rgba(219, 226, 239, 0.92);
-  --color-bg-secondary-100: #dbe2ef;
-  --color-divider: rgba(47, 62, 96, 0.28);
-  --color-gray-100: #e6e5e9;
-  --color-bg-accent-pink: #ebc0cc;
-  --color-bg-accent-blue: #dae1ed;
-  --color-bg-accent-beige: #dac5bd;
-  --color-bg-accent-ice: #eaeef5;
+  /* Text */
+  --color-text-muted: color-mix(in srgb, var(--color-text-primary) 55%, var(--color-white) 45%);
+  --color-text-inverse: var(--color-white);
 
-  /* Shadows and overlays */
-  --color-shadow-light: rgba(126, 139, 168, 0.12);
-  --color-shadow-medium: rgba(126, 139, 168, 0.18);
-  --color-shadow-deep: rgba(126, 139, 168, 0.2);
-  --color-shadow-intense: rgba(126, 139, 168, 0.35);
-  --color-shadow-cool-22: rgba(200, 207, 223, 0.22);
-  --color-shadow-cool-24: rgba(200, 207, 223, 0.24);
-  --color-shadow-cool-25: rgba(200, 207, 223, 0.25);
-  --color-shadow-header: rgba(35, 40, 54, 0.15);
+  /* Borders & shadows */
+  --color-border: var(--color-primary);
+  --color-shadow: color-mix(in srgb, var(--color-black) 16%, transparent);
 
-  /* Derived surfaces */
-  --color-bg-primary: var(--color-bg-primary-98);
-  --color-bg-secondary: var(--color-bg-secondary-85);
-  --color-surface: var(--color-white);
-
-  /* Gradients */
-  --gradient-main: linear-gradient(
+  /* Gradient */
+  --gradient-primary: linear-gradient(
     180deg,
-    var(--color-bg-primary-95) 0%,
-    var(--color-bg-secondary-60) 100%
+    color-mix(in srgb, var(--color-bg-overlay-soft) 100%, transparent) 0%,
+    color-mix(in srgb, var(--color-accent-secondary) 60%, transparent) 100%
   );
-  --color-gradient-dark: var(--color-bg-accent-beige);
-  --color-gradient-light: var(--color-bg-accent-ice);
 }
 
 body {

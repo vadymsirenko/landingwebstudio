@@ -1,5 +1,5 @@
 .contacts-page {
-  background: linear-gradient(150deg, var(--color-bg-primary-90) 0%, var(--color-bg-secondary-90) 100%);
+  background: linear-gradient(150deg, var(--color-bg-overlay-soft) 0%, var(--color-bg-contrast) 100%);
   color: var(--color-text-primary);
 }
 
@@ -26,7 +26,7 @@
 .contacts-hero__content h1 {
   font-size: clamp(34px, 3.6vw, 52px);
   line-height: 1.1;
-  color: var(--color-text-secondary);
+  color: var(--color-primary);
   margin-bottom: 24px;
   font-weight: 700;
 }
@@ -45,14 +45,14 @@
 
 .btn-secondary {
   background: transparent;
-  border: 1px solid var(--color-border-accent);
-  color: var(--color-button-border);
+  border: 1px solid var(--color-border);
+  color: var(--color-border);
 }
 
 .btn-secondary:hover {
-  background: var(--color-button-bg);
-  color: var(--color-button-text);
-  border-color: var(--color-border-accent);
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+  border-color: var(--color-border);
 }
 
 .contacts-hero__aside {
@@ -61,11 +61,11 @@
 }
 
 .availability-card {
-  background: linear-gradient(232deg,var(--color-gradient-dark) 0%, var(--color-gradient-light) 100%);
-  border: 1px solid var(--color-border-accent);
+  background: linear-gradient(232deg,var(--color-accent-secondary) 0%, var(--color-bg-secondary) 100%);
+  border: 1px solid var(--color-border);
   border-radius: 24px;
   padding: 32px 28px;
-  box-shadow: 0 18px 36px var(--color-shadow-medium);
+  box-shadow: 0 18px 36px var(--color-shadow);
   display: grid;
   gap: 18px;
 }
@@ -73,7 +73,7 @@
 .availability-card h2 {
   font-size: 20px;
   font-weight: 600;
-  color: var(--color-text-secondary);
+  color: var(--color-primary);
 }
 
 .availability-card ul {
@@ -101,7 +101,7 @@
 
 .contacts-section__header h2 {
   font-size: clamp(28px, 3vw, 42px);
-  color: var(--color-text-secondary);
+  color: var(--color-primary);
   font-weight: 700;
 }
 
@@ -116,11 +116,11 @@
 }
 
 .contact-card {
-  background: linear-gradient(232deg, var(--color-bg-accent-pink) 0%, var(--color-bg-accent-blue) 100%);
+  background: linear-gradient(232deg, var(--color-accent-secondary) 0%, var(--color-bg-secondary) 100%);
   border-radius: 22px;
   padding: 28px;
-  border: 1px solid var(--color-border-accent);
-  box-shadow: 0 14px 30px var(--color-shadow-deep);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 14px 30px var(--color-shadow);
   display: grid;
   gap: 16px;
   grid-template-rows: auto 1fr auto;
@@ -131,13 +131,13 @@
 .contact-card:hover,
 .contact-card:focus-within {
   transform: translateY(-4px);
-  box-shadow: 0 18px 42px var(--color-button-shadow);
+  box-shadow: 0 18px 42px var(--color-shadow);
 }
 
 .contact-card h3 {
   font-size: 20px;
   font-weight: 600;
-  color: var(--color-text-secondary);
+  color: var(--color-primary);
 }
 
 .contact-card__text {
@@ -152,7 +152,7 @@
 }
 
 .contact-card__link {
-  color: var(--color-button-border);
+  color: var(--color-border);
   font-weight: 600;
   display: inline-flex;
   align-items: center;
@@ -165,14 +165,14 @@
 
 .contact-card__link:hover,
 .contact-card__link:focus-visible {
-  color: var(--color-text-secondary);
+  color: var(--color-primary);
 }
 
 .contacts-form__inner {
-  background: var(--color-bg-primary-92);
+  background: var(--color-bg-secondary);
   border-radius: 28px;
-  border: 1px solid var(--color-border-accent);
-  box-shadow: 0 20px 50px var(--color-shadow-deep);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 20px 50px var(--color-shadow);
   padding: 48px 52px;
   display: grid;
   gap: 40px;
@@ -187,7 +187,7 @@
 
 .contacts-form__intro h2 {
   font-size: clamp(26px, 2.6vw, 36px);
-  color: var(--color-text-secondary);
+  color: var(--color-primary);
   font-weight: 700;
 }
 
@@ -222,7 +222,7 @@
 .contact-form label span {
   font-size: 15px;
   font-weight: 600;
-  color: var(--color-text-secondary);
+  color: var(--color-primary);
 }
 
 .contact-form input,
@@ -230,8 +230,8 @@
 .contact-form textarea {
   padding: 12px 16px;
   border-radius: 14px;
-  border: 1px solid var(--color-border-accent);
-  background: var(--color-bg-primary-95);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-primary);
   font-size: 15px;
   color: var(--color-text-primary);
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
@@ -240,8 +240,8 @@
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
-  border-color: var(--color-button-border);
-  box-shadow: 0 0 0 3px var(--color-border-focus);
+  border-color: var(--color-border);
+  box-shadow: 0 0 0 3px var(--color-accent-secondary);
   outline: none;
 }
 
@@ -271,7 +271,7 @@
   width: 18px;
   height: 18px;
   border-radius: 6px;
-  border: 1px solid var(--color-border-accent);
+  border: 1px solid var(--color-border);
   margin-top: 2px;
   flex-shrink: 0;
 }
@@ -302,11 +302,11 @@
 }
 
 .faq-card {
-  background: linear-gradient(232deg,var(--color-gradient-dark) 0%, var(--color-gradient-light) 100%);
+  background: linear-gradient(232deg,var(--color-accent-secondary) 0%, var(--color-bg-secondary) 100%);
   border-radius: 22px;
-  border: 1px solid var(--color-border-accent);
+  border: 1px solid var(--color-border);
   padding: 28px;
-  box-shadow: 0 14px 32px var(--color-shadow-deep);
+  box-shadow: 0 14px 32px var(--color-shadow);
   display: grid;
   gap: 12px;
 }
@@ -314,20 +314,16 @@
 .faq-card h3 {
   font-size: 18px;
   font-weight: 600;
-  color: var(--color-text-secondary);
+  color: var(--color-primary);
 }
 
 .contacts-cta__inner {
-  background: linear-gradient(
-      140deg,
-      var(--color-bg-primary-92),
-      var(--color-bg-secondary-92)
-    );
+  background: linear-gradient(140deg, var(--color-bg-overlay-soft), var(--color-bg-contrast));
   border-radius: 26px;
   padding: 60px 40px;
   text-align: center;
-  border: 1px solid var(--color-border-accent);
-  box-shadow: 0 20px 50px var(--color-shadow-medium);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 20px 50px var(--color-shadow);
   display: grid;
   gap: 18px;
   justify-items: center;
@@ -335,7 +331,7 @@
 
 .contacts-cta__inner h2 {
   font-size: clamp(28px, 3vw, 40px);
-  color: var(--color-text-secondary);
+  color: var(--color-primary);
   font-weight: 700;
 }
 

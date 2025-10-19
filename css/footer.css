@@ -3,7 +3,7 @@ footer {
   text-align: center;
   padding: 30px 20px 20px;
   color: var(--color-text-primary);
-  background: linear-gradient(180deg, var(--color-bg-primary-98), var(--color-bg-secondary-85));
+  background: linear-gradient(180deg, var(--color-bg-primary), var(--color-bg-secondary));
 }
 
 

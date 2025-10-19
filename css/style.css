@@ -32,35 +32,35 @@ body.lock {
   display: inline-block;
   padding: 12px 28px;
   border-radius: 24px;
-  background: var(--color-button-bg);
-  color: var(--color-button-text);
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
-  box-shadow: 0 22px 48px var(--color-button-shadow) !important;
+  box-shadow: 0 22px 48px var(--color-shadow) !important;
 }
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 26px 56px var(--color-button-shadow) !important;
+  box-shadow: 0 26px 56px var(--color-shadow) !important;
 }
 
 .btn-secondary {
   background: transparent;
-  border: 1px solid var(--color-border-accent);
-  color: var(--color-button-border);
-  box-shadow: 0 18px 40px var(--color-shadow-light) !important;
+  border: 1px solid var(--color-border);
+  color: var(--color-border);
+  box-shadow: 0 18px 40px var(--color-shadow) !important;
 }
 
 .btn-secondary:hover {
-  background: var(--color-button-bg);
-  color: var(--color-button-text);
-  border-color: var(--color-border-accent);
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+  border-color: var(--color-border);
 }
 
 .i {
   width: 24px;
   height: 24px;
-  fill: var(--color-button-bg);
+  fill: var(--color-primary);
 }
 
 .footer-socials {

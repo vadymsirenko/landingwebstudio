@@ -6,10 +6,10 @@
   justify-content: space-between;
   background: linear-gradient(
     232deg,
-    var(--color-bg-secondary-100) 0%,
-    var(--color-bg-primary-100) 100%
+    var(--color-bg-secondary) 0%,
+    var(--color-bg-primary) 100%
   );
-  border: 1px solid var(--color-border-accent);
+  border: 1px solid var(--color-border);
   border-radius: 15px;
   padding: 70px 20px;
 }
@@ -28,7 +28,7 @@
   gap: 20px;
   text-align: center;
   font-size: 16px;
-  color: var(--color-divider);
+  color: var(--color-border);
   font-weight: 600;
   line-height: 1.5;
   margin: 15px;
@@ -56,8 +56,8 @@
   padding: 30px 20px;
   background: linear-gradient(
     232deg,
-    var(--color-bg-secondary-100) 0%,
-    var(--color-bg-primary-100) 100%
+    var(--color-bg-secondary) 0%,
+    var(--color-bg-primary) 100%
   );
   margin: 15px 0;
   border-radius: 15px;
@@ -108,7 +108,7 @@
   width: 36px;
   height: 36px;
   margin: 0;
-  color: var(--color-border-accent);
+  color: var(--color-border);
 }
 
 .reviewsSwiper .swiper-button-prev {

@@ -1,7 +1,7 @@
 .works {
   padding: 60px 20px;
   text-align: center;
-  /* background: linear-gradient(180deg, var(--color-gray-100) , var(--color-bg-primary)); */
+  /* background: linear-gradient(180deg, var(--color-bg-secondary) , var(--color-bg-primary)); */
 }
 .works-header {
   display: flex;
@@ -22,7 +22,7 @@
 
 .tag {
   display: inline-block;
-  background: var(--color-bg-primary-85);
+  background: var(--color-bg-overlay-strong);
   border-radius: 12px;
   padding: 6px 12px;
   margin: 0 5px;
@@ -30,8 +30,8 @@
 
 
 .tag:hover {
-  background: linear-gradient(232deg,var(--color-bg-secondary-100) 0%, var(--color-divider) 100%);
-  color: var(--color-button-text);
+  background: linear-gradient(232deg,var(--color-bg-secondary) 0%, var(--color-border) 100%);
+  color: var(--color-text-inverse);
 }
 
 .cards {
@@ -41,10 +41,10 @@
 }
 
 .card {
-  background: linear-gradient(232deg,var(--color-gradient-dark) 0%, var(--color-gradient-light) 100%);
+  background: linear-gradient(232deg,var(--color-accent-secondary) 0%, var(--color-bg-secondary) 100%);
   padding: 20px;
   border-radius: 16px;
-  box-shadow: 0 4px 18px var(--color-shadow-intense);
+  box-shadow: 0 4px 18px var(--color-shadow);
 }
 
 .card img {

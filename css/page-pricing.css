@@ -242,7 +242,7 @@
 
 .pricing-faq {
   padding: 90px 0;
-  background: linear-gradient(180deg, rgba(248, 249, 252, 0.4), rgba(200, 207, 223, 0.22));
+  /* background: linear-gradient(180deg, rgba(248, 249, 252, 0.4), rgba(200, 207, 223, 0.22)); */
 }
 
 .pricing-faq__grid {

@@ -32,35 +32,35 @@ body.lock {
   display: inline-block;
   padding: 12px 28px;
   border-radius: 24px;
-  background: var(--btn);
-  color: var(--btn-text-ink);
+  background: var(--color-button-bg);
+  color: var(--color-button-text);
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
-  box-shadow: 0 22px 48px var(--btn-hover-shadow) !important;
+  box-shadow: 0 22px 48px var(--color-button-shadow) !important;
 }
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 26px 56px var(--btn-hover-shadow) !important;
+  box-shadow: 0 26px 56px var(--color-button-shadow) !important;
 }
 
 .btn-secondary {
   background: transparent;
-  border: 1px solid var(--border);
-  color: var(--btn-border);
-  box-shadow: 0 18px 40px var(--shadow) !important;
+  border: 1px solid var(--color-border-accent);
+  color: var(--color-button-border);
+  box-shadow: 0 18px 40px var(--color-shadow-light) !important;
 }
 
 .btn-secondary:hover {
-  background: var(--btn);
-  color: var(--btn-text-ink);
-  border-color: var(--border);
+  background: var(--color-button-bg);
+  color: var(--color-button-text);
+  border-color: var(--color-border-accent);
 }
 
 .i {
   width: 24px;
   height: 24px;
-  fill: var(--btn);
+  fill: var(--color-button-bg);
 }
 
 .footer-socials {
@@ -74,7 +74,7 @@ body.lock {
   display: block;
   width: 75%;
   min-height: 2px;
-  background: var(--text-muted);
+  background: var(--color-text-muted);
   margin: 20px auto;
   border-radius: 5px;
 }

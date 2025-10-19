@@ -2,13 +2,13 @@ footer {
   width: 100%;
   text-align: center;
   padding: 30px 20px 20px;
-  color: var(--text-ink);
-  background: linear-gradient(180deg, var(--color-light), var(--color-dark));
+  color: var(--color-text-primary);
+  background: linear-gradient(180deg, var(--color-bg-primary-98), var(--color-bg-secondary-85));
 }
 
 
 footer .socials a {
-  color: var(--text-ink);
+  color: var(--color-text-primary);
   text-decoration: none;
   margin: 0 10px;
   font-size: 1.2rem;

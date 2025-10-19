@@ -13,7 +13,7 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: linear-gradient(180deg, var(--color-light), var(--color-dark));
+  background: linear-gradient(180deg, var(--color-bg-primary-98), var(--color-bg-secondary-85));
 }
 
 .hero-inner {

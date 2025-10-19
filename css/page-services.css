@@ -1,10 +1,10 @@
 .services-page {
   background: linear-gradient(
     160deg,
-    rgba(248, 249, 252, 0.9) 0%,
-    rgba(219, 226, 239, 0.9) 100%
+    var(--color-bg-primary-90) 0%,
+    var(--color-bg-secondary-90) 100%
   );
-  color: var(--text-ink);
+  color: var(--color-text-primary);
 }
 
 .services-hero {
@@ -23,14 +23,14 @@
   text-transform: uppercase;
   letter-spacing: 0.14em;
   font-size: 13px;
-  color: var(--text-muted);
+  color: var(--color-text-muted);
   margin-bottom: 12px;
 }
 
 .services-hero__content h1 {
   font-size: clamp(34px, 3.4vw, 52px);
   line-height: 1.1;
-  color: var(--text-ink-secondary);
+  color: var(--color-text-secondary);
   margin-bottom: 24px;
   font-weight: 700;
 }
@@ -50,14 +50,14 @@
 
 .btn-secondary {
   background: transparent;
-  border: 1px solid var(--border);
-  color: var(--btn-border);
+  border: 1px solid var(--color-border-accent);
+  color: var(--color-button-border);
 }
 
 .btn-secondary:hover {
-  background: var(--btn);
-  color: var(--btn-text-ink);
-  border-color: var(--border);
+  background: var(--color-button-bg);
+  color: var(--color-button-text);
+  border-color: var(--color-border-accent);
 }
 
 .services-hero__pills {
@@ -67,8 +67,8 @@
 }
 
 .services-hero__pills div {
-  background: rgba(248, 249, 252, 0.92);
-  border: 1px solid var(--border);
+  background: var(--color-bg-primary-92);
+  border: 1px solid var(--color-border-accent);
   border-radius: 18px;
   padding: 20px 22px;
 }
@@ -76,20 +76,20 @@
 .services-hero__pills dt {
   font-weight: 600;
   font-size: 16px;
-  color: var(--text-ink-secondary);
+  color: var(--color-text-secondary);
   margin-bottom: 4px;
 }
 
 .services-hero__pills dd {
   font-size: 14px;
-  color: var(--text-ink);
+  color: var(--color-text-primary);
   margin: 0;
 }
 
 .services-highlight-card {
   background: linear-gradient(232deg,var(--color-gradient-dark) 0%, var(--color-gradient-light) 100%);
   border-radius: 24px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--color-border-accent);
   padding: 32px 28px;
   display: grid;
   gap: 18px;
@@ -98,7 +98,7 @@
 .services-highlight-card h2 {
   font-size: 22px;
   font-weight: 600;
-  color: var(--text-ink-secondary);
+  color: var(--color-text-secondary);
 }
 
 .services-highlight-card ul {
@@ -128,7 +128,7 @@
 
 .services-highlight-card__note {
   font-size: 14px;
-  color: var(--text-muted);
+  color: var(--color-text-muted);
 }
 
 .services-section {
@@ -148,7 +148,7 @@
 .services-section__header h2,
 .services-process__intro h2 {
   font-size: clamp(28px, 3vw, 42px);
-  color: var(--text-ink-secondary);
+  color: var(--color-text-secondary);
   font-weight: 700;
 }
 
@@ -166,7 +166,7 @@
 .service-card {
   background: linear-gradient(232deg,var(--color-gradient-dark) 0%, var(--color-gradient-light) 100%);
   border-radius: 24px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--color-border-accent);
   padding: 32px 28px;
   display: grid;
   gap: 18px;
@@ -175,7 +175,7 @@
 .service-card header h3 {
   font-size: 22px;
   font-weight: 600;
-  color: var(--text-ink-secondary);
+  color: var(--color-text-secondary);
 }
 
 .service-card header p {
@@ -195,7 +195,7 @@
 
 .service-card__meta {
   font-size: 14px;
-  color: var(--text-muted);
+  color: var(--color-text-muted);
   margin-bottom: 12px;
 }
 
@@ -212,9 +212,9 @@
 }
 
 .services-timeline li {
-  background: rgba(248, 249, 252, 0.92);
+  background: var(--color-bg-primary-92);
   border-radius: 22px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--color-border-accent);
   padding: 26px;
   display: grid;
   gap: 14px;
@@ -226,10 +226,10 @@
   width: 48px;
   height: 48px;
   border-radius: 14px;
-  background: rgba(219, 226, 239, 0.9);
+  background: var(--color-bg-secondary-90);
   display: grid;
   place-items: center;
-  color: var(--text-ink-secondary);
+  color: var(--color-text-secondary);
   font-size: 16px;
   font-weight: 700;
 }
@@ -237,7 +237,7 @@
 .services-timeline h3 {
   font-size: 20px;
   font-weight: 600;
-  color: var(--text-ink-secondary);
+  color: var(--color-text-secondary);
   margin-bottom: 6px;
 }
 
@@ -246,15 +246,15 @@
 }
 
 .services-process__list li{
-    background: rgba(248, 249, 252, 0.92);
+    background: var(--color-bg-primary-92);
   border-radius: 20px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--color-border-accent);
   padding: 24px;
   display: grid;
   gap: 16px;
   grid-template-columns: auto 1fr;
   align-items: start;
-  box-shadow: 0 12px 28px rgba(200, 207, 223, 0.25);
+  box-shadow: 0 12px 28px var(--color-shadow-cool-25);
   margin-bottom: 15px;
   width: 70%;
 }
@@ -273,7 +273,7 @@
 .services-capabilities__intro h2 {
   font-size: clamp(28px, 2.8vw, 40px);
   font-weight: 700;
-  color: var(--text-ink-secondary);
+  color: var(--color-text-secondary);
 }
 
 .services-capabilities__grid {
@@ -283,9 +283,9 @@
 }
 
 .services-capabilities__grid article {
-  background: rgba(248, 249, 252, 0.92);
+  background: var(--color-bg-primary-92);
   border-radius: 22px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--color-border-accent);
   padding: 26px;
   display: grid;
   gap: 12px;
@@ -294,7 +294,7 @@
 .services-capabilities__grid h3 {
   font-size: 18px;
   font-weight: 600;
-  color: var(--text-ink-secondary);
+  color: var(--color-text-secondary);
 }
 
 .services-capabilities__grid ul {
@@ -318,7 +318,7 @@
 .services-proof__inner h2 {
   font-size: clamp(28px, 2.8vw, 40px);
   font-weight: 700;
-  color: var(--text-ink-secondary);
+  color: var(--color-text-secondary);
 }
 
 .services-proof__stats {
@@ -327,9 +327,9 @@
 }
 
 .services-proof__stat {
-  background: rgba(248, 249, 252, 0.92);
+  background: var(--color-bg-primary-92);
   border-radius: 22px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--color-border-accent);
   padding: 24px;
   display: grid;
   gap: 8px;
@@ -338,24 +338,24 @@
 .services-proof__value {
   font-size: 32px;
   font-weight: 700;
-  color: var(--text-ink-tertiary);
+  color: var(--color-text-tertiary);
 }
 
 .services-proof__label {
   font-size: 15px;
-  color: var(--text-ink);
+  color: var(--color-text-primary);
 }
 
 .services-cta__inner {
   background: linear-gradient(
       140deg,
-      rgba(248, 249, 252, 0.92),
-      rgba(219, 226, 239, 0.92)
+      var(--color-bg-primary-92),
+      var(--color-bg-secondary-92)
     );
   border-radius: 26px;
   padding: 60px 40px;
   text-align: center;
-  border: 1px solid var(--border);
+  border: 1px solid var(--color-border-accent);
   display: grid;
   gap: 18px;
   justify-items: center;
@@ -364,7 +364,7 @@
 .services-cta__inner h2 {
   font-size: clamp(28px, 3vw, 40px);
   font-weight: 700;
-  color: var(--text-ink-secondary);
+  color: var(--color-text-secondary);
 }
 
 .services-cta__inner p {

@@ -1,10 +1,10 @@
 .blog-page {
   background: linear-gradient(
     162deg,
-    rgba(248, 249, 252, 0.9) 0%,
-    rgba(219, 226, 239, 0.9) 100%
+    var(--color-bg-primary-90) 0%,
+    var(--color-bg-secondary-90) 100%
   );
-  color: var(--text-ink);
+  color: var(--color-text-primary);
 }
 
 .blog-hero {
@@ -23,7 +23,7 @@
   text-transform: uppercase;
   letter-spacing: 0.14em;
   font-size: 13px;
-  color: var(--text-muted);
+  color: var(--color-text-muted);
   margin-bottom: 12px;
 }
 
@@ -31,7 +31,7 @@
   font-size: clamp(34px, 3.8vw, 54px);
   line-height: 1.1;
   font-weight: 700;
-  color: var(--text-ink-secondary);
+  color: var(--color-text-secondary);
   margin-bottom: 24px;
 }
 
@@ -50,14 +50,14 @@
 
 .btn-secondary {
   background: transparent;
-  border: 1px solid var(--border);
-  color: var(--btn-border);
+  border: 1px solid var(--color-border-accent);
+  color: var(--color-button-border);
 }
 
 .btn-secondary:hover {
-  background: var(--btn);
-  color: var(--btn-text-ink);
-  border-color: var(--border);
+  background: var(--color-button-bg);
+  color: var(--color-button-text);
+  border-color: var(--color-border-accent);
 }
 
 .blog-hero__aside {
@@ -68,9 +68,9 @@
 .blog-hero__card {
   background: linear-gradient(232deg,var(--color-gradient-dark) 0%, var(--color-gradient-light) 100%);
   border-radius: 24px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--color-border-accent);
   padding: 30px;
-  box-shadow: 0 20px 42px rgba(200, 207, 223, 0.25);
+  box-shadow: 0 20px 42px var(--color-shadow-cool-25);
   display: grid;
   gap: 16px;
 }
@@ -78,7 +78,7 @@
 .blog-hero__card h2 {
   font-size: 20px;
   font-weight: 600;
-  color: var(--text-ink-secondary);
+  color: var(--color-text-secondary);
 }
 
 .blog-hero__card ul {
@@ -89,11 +89,11 @@
 }
 
 .blog-subscribe {
-  background: rgba(248, 249, 252, 0.9);
+  background: var(--color-bg-primary-90);
   border-radius: 20px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--color-border-accent);
   padding: 24px;
-  box-shadow: 0 18px 36px rgba(200, 207, 223, 0.22);
+  box-shadow: 0 18px 36px var(--color-shadow-cool-22);
   display: grid;
   gap: 12px;
 }
@@ -101,25 +101,25 @@
 .blog-subscribe h3 {
   font-size: 18px;
   font-weight: 600;
-  color: var(--text-ink-secondary);
+  color: var(--color-text-secondary);
 }
 
 .blog-subscribe p {
   font-size: 14px;
-  color: var(--text-ink);
+  color: var(--color-text-primary);
 }
 
 .blog-subscribe input {
   padding: 12px 14px;
   border-radius: 14px;
-  border: 1px solid var(--border);
-  background: rgba(248, 249, 252, 0.96);
+  border: 1px solid var(--color-border-accent);
+  background: var(--color-bg-primary-96);
   font-size: 15px;
-  color: var(--text-ink);
+  color: var(--color-text-primary);
 }
 
 .blog-subscribe input:focus {
-  border-color: var(--border);
+  border-color: var(--color-border-accent);
 }
 
 .blog-section-header {
@@ -132,13 +132,13 @@
 
 .blog-section-header h2 {
   font-size: clamp(28px, 3vw, 42px);
-  color: var(--text-ink-secondary);
+  color: var(--color-text-secondary);
   font-weight: 700;
 }
 
 .blog-section-header p {
   font-size: 18px;
-  color: var(--text-ink);
+  color: var(--color-text-primary);
 }
 
 .blog-topics {
@@ -154,9 +154,9 @@
 .blog-topic-card {
   background: linear-gradient(232deg,var(--color-gradient-dark) 0%, var(--color-gradient-light) 100%);
   border-radius: 20px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--color-border-accent);
   padding: 24px;
-  box-shadow: 0 18px 36px rgba(200, 207, 223, 0.22);
+  box-shadow: 0 18px 36px var(--color-shadow-cool-22);
   display: grid;
   gap: 10px;
   color: inherit;
@@ -165,13 +165,13 @@
 
 .blog-topic-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 22px 46px rgba(200, 207, 223, 0.25);
+  box-shadow: 0 22px 46px var(--color-shadow-cool-25);
 }
 
 .blog-topic-card h3 {
   font-size: 18px;
   font-weight: 600;
-  color: var(--text-ink-secondary);
+  color: var(--color-text-secondary);
 }
 
 .blog-topic-card p {
@@ -182,8 +182,8 @@
   padding: 90px 0;
   background: linear-gradient(
     180deg,
-    rgba(248, 249, 252, 0.45) 0%,
-    rgba(219, 226, 239, 0.2) 100%
+    var(--color-bg-primary-45) 0%,
+    var(--color-bg-secondary-20) 100%
   );
 }
 
@@ -196,9 +196,9 @@
 .blog-post-card {
   background: linear-gradient(232deg,var(--color-gradient-dark) 0%, var(--color-gradient-light) 100%);
   border-radius: 22px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--color-border-accent);
   padding: 28px;
-  box-shadow: 0 20px 42px rgba(200, 207, 223, 0.22);
+  box-shadow: 0 20px 42px var(--color-shadow-cool-22);
   display: grid;
   gap: 12px;
   margin-bottom: 15px;
@@ -208,13 +208,13 @@
   font-size: 13px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--color-text-muted);
 }
 
 .blog-post-card h3 {
   font-size: 20px;
   font-weight: 600;
-  color: var(--text-ink-secondary);
+  color: var(--color-text-secondary);
 }
 
 .blog-post-card h3 a {
@@ -231,7 +231,7 @@
 
 .blog-post-card__date {
   font-size: 13px;
-  color: var(--text-muted);
+  color: var(--color-text-muted);
 }
 
 .blog-featured {
@@ -239,10 +239,10 @@
 }
 
 .blog-featured__inner {
-  background: rgba(248, 249, 252, 0.95);
+  background: var(--color-bg-primary-95);
   border-radius: 26px;
-  border: 1px solid var(--border);
-  box-shadow: 0 22px 50px rgba(200, 207, 223, 0.25);
+  border: 1px solid var(--color-border-accent);
+  box-shadow: 0 22px 50px var(--color-shadow-cool-25);
   padding: 50px;
   display: grid;
   gap: 36px;
@@ -251,7 +251,7 @@
 
 .blog-featured__inner h2 {
   font-size: clamp(26px, 2.6vw, 36px);
-  color: var(--text-ink-secondary);
+  color: var(--color-text-secondary);
   font-weight: 700;
   margin-bottom: 12px;
 }
@@ -265,7 +265,7 @@
 }
 
 .blog-featured__note {
-  background: rgba(248, 249, 252, 0.6);
+  background: var(--color-bg-primary-60);
   border-radius: 20px;
   padding: 24px;
   display: grid;
@@ -275,7 +275,7 @@
 .blog-featured__note h3 {
   font-size: 18px;
   font-weight: 600;
-  color: var(--text-ink-secondary);
+  color: var(--color-text-secondary);
 }
 
 .blog-featured__links {
@@ -285,7 +285,7 @@
 }
 
 .blog-featured__links a {
-  color: var(--btn-border);
+  color: var(--color-button-border);
   font-weight: 600;
 }
 

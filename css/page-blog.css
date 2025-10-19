@@ -66,7 +66,7 @@
 }
 
 .blog-hero__card {
-  background: linear-gradient(232deg,rgba(235, 192, 204, 1) 0%, rgba(218, 225, 237, 1) 100%);
+  background: linear-gradient(232deg,var(--color-gradient-dark) 0%, var(--color-gradient-light) 100%);
   border-radius: 24px;
   border: 1px solid var(--border);
   padding: 30px;
@@ -152,7 +152,7 @@
 }
 
 .blog-topic-card {
-  background: linear-gradient(232deg,rgba(235, 192, 204, 1) 0%, rgba(218, 225, 237, 1) 100%);
+  background: linear-gradient(232deg,var(--color-gradient-dark) 0%, var(--color-gradient-light) 100%);
   border-radius: 20px;
   border: 1px solid var(--border);
   padding: 24px;
@@ -194,7 +194,7 @@
 }
 
 .blog-post-card {
-  background: linear-gradient(232deg,rgba(235, 192, 204, 1) 0%, rgba(218, 225, 237, 1) 100%);
+  background: linear-gradient(232deg,var(--color-gradient-dark) 0%, var(--color-gradient-light) 100%);
   border-radius: 22px;
   border: 1px solid var(--border);
   padding: 28px;

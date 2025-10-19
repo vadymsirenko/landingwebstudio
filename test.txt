@@ -36,3 +36,34 @@
   - відображення текстів у браузері без проблем із кодуванням;  
   - адаптивність інтерфейсу на **всіх breakpoints (320, 360, 768, 1024, 1400, 1920)**;  
   - щоб текст не виходив за межі контейнерів при зміні мови.  
+
+:root {
+  /* Base */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-primary: #3f3f3f;
+  --color-accent-secondary: #facdbc;
+  --color-text-primary: #161d2f;
+
+  /* Backgrounds */
+  --color-bg-primary: color-mix(in srgb, var(--color-white) 92%, var(--color-accent-secondary) 8%);
+  --color-bg-secondary: color-mix(in srgb, var(--color-white) 85%, var(--color-accent-secondary) 15%);
+  --color-bg-contrast: color-mix(in srgb, var(--color-accent-secondary) 55%, transparent 45%);
+  --color-bg-overlay-soft: color-mix(in srgb, var(--color-bg-primary) 80%, transparent 20%);
+  --color-bg-overlay-strong: color-mix(in srgb, var(--color-bg-secondary) 65%, transparent 35%);
+
+  /* Text */
+  --color-text-muted: color-mix(in srgb, var(--color-text-primary) 55%, var(--color-white) 45%);
+  --color-text-inverse: var(--color-white);
+
+  /* Borders & shadows */
+  --color-border: var(--color-primary);
+  --color-shadow: color-mix(in srgb, var(--color-black) 16%, transparent);
+
+  /* Gradient */
+  --gradient-primary: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--color-white) 100%, transparent) 0%,
+    color-mix(in srgb, var(--color-accent-secondary) 60%, transparent) 100%
+  );
+}

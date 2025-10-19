@@ -129,7 +129,6 @@ h6 {
   --gradient-primary: linear-gradient(
     180deg,
     color-mix(in srgb, var(--color-white) 100%, transparent) 0%,
-    /* color-mix(in srgb, var(--color-bg-overlay-soft) 100%, transparent) 0%, */
     color-mix(in srgb, var(--color-accent-secondary) 60%, transparent) 100%
   );
 }

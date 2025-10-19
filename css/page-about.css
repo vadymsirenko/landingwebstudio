@@ -117,8 +117,6 @@
 .about-card {
 
   background: linear-gradient(232deg,var(--color-accent-secondary) 0%, var(--color-bg-secondary) 100%);
-
-
   border: 1px solid var(--color-border);
   border-radius: 22px;
   padding: 32px;

@@ -106,9 +106,7 @@ h6 {
   /* Base */
   --color-white: #ffffff;
   --color-black: #000000;
-  --color-primary: #3a302e;
-  /* --color-primary: #2f3e60; */
-  /* --color-accent-secondary: #d9cbe7; */
+  --color-primary: #3f3f3f;
   --color-accent-secondary: #facdbc;
   --color-text-primary: #161d2f;
 
@@ -130,7 +128,8 @@ h6 {
   /* Gradient */
   --gradient-primary: linear-gradient(
     180deg,
-    color-mix(in srgb, var(--color-bg-overlay-soft) 100%, transparent) 0%,
+    color-mix(in srgb, var(--color-white) 100%, transparent) 0%,
+    /* color-mix(in srgb, var(--color-bg-overlay-soft) 100%, transparent) 0%, */
     color-mix(in srgb, var(--color-accent-secondary) 60%, transparent) 100%
   );
 }

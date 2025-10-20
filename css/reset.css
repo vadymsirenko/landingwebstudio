@@ -108,6 +108,7 @@ h6 {
   --color-black: #000000;
   --color-primary: #3f3f3f;
   --color-accent-secondary: #facdbc;
+  --color-accent-soft: color-mix(in srgb, var(--color-accent-secondary) 70%, var(--color-white) 30%);
   --color-text-primary: #161d2f;
 
   /* Backgrounds */
@@ -116,6 +117,7 @@ h6 {
   --color-bg-contrast: color-mix(in srgb, var(--color-accent-secondary) 55%, transparent 45%);
   --color-bg-overlay-soft: color-mix(in srgb, var(--color-bg-primary) 80%, transparent 20%);
   --color-bg-overlay-strong: color-mix(in srgb, var(--color-bg-secondary) 65%, transparent 35%);
+  --color-gray-200: color-mix(in srgb, var(--color-bg-contrast) 60%, var(--color-bg-primary) 40%);
 
   /* Text */
   --color-text-muted: color-mix(in srgb, var(--color-text-primary) 55%, var(--color-white) 45%);
@@ -125,11 +127,30 @@ h6 {
   --color-border: var(--color-primary);
   --color-shadow: color-mix(in srgb, var(--color-black) 16%, transparent);
 
-  /* Gradient */
-  --gradient-primary: linear-gradient(
-    180deg,
-    color-mix(in srgb, var(--color-white) 100%, transparent) 0%,
-    color-mix(in srgb, var(--color-accent-secondary) 60%, transparent) 100%
+  /* Gradients */
+  --gradient-main: linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
+  --gradient-accent: linear-gradient(232deg, var(--color-accent-soft) 0%, var(--color-bg-secondary) 100%);
+  --gradient-light: linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-gray-200) 100%);
+  --gradient-soft: linear-gradient(140deg, var(--color-bg-primary) 0%, var(--color-gray-200) 100%);
+  --gradient-surface: linear-gradient(
+    var(--gradient-surface-angle, 180deg),
+    var(--gradient-surface-start, var(--color-bg-overlay-soft)) 0%,
+    var(--gradient-surface-end, var(--color-bg-overlay-strong)) 100%
+  );
+  --gradient-contrast: linear-gradient(
+    var(--gradient-contrast-angle, 180deg),
+    var(--gradient-contrast-start, var(--color-bg-overlay-strong)) 0%,
+    var(--gradient-contrast-end, var(--color-bg-contrast)) 100%
+  );
+  --gradient-shadow: linear-gradient(
+    var(--gradient-shadow-angle, to right),
+    var(--gradient-shadow-start, var(--color-shadow)),
+    var(--gradient-shadow-end, transparent)
+  );
+  --gradient-depth: linear-gradient(
+    var(--gradient-depth-angle, 232deg),
+    var(--gradient-depth-start, var(--color-bg-secondary)) 0%,
+    var(--gradient-depth-end, var(--color-bg-primary)) 100%
   );
 }
 

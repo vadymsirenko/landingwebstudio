@@ -1,5 +1,7 @@
-.services-page {
-  background: linear-gradient(160deg, var(--color-bg-overlay-soft) 0%, var(--color-bg-contrast) 100%);
+﻿.services-page {
+  --gradient-surface-angle: 160deg;
+  --gradient-surface-end: var(--color-bg-contrast);
+  background: var(--gradient-surface);
   color: var(--color-text-primary);
 }
 
@@ -83,7 +85,7 @@
 }
 
 .services-highlight-card {
-  background: linear-gradient(232deg,var(--color-accent-secondary) 0%, var(--color-bg-secondary) 100%);
+  background: var(--gradient-accent);
   border-radius: 24px;
   border: 1px solid var(--color-border);
   padding: 32px 28px;
@@ -160,7 +162,7 @@
 }
 
 .service-card {
-  background: linear-gradient(232deg,var(--color-accent-secondary) 0%, var(--color-bg-secondary) 100%);
+  background: var(--gradient-accent);
   border-radius: 24px;
   border: 1px solid var(--color-border);
   padding: 32px 28px;
@@ -343,7 +345,7 @@
 }
 
 .services-cta__inner {
-  background: linear-gradient(140deg, var(--color-bg-overlay-soft), var(--color-bg-contrast));
+  background: var(--gradient-soft);
   border-radius: 26px;
   padding: 60px 40px;
   text-align: center;
@@ -411,6 +413,10 @@
     flex-direction: column;
   }
 }
+
+
+
+
 
 
 

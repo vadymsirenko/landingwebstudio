@@ -1,5 +1,7 @@
-.pricing-page {
-  background: linear-gradient(160deg, var(--color-bg-overlay-soft) 0%, var(--color-bg-contrast) 100%);
+﻿.pricing-page {
+  --gradient-surface-angle: 160deg;
+  --gradient-surface-end: var(--color-bg-contrast);
+  background: var(--gradient-surface);
   color: var(--color-text-primary);
 }
 
@@ -62,7 +64,7 @@
 }
 
 .pricing-hero__card {
-  background: linear-gradient(232deg,var(--color-accent-secondary) 0%, var(--color-bg-secondary) 100%);
+  background: var(--gradient-accent);
   border-radius: 24px;
   border: 1px solid var(--color-border);
   padding: 30px;
@@ -123,7 +125,7 @@
 }
 
 .pricing-card {
-  background: linear-gradient(232deg,var(--color-accent-secondary) 0%, var(--color-bg-secondary) 100%);
+  background: var(--gradient-accent);
   border-radius: 24px;
   border: 1px solid var(--color-border);
   padding: 30px;
@@ -162,7 +164,7 @@
 
 .pricing-addons {
   padding: 90px 0;
-  background: linear-gradient(180deg, var(--color-bg-overlay-soft) 0%, var(--color-bg-contrast) 100%);
+  background: var(--gradient-light);
 }
 
 .pricing-addons__grid {
@@ -242,7 +244,7 @@
 
 .pricing-faq {
   padding: 90px 0;
-  /* background: linear-gradient(180deg, var(--color-bg-overlay-soft) 0%, var(--color-bg-contrast) 100%); */
+  /* background: var(--gradient-light); */
 }
 
 .pricing-faq__grid {
@@ -272,7 +274,7 @@
 }
 
 .pricing-cta__inner {
-  background: linear-gradient(140deg, var(--color-bg-overlay-soft), var(--color-bg-contrast));
+  background: var(--gradient-soft);
   border-radius: 26px;
   border: 1px solid var(--color-border);
   padding: 60px 40px;
@@ -331,6 +333,11 @@
     flex-direction: column;
   }
 }
+
+
+
+
+
 
 
 

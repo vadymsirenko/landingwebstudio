@@ -1,5 +1,7 @@
-.blog-page {
-  background: linear-gradient(162deg, var(--color-bg-overlay-soft) 0%, var(--color-bg-contrast) 100%);
+﻿.blog-page {
+  --gradient-surface-angle: 162deg;
+  --gradient-surface-end: var(--color-bg-contrast);
+  background: var(--gradient-surface);
   color: var(--color-text-primary);
 }
 
@@ -62,7 +64,7 @@
 }
 
 .blog-hero__card {
-  background: linear-gradient(232deg,var(--color-accent-secondary) 0%, var(--color-bg-secondary) 100%);
+  background: var(--gradient-accent);
   border-radius: 24px;
   border: 1px solid var(--color-border);
   padding: 30px;
@@ -148,7 +150,7 @@
 }
 
 .blog-topic-card {
-  background: linear-gradient(232deg,var(--color-accent-secondary) 0%, var(--color-bg-secondary) 100%);
+  background: var(--gradient-accent);
   border-radius: 20px;
   border: 1px solid var(--color-border);
   padding: 24px;
@@ -176,11 +178,7 @@
 
 .blog-latest {
   padding: 90px 0;
-  background: linear-gradient(
-    180deg,
-    var(--color-bg-overlay-soft) 0%,
-    var(--color-bg-contrast) 100%
-  );
+  background: var(--gradient-light);
 }
 
 .blog-latest__grid {
@@ -190,7 +188,7 @@
 }
 
 .blog-post-card {
-  background: linear-gradient(232deg,var(--color-accent-secondary) 0%, var(--color-bg-secondary) 100%);
+  background: var(--gradient-accent);
   border-radius: 22px;
   border: 1px solid var(--color-border);
   padding: 28px;
@@ -314,6 +312,9 @@
     flex-direction: column;
   }
 }
+
+
+
 
 
 

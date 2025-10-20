@@ -1,7 +1,7 @@
-.works {
+﻿.works {
   padding: 60px 20px;
   text-align: center;
-  /* background: linear-gradient(180deg, var(--color-bg-secondary) , var(--color-bg-primary)); */
+  /* background: var(--gradient-depth); */
 }
 .works-header {
   display: flex;
@@ -30,7 +30,8 @@
 
 
 .tag:hover {
-  background: linear-gradient(232deg,var(--color-bg-secondary) 0%, var(--color-border) 100%);
+  --gradient-depth-end: var(--color-border);
+  background: var(--gradient-depth);
   color: var(--color-text-inverse);
 }
 
@@ -41,7 +42,7 @@
 }
 
 .card {
-  background: linear-gradient(232deg,var(--color-accent-secondary) 0%, var(--color-bg-secondary) 100%);
+  background: var(--gradient-accent);
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0 4px 18px var(--color-shadow);
@@ -72,6 +73,9 @@
     gap: 0;
   }
 }
+
+
+
 
 
 

@@ -1,5 +1,7 @@
-.contacts-page {
-  background: linear-gradient(150deg, var(--color-bg-overlay-soft) 0%, var(--color-bg-contrast) 100%);
+﻿.contacts-page {
+  --gradient-surface-angle: 150deg;
+  --gradient-surface-end: var(--color-bg-contrast);
+  background: var(--gradient-surface);
   color: var(--color-text-primary);
 }
 
@@ -61,7 +63,7 @@
 }
 
 .availability-card {
-  background: linear-gradient(232deg,var(--color-accent-secondary) 0%, var(--color-bg-secondary) 100%);
+  background: var(--gradient-accent);
   border: 1px solid var(--color-border);
   border-radius: 24px;
   padding: 32px 28px;
@@ -116,7 +118,7 @@
 }
 
 .contact-card {
-  background: linear-gradient(232deg, var(--color-accent-secondary) 0%, var(--color-bg-secondary) 100%);
+  background: var(--gradient-accent);
   border-radius: 22px;
   padding: 28px;
   border: 1px solid var(--color-border);
@@ -302,7 +304,7 @@
 }
 
 .faq-card {
-  background: linear-gradient(232deg,var(--color-accent-secondary) 0%, var(--color-bg-secondary) 100%);
+  background: var(--gradient-accent);
   border-radius: 22px;
   border: 1px solid var(--color-border);
   padding: 28px;
@@ -318,7 +320,7 @@
 }
 
 .contacts-cta__inner {
-  background: linear-gradient(140deg, var(--color-bg-overlay-soft), var(--color-bg-contrast));
+  background: var(--gradient-soft);
   border-radius: 26px;
   padding: 60px 40px;
   text-align: center;
@@ -367,6 +369,7 @@
     padding: 70px 0;
   }
 }
+
 
 
 

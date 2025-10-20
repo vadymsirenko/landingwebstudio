@@ -104,55 +104,40 @@ h6 {
 /*--------------------*/
 :root {
   /* Base */
-  --color-white: #ffffff;
-  --color-black: #000000;
-  --color-primary: #3f3f3f;
-  --color-accent-secondary: #facdbc;
-  --color-accent-soft: color-mix(in srgb, var(--color-accent-secondary) 70%, var(--color-white) 30%);
-  --color-text-primary: #161d2f;
+  --color-white: #f5f0e9;            /* теплий беж */
+  --color-black: #2f2b28;            /* теплий темно-сірий */
+  --color-primary: #a9a8a6;          /* середній сірий */
+  --color-accent-secondary: #d98d82; /* насичений рожевий */
+  --color-accent-soft: #e6c3be;      /* пудрово-рожевий */
+  --color-text-primary: #2f2b28;     /* основний текст */
 
   /* Backgrounds */
-  --color-bg-primary: color-mix(in srgb, var(--color-white) 92%, var(--color-accent-secondary) 8%);
-  --color-bg-secondary: color-mix(in srgb, var(--color-white) 85%, var(--color-accent-secondary) 15%);
-  --color-bg-contrast: color-mix(in srgb, var(--color-accent-secondary) 55%, transparent 45%);
-  --color-bg-overlay-soft: color-mix(in srgb, var(--color-bg-primary) 80%, transparent 20%);
-  --color-bg-overlay-strong: color-mix(in srgb, var(--color-bg-secondary) 65%, transparent 35%);
-  --color-gray-200: color-mix(in srgb, var(--color-bg-contrast) 60%, var(--color-bg-primary) 40%);
+  --color-bg-primary: #f5f0e9;       /* головний фон */
+  --color-bg-secondary: #c7c5c2;     /* другорядний фон */
+  --color-bg-contrast: #e6c3be;      /* акцентний фон */
+  --color-bg-overlay-soft: #f5f0e9;  /* м’який шар */
+  --color-bg-overlay-strong: #c7c5c2;/* насичений шар */
+  --color-gray-200: #a9a8a6;         /* приглушений сірий */
 
   /* Text */
-  --color-text-muted: color-mix(in srgb, var(--color-text-primary) 55%, var(--color-white) 45%);
-  --color-text-inverse: var(--color-white);
+  --color-text-muted: #a9a8a6;       /* приглушений текст */
+  --color-text-inverse: #ffffff;     /* інверсія */
 
   /* Borders & shadows */
-  --color-border: var(--color-primary);
-  --color-shadow: color-mix(in srgb, var(--color-black) 16%, transparent);
+  --color-border: #a9a8a6;
+  --color-shadow: #2f2b28;
 
-  /* Gradients */
-  --gradient-main: linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
-  --gradient-accent: linear-gradient(232deg, var(--color-accent-soft) 0%, var(--color-bg-secondary) 100%);
-  --gradient-light: linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-gray-200) 100%);
-  --gradient-soft: linear-gradient(140deg, var(--color-bg-primary) 0%, var(--color-gray-200) 100%);
-  --gradient-surface: linear-gradient(
-    var(--gradient-surface-angle, 180deg),
-    var(--gradient-surface-start, var(--color-bg-overlay-soft)) 0%,
-    var(--gradient-surface-end, var(--color-bg-overlay-strong)) 100%
-  );
-  --gradient-contrast: linear-gradient(
-    var(--gradient-contrast-angle, 180deg),
-    var(--gradient-contrast-start, var(--color-bg-overlay-strong)) 0%,
-    var(--gradient-contrast-end, var(--color-bg-contrast)) 100%
-  );
-  --gradient-shadow: linear-gradient(
-    var(--gradient-shadow-angle, to right),
-    var(--gradient-shadow-start, var(--color-shadow)),
-    var(--gradient-shadow-end, transparent)
-  );
-  --gradient-depth: linear-gradient(
-    var(--gradient-depth-angle, 232deg),
-    var(--gradient-depth-start, var(--color-bg-secondary)) 0%,
-    var(--gradient-depth-end, var(--color-bg-primary)) 100%
-  );
+  /* Gradients → замінені на кольори */
+  --gradient-main: #f5f0e9;          /* замінено на фон */
+  --gradient-accent: #d98d82;        /* замінено на акцент */
+  --gradient-light: #c7c5c2;         /* замінено на світло-сірий */
+  --gradient-soft: #e6c3be;          /* замінено на пудровий */
+  --gradient-surface: #f5f0e9;       /* м’який фон */
+  --gradient-contrast: #e6c3be;      /* контрастний фон */
+  --gradient-shadow: #2f2b28;        /* тінь */
+  --gradient-depth: #a9a8a6;         /* глибина */
 }
+
 
 body {
   margin: 0;
